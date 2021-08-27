@@ -3,4 +3,7 @@
 *.pyc
 *.xls*
 *.json
+!pypkg.json
+*.htm*
+*.csv
 .env

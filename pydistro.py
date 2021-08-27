@@ -20,8 +20,9 @@ def is_iterable(obj):
 class Pkgcomp:
 
     def __init__(self, pyexes=None, dbdir=None, use_procs=False, max_workers=WORKERS, 
-                 get_latest_vers=True, timeout=TIMEOUT, save_on_exist=True, debug=False, request_args={}):
-        self.pyexes = pyexes or {sys.executable: sys.version.split()[0]}
+                 get_latest_vers=True, timeout=TIMEOUT, save_on_exist=True, version_labels=True,
+                 debug=False, request_args={}):
+        self.pyexes = pyexes or {0: None}
         self.dbdir = dbdir or os.path.dirname(os.path.realpath(__file__))
         self.dbfile = os.path.join(self.dbdir, 'pypkg.json')
         self.max_workers = max_workers
@@ -30,12 +31,13 @@ class Pkgcomp:
         self.request_args = request_args
         self.use_procs = use_procs
         self.save_on_exist = save_on_exist
+        self.version_labels = version_labels
         self.debug = debug
         self._has_updated = False
         self.load_db()
 
     def __del__(self):
-        if self.save_on_exist and not self.use_procs:
+        if self._has_updated and self.save_on_exist and not self.use_procs:
             self.save_db()
 
     def load_db(self, filepath=None):        
@@ -126,6 +128,7 @@ class Pkgcomp:
         df = self._db2pd()
         for env, data in packages.items():
             df[env] = pd.Series(data, index=df.index)
+        df.dropna(how='all', subset=list(packages.keys()), inplace=True)
         df.fillna('', inplace=True)
         return df
 
@@ -135,8 +138,15 @@ class Pkgcomp:
         packages = {}
         def on_envpklist(pyexe, envpklist):
             k = pyexes[pyexe] if isdict else pyexe
-            packages[k] = dict(envpklist)
-            if self.debug: print(f'>>> RETRIEVED PKS FOR ENV: {k}')
+            if not k:
+                k = self._get_env_version(pyexe) if pyexe else f'{sys.version.split()[0]} (CURRENT)'
+            elif self.version_labels and not isdict:
+                k = self._get_env_version(pyexe)
+            if k:
+                packages[k] = dict(envpklist)
+                if self.debug: print(f'>>> RETRIEVED PKS FOR ENV: {k}')
+            elif self.debug: 
+                print(f'~~~ CANNOT PARSE ENV "{pyexe}"!')
         if self.debug: print(f'{NL}COLLECTING PACKAGE LISTS FROM {len(pyexes)} ENVS ...')
         self._list_packages_env_multi(pyexes, on_envpklist=on_envpklist, on_error=(lambda pyexe, exc: print(f'~~~ ERROR LISTING PKS FOR ENV "{pyexe}": {str(exc)}')))
         if not packages: return None
@@ -155,6 +165,13 @@ class Pkgcomp:
             df = pd.DataFrame.from_dict(self._pkdict, orient='index')
             return df.reindex(sorted(df.index, key=lambda x: x.lower())) #df.sort_index()
         return None
+
+    def _get_env_version(self, env):
+        env = env or sys.executable
+        try:
+            return sp.check_output([env, '-V'], encoding='utf-8').split(' ')[-1].strip()
+        except:
+            return None
 
     def _get_pkg_info_multi(self, pknames, on_info=None, on_error=None):
         ex_class = concurrent.futures.ProcessPoolExecutor if self.use_procs else concurrent.futures.ThreadPoolExecutor
@@ -183,13 +200,27 @@ class Pkgcomp:
     def __call__(self, key=None):
         return self.compare_env(key)
 
+## ---------------------------------------------------------------------------------------------- ##
+
 def main():
-    envs = {r'c:\_PROG_\WPy64-3910\python-3.9.1.amd64\python.exe': '3.9.1', 
-            r'c:\_PROG_\WPy64-3950\python-3.9.5.amd64\python.exe': '3.9.5',
-            r'c:\_PROG_\Projects\__VENV__\Scripts\python.exe': 'venv3.9'}
+    # envicronments to compare (None = current)
+    envs = [None, r'c:\_PROG_\WPy64-3950\python-3.9.5.amd64\python.exe']
+    # create class instance (don't update existing DB with latest versions, switch on debugging messages)
     pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
+    # generate comparison dataframe
     df = pk()
-    df.to_excel('pk.xlsx', index_label='Packages')
+    # output to Excel book
+    df.to_excel('pk1.xlsx', index_label='packages')
+    
+    # other output variants:
+    # >> CSV
+    df.to_csv('pk.csv', sep=';', index=False)
+    # >> JSON
+    with open('pk.json', 'w', encoding='utf-8') as file_:
+        file_.write(df.to_json(orient='index', indent=2))
+    # >> HTML
+    with open('pk.html', 'w', encoding='utf-8') as file_:
+        file_.write(df.to_html(na_rep='', render_links=True))
 
 ## ---------------------------------------------------------------------------------------------- ##
 if __name__ == '__main__':
