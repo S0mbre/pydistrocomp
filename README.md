@@ -12,6 +12,11 @@ With a few code lines `pydistrocomp` will help you generate a comparison table (
 Reviewing this table, you can easily see what packages are included in which distro (last two columns highlighted green), match against the newest version (column "latest") and check out the basic package info: name, authors, homepage and summary.
 
 ## Usage
+Install the only two required packages:
+```bash
+python -m pip install -r requirements.txt
+```
+
 See `pydistro.py` for examples in the `main()` function. 
 
 You pass a list of python executables (for each distro you want to review / compare) to the `Pkgcomp` class constructor:
