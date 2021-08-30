@@ -3,2002 +3,2002 @@
     "name": "pyzo",
     "author": "Almar Klein",
     "summary": "the Python IDE for scientific computing",
-    "homepage": "https://pypi.org/project/pyzo/",
+    "homepage": "https://pyzo.org",
     "latest": "4.11.2"
   },
   "pathspec": {
     "name": "pathspec",
     "author": "Caleb P. Burns",
     "summary": "Utility library for gitignore style pattern matching of file paths.",
-    "homepage": "https://pypi.org/project/pathspec/",
+    "homepage": "https://github.com/cpburnz/python-path-specification",
     "latest": "0.9.0"
   },
   "numpydoc": {
     "name": "numpydoc",
     "author": "Pauli Virtanen and others",
     "summary": "Sphinx extension to support docstrings in Numpy format",
-    "homepage": "https://pypi.org/project/numpydoc/",
+    "homepage": "https://numpydoc.readthedocs.io",
     "latest": "1.1.0"
   },
   "PIMS": {
     "name": "PIMS",
     "author": "PIMS Contributors",
     "summary": "Python Image Sequence",
-    "homepage": "https://pypi.org/project/PIMS/",
+    "homepage": "https://github.com/soft-matter/pims",
     "latest": "0.5"
   },
   "intake": {
     "name": "intake",
     "author": "",
     "summary": "Data load and catalog system",
-    "homepage": "https://pypi.org/project/intake/",
+    "homepage": "https://github.com/intake/intake",
     "latest": "0.6.3"
   },
   "jsonschema": {
     "name": "jsonschema",
     "author": "Julian Berman",
     "summary": "An implementation of JSON Schema validation for Python",
-    "homepage": "https://pypi.org/project/jsonschema/",
+    "homepage": "https://github.com/Julian/jsonschema",
     "latest": "3.2.0"
   },
   "PyWavelets": {
     "name": "PyWavelets",
     "author": "",
     "summary": "PyWavelets, wavelet transform module",
-    "homepage": "https://pypi.org/project/PyWavelets/",
+    "homepage": "https://github.com/PyWavelets/pywt",
     "latest": "1.1.1"
   },
   "ipywidgets": {
     "name": "ipywidgets",
     "author": "IPython Development Team",
     "summary": "IPython HTML widgets for Jupyter",
-    "homepage": "https://pypi.org/project/ipywidgets/",
+    "homepage": "http://ipython.org",
     "latest": "7.6.3"
   },
   "scipy": {
     "name": "scipy",
     "author": "",
     "summary": "SciPy: Scientific Library for Python",
-    "homepage": "https://pypi.org/project/scipy/",
+    "homepage": "https://www.scipy.org",
     "latest": "1.7.1"
   },
   "python-dateutil": {
     "name": "python-dateutil",
     "author": "Gustavo Niemeyer",
     "summary": "Extensions to the standard Python datetime module",
-    "homepage": "https://pypi.org/project/python-dateutil/",
+    "homepage": "https://github.com/dateutil/dateutil",
     "latest": "2.8.2"
   },
   "jupyter-server-proxy": {
     "name": "jupyter-server-proxy",
     "author": "Ryan Lovett & Yuvi Panda",
     "summary": "Jupyter server extension to supervise and proxy web services",
-    "homepage": "https://pypi.org/project/jupyter-server-proxy/",
+    "homepage": "https://github.com/jupyterhub/jupyter-server-proxy",
     "latest": "3.1.0"
   },
   "rfc3986": {
     "name": "rfc3986",
     "author": "Ian Stapleton Cordasco",
     "summary": "Validating URI References per RFC 3986",
-    "homepage": "https://pypi.org/project/rfc3986/",
+    "homepage": "http://rfc3986.readthedocs.io",
     "latest": "1.5.0"
   },
   "Sphinx": {
     "name": "Sphinx",
     "author": "Georg Brandl",
     "summary": "Python documentation generator",
-    "homepage": "https://pypi.org/project/Sphinx/",
+    "homepage": "https://sphinx-doc.org/",
     "latest": "4.1.2"
   },
   "dash-html-components": {
     "name": "dash-html-components",
     "author": "Chris Parmer <chris@plotly.com>",
     "summary": "Vanilla HTML components for Dash",
-    "homepage": "https://pypi.org/project/dash-html-components/",
+    "homepage": "https://github.com/plotly/dash-html-components",
     "latest": "1.1.4"
   },
   "datashape": {
     "name": "DataShape",
     "author": "Continuum Analytics",
     "summary": "A data description language.",
-    "homepage": "https://pypi.org/project/DataShape/",
+    "homepage": "http://datashape.readthedocs.org/en/latest/",
     "latest": "0.5.2"
   },
   "pyct": {
     "name": "pyct",
     "author": "HoloViz",
     "summary": "Python package common tasks for users (e.g. copy examples, fetch data, ...)",
-    "homepage": "https://pypi.org/project/pyct/",
+    "homepage": "https://github.com/pyviz-dev/pyct",
     "latest": "0.4.8"
   },
   "terminado": {
     "name": "terminado",
     "author": "Jupyter Development Team",
     "summary": "Tornado websocket backend for the Xterm.js Javascript terminal emulator library.",
-    "homepage": "https://pypi.org/project/terminado/",
+    "homepage": "https://github.com/jupyter/terminado",
     "latest": "0.11.1"
   },
   "voila": {
     "name": "voila",
     "author": "Voila Development Team",
     "summary": "Voilà turns Jupyter notebooks into standalone web applications",
-    "homepage": "https://pypi.org/project/voila/",
+    "homepage": "https://github.com/voila-dashboards/voila",
     "latest": "0.2.10"
   },
   "asgi-csrf": {
     "name": "asgi-csrf",
     "author": "Simon Willison",
     "summary": "ASGI middleware for protecting against CSRF attacks",
-    "homepage": "https://pypi.org/project/asgi-csrf/",
+    "homepage": "https://github.com/simonw/asgi-csrf",
     "latest": "0.9"
   },
   "outcome": {
     "name": "outcome",
     "author": "Frazer McLean",
     "summary": "Capture the outcome of Python function calls.",
-    "homepage": "https://pypi.org/project/outcome/",
+    "homepage": "https://github.com/python-trio/outcome",
     "latest": "1.1.0"
   },
   "sqlite-utils": {
     "name": "sqlite-utils",
     "author": "Simon Willison",
     "summary": "CLI tool and Python utility functions for manipulating SQLite databases",
-    "homepage": "https://pypi.org/project/sqlite-utils/",
+    "homepage": "https://github.com/simonw/sqlite-utils",
     "latest": "3.17"
   },
   "packaging": {
     "name": "packaging",
     "author": "Donald Stufft and individual contributors",
     "summary": "Core utilities for Python packages",
-    "homepage": "https://pypi.org/project/packaging/",
+    "homepage": "https://github.com/pypa/packaging",
     "latest": "21.0"
   },
   "regex": {
     "name": "regex",
     "author": "Matthew Barnett",
     "summary": "Alternative regular expression module, to replace re.",
-    "homepage": "https://pypi.org/project/regex/",
-    "latest": "2021.8.21"
+    "homepage": "https://bitbucket.org/mrabarnett/mrab-regex",
+    "latest": "2021.8.28"
   },
   "quantecon": {
     "name": "quantecon",
     "author": "Thomas J. Sargent and John Stachurski (Project coordinators)",
     "summary": "QuantEcon is a package to support all forms of quantitative economic modelling.",
-    "homepage": "https://pypi.org/project/quantecon/",
+    "homepage": "https://github.com/QuantEcon/QuantEcon.py",
     "latest": "0.5.1"
   },
   "cookiecutter": {
     "name": "cookiecutter",
     "author": "Audrey Roy",
     "summary": "A command-line utility that creates projects from project templates, e.g. creating a Python package project from a Python package project template.",
-    "homepage": "https://pypi.org/project/cookiecutter/",
+    "homepage": "https://github.com/cookiecutter/cookiecutter",
     "latest": "1.7.3"
   },
   "ruamel.yaml.clib": {
     "name": "ruamel.yaml.clib",
     "author": "Anthon van der Neut",
     "summary": "C version of reader, parser and emitter for ruamel.yaml derived from libyaml",
-    "homepage": "https://pypi.org/project/ruamel.yaml.clib/",
+    "homepage": "https://sourceforge.net/p/ruamel-yaml-clib/code/ci/default/tree",
     "latest": "0.2.6"
   },
   "inflection": {
     "name": "inflection",
     "author": "Janne Vanhala",
     "summary": "A port of Ruby on Rails inflector to Python",
-    "homepage": "https://pypi.org/project/inflection/",
+    "homepage": "https://github.com/jpvanhal/inflection",
     "latest": "0.5.1"
   },
   "param": {
     "name": "param",
     "author": "HoloViz",
     "summary": "Make your Python code clearer and more reliable by declaring Parameters.",
-    "homepage": "https://pypi.org/project/param/",
+    "homepage": "http://param.holoviz.org/",
     "latest": "1.11.1"
   },
   "py-lru-cache": {
     "name": "py_lru_cache",
     "author": "Chris Stucchio",
     "summary": "LRU cache for python. Provides a dictionary-like object as well as a method decorator.",
-    "homepage": "https://pypi.org/project/py_lru_cache/",
+    "homepage": "https://github.com/stucchio/Python-LRU-cache",
     "latest": "0.1.4"
   },
   "flask-accepts": {
     "name": "flask-accepts",
     "author": "Alan \"AJ\" Pryor, Jr.",
     "summary": "Easy, opinionated Flask input/output handling with Flask-restx and Marshmallow",
-    "homepage": "https://pypi.org/project/flask-accepts/",
+    "homepage": "",
     "latest": "0.18.2"
   },
   "scilab2py": {
     "name": "scilab2py",
     "author": "",
     "summary": "Python to Scilab bridge",
-    "homepage": "https://pypi.org/project/scilab2py/",
+    "homepage": "http://github.com/blink1073/scilab2py",
     "latest": "0.6.2"
   },
   "fast-histogram": {
     "name": "fast-histogram",
     "author": "Thomas Robitaille",
     "summary": "Fast simple 1D and 2D histograms",
-    "homepage": "https://pypi.org/project/fast-histogram/",
+    "homepage": "https://github.com/astrofrog/fast-histogram",
     "latest": "0.9"
   },
   "flake8": {
     "name": "flake8",
     "author": "Tarek Ziade",
     "summary": "the modular source code checker: pep8 pyflakes and co",
-    "homepage": "https://pypi.org/project/flake8/",
+    "homepage": "https://gitlab.com/pycqa/flake8",
     "latest": "3.9.2"
   },
   "typing-extensions": {
     "name": "typing-extensions",
     "author": "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee",
     "summary": "Backported and Experimental Type Hints for Python 3.5+",
-    "homepage": "https://pypi.org/project/typing-extensions/",
-    "latest": "3.10.0.0"
+    "homepage": "https://github.com/python/typing/blob/master/typing_extensions/README.rst",
+    "latest": "3.10.0.1"
   },
   "flatbuffers": {
     "name": "flatbuffers",
     "author": "FlatBuffers Contributors",
     "summary": "The FlatBuffers serialization format for Python",
-    "homepage": "https://pypi.org/project/flatbuffers/",
+    "homepage": "https://google.github.io/flatbuffers/",
     "latest": "2.0"
   },
   "jupyter-server": {
     "name": "jupyter-server",
     "author": "Jupyter Development Team",
     "summary": "The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications.",
-    "homepage": "https://pypi.org/project/jupyter-server/",
+    "homepage": "https://jupyter.org",
     "latest": "1.10.2"
   },
   "fuzzywuzzy": {
     "name": "fuzzywuzzy",
     "author": "Adam Cohen",
     "summary": "Fuzzy string matching in python",
-    "homepage": "https://pypi.org/project/fuzzywuzzy/",
+    "homepage": "https://github.com/seatgeek/fuzzywuzzy",
     "latest": "0.18.0"
   },
   "decorator": {
     "name": "decorator",
     "author": "Michele Simionato",
     "summary": "Decorators for Humans",
-    "homepage": "https://pypi.org/project/decorator/",
+    "homepage": "https://github.com/micheles/decorator",
     "latest": "5.0.9"
   },
   "python-hdf4": {
     "name": "python-hdf4",
     "author": "Andre Gosselin et al.",
     "summary": "Python-HDF4: Python interface to the NCSA HDF4 library.",
-    "homepage": "https://pypi.org/project/python-hdf4/",
+    "homepage": "https://github.com/fhs/python-hdf4",
     "latest": "0.9.2"
   },
   "sqlparse": {
     "name": "sqlparse",
     "author": "Andi Albrecht",
     "summary": "A non-validating SQL parser.",
-    "homepage": "https://pypi.org/project/sqlparse/",
+    "homepage": "https://github.com/andialbrecht/sqlparse",
     "latest": "0.4.1"
   },
   "ibis-framework": {
     "name": "ibis-framework",
     "author": "",
     "summary": "Productivity-centric Python Big Data Framework",
-    "homepage": "https://pypi.org/project/ibis-framework/",
+    "homepage": "https://github.com/ibis-project/ibis",
     "latest": "1.4.0"
   },
   "PyAudio": {
     "name": "PyAudio",
     "author": "Hubert Pham",
     "summary": "Bindings for PortAudio v19, the cross-platform audio input/output stream library.",
-    "homepage": "https://pypi.org/project/PyAudio/",
+    "homepage": "http://people.csail.mit.edu/hubert/pyaudio/",
     "latest": "0.2.11"
   },
   "pycparser": {
     "name": "pycparser",
     "author": "Eli Bendersky",
     "summary": "C parser in Python",
-    "homepage": "https://pypi.org/project/pycparser/",
+    "homepage": "https://github.com/eliben/pycparser",
     "latest": "2.20"
   },
   "Flask-SQLAlchemy": {
     "name": "Flask-SQLAlchemy",
     "author": "Armin Ronacher",
     "summary": "Adds SQLAlchemy support to your Flask application.",
-    "homepage": "https://pypi.org/project/Flask-SQLAlchemy/",
+    "homepage": "https://github.com/pallets/flask-sqlalchemy",
     "latest": "2.5.1"
   },
   "PyQt5": {
     "name": "PyQt5",
     "author": "Riverbank Computing Limited",
     "summary": "Python bindings for the Qt cross platform application toolkit",
-    "homepage": "https://pypi.org/project/PyQt5/",
+    "homepage": "https://www.riverbankcomputing.com/software/pyqt/",
     "latest": "5.15.4"
   },
   "Flask-Compress": {
     "name": "Flask-Compress",
     "author": "Thomas Mansencal",
     "summary": "Compress responses in your Flask app with gzip, deflate or brotli.",
-    "homepage": "https://pypi.org/project/Flask-Compress/",
+    "homepage": "https://github.com/colour-science/flask-compress",
     "latest": "1.10.1"
   },
   "PyPDF2": {
     "name": "PyPDF2",
     "author": "Phaseit, Inc.",
     "summary": "PDF toolkit",
-    "homepage": "https://pypi.org/project/PyPDF2/",
+    "homepage": "http://mstamy2.github.com/PyPDF2",
     "latest": "1.26.0"
   },
   "sniffio": {
     "name": "sniffio",
     "author": "Nathaniel J. Smith",
     "summary": "Sniff out which async library your code is running under",
-    "homepage": "https://pypi.org/project/sniffio/",
+    "homepage": "https://github.com/python-trio/sniffio",
     "latest": "1.2.0"
   },
   "csvs-to-sqlite": {
     "name": "csvs-to-sqlite",
     "author": "Simon Willison",
     "summary": "Convert CSV files into a SQLite database",
-    "homepage": "https://pypi.org/project/csvs-to-sqlite/",
+    "homepage": "https://github.com/simonw/csvs-to-sqlite",
     "latest": "1.2"
   },
   "traitlets": {
     "name": "traitlets",
     "author": "IPython Development Team",
     "summary": "Traitlets Python configuration system",
-    "homepage": "https://pypi.org/project/traitlets/",
+    "homepage": "https://github.com/ipython/traitlets",
     "latest": "5.0.5"
   },
   "simpy": {
     "name": "simpy",
     "author": "Ontje Lünsdorf, Stefan Scherfke",
     "summary": "Event discrete, process based simulation for Python.",
-    "homepage": "https://pypi.org/project/simpy/",
+    "homepage": "https://simpy.readthedocs.io",
     "latest": "4.0.1"
   },
   "twitter": {
     "name": "twitter",
     "author": "Mike Verdone",
     "summary": "An API and command-line toolset for Twitter (twitter.com)",
-    "homepage": "https://pypi.org/project/twitter/",
+    "homepage": "https://mike.verdone.ca/twitter/",
     "latest": "1.19.3"
   },
   "ecos": {
     "name": "ecos",
     "author": "Alexander Domahidi, Eric Chu, Han Wang, Santiago Akle",
     "summary": "This is the Python package for ECOS: Embedded Cone Solver. See Github page for more information.",
-    "homepage": "https://pypi.org/project/ecos/",
+    "homepage": "http://github.com/embotech/ecos",
     "latest": "2.0.7.post1"
   },
   "databases": {
     "name": "databases",
     "author": "Tom Christie",
     "summary": "Async database support for Python.",
-    "homepage": "https://pypi.org/project/databases/",
+    "homepage": "https://github.com/encode/databases",
     "latest": "0.5.0"
   },
   "Quart": {
     "name": "Quart",
     "author": "P G Jones",
     "summary": "A Python ASGI web microframework with the same API as Flask",
-    "homepage": "https://pypi.org/project/Quart/",
+    "homepage": "https://gitlab.com/pgjones/quart/",
     "latest": "0.15.1"
   },
   "cvxopt": {
     "name": "cvxopt",
     "author": "M. Andersen, J. Dahl, and L. Vandenberghe",
     "summary": "Convex optimization package",
-    "homepage": "https://pypi.org/project/cvxopt/",
+    "homepage": "http://cvxopt.org",
     "latest": "1.2.6"
   },
   "jupyter-console": {
     "name": "jupyter-console",
     "author": "Jupyter Development Team",
     "summary": "Jupyter terminal console",
-    "homepage": "https://pypi.org/project/jupyter-console/",
+    "homepage": "https://jupyter.org",
     "latest": "6.4.0"
   },
   "aiosqlite": {
     "name": "aiosqlite",
     "author": "John Reese",
     "summary": "asyncio bridge to the standard sqlite3 module",
-    "homepage": "https://pypi.org/project/aiosqlite/",
+    "homepage": "https://aiosqlite.omnilib.dev",
     "latest": "0.17.0"
   },
   "QtAwesome": {
     "name": "QtAwesome",
     "author": "Sylvain Corlay",
     "summary": "FontAwesome icons in PyQt and PySide applications",
-    "homepage": "https://pypi.org/project/QtAwesome/",
+    "homepage": "https://github.com/spyder-ide/qtawesome",
     "latest": "1.0.3"
   },
   "h5py": {
     "name": "h5py",
     "author": "Andrew Collette",
     "summary": "Read and write HDF5 files from Python",
-    "homepage": "https://pypi.org/project/h5py/",
+    "homepage": "http://www.h5py.org",
     "latest": "3.4.0"
   },
   "typer": {
     "name": "typer",
     "author": "Sebastián Ramírez",
     "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints.",
-    "homepage": "https://pypi.org/project/typer/",
+    "homepage": "https://github.com/tiangolo/typer",
     "latest": "0.3.2"
   },
   "Cython": {
     "name": "Cython",
     "author": "Robert Bradshaw, Stefan Behnel, Dag Seljebotn, Greg Ewing, et al.",
     "summary": "The Cython compiler for writing C extensions for the Python language.",
-    "homepage": "https://pypi.org/project/Cython/",
+    "homepage": "http://cython.org/",
     "latest": "0.29.24"
   },
   "jupyterlab-git": {
     "name": "jupyterlab-git",
     "author": "Jupyter Development Team",
     "summary": "A JupyterLab extension for version control using git",
-    "homepage": "https://pypi.org/project/jupyterlab-git/",
+    "homepage": "https://github.com/jupyterlab/jupyterlab-git.git",
     "latest": "0.32.2"
   },
   "guidata": {
     "name": "guidata",
     "author": "Pierre Raybaut",
     "summary": "Automatic graphical user interfaces generation for easy dataset editing and display",
-    "homepage": "https://pypi.org/project/guidata/",
+    "homepage": "https://github.com/PierreRaybaut/guidata",
     "latest": "1.8.0"
   },
   "graphql-relay": {
     "name": "graphql-relay",
     "author": "Syrus Akbary",
     "summary": "Relay library for graphql-core",
-    "homepage": "https://pypi.org/project/graphql-relay/",
+    "homepage": "https://github.com/graphql-python/graphql-relay-py",
     "latest": "3.1.0"
   },
   "pycodestyle": {
     "name": "pycodestyle",
     "author": "Johann C. Rocholl",
     "summary": "Python style guide checker",
-    "homepage": "https://pypi.org/project/pycodestyle/",
+    "homepage": "https://pycodestyle.pycqa.org/",
     "latest": "2.7.0"
   },
   "llvmlite": {
     "name": "llvmlite",
     "author": "Continuum Analytics, Inc.",
     "summary": "lightweight wrapper around basic LLVM functionality",
-    "homepage": "https://pypi.org/project/llvmlite/",
+    "homepage": "http://llvmlite.pydata.org",
     "latest": "0.37.0"
   },
   "palettable": {
     "name": "palettable",
     "author": "Matt Davis",
     "summary": "Color palettes for Python",
-    "homepage": "https://pypi.org/project/palettable/",
+    "homepage": "https://jiffyclub.github.io/palettable/",
     "latest": "3.3.0"
   },
   "Babel": {
     "name": "Babel",
     "author": "Armin Ronacher",
     "summary": "Internationalization utilities",
-    "homepage": "https://pypi.org/project/Babel/",
+    "homepage": "http://babel.pocoo.org/",
     "latest": "2.9.1"
   },
   "maturin": {
     "name": "maturin",
     "author": "konstin <konstin@mailbox.org>",
     "summary": "Build and publish crates with pyo3, rust-cpython and cffi bindings as well as rust binaries as python packages",
-    "homepage": "https://pypi.org/project/maturin/",
+    "homepage": "https://github.com/pyo3/maturin",
     "latest": "0.11.3"
   },
   "PyMeta3": {
     "name": "PyMeta3",
     "author": "wbond",
     "summary": "Pattern-matching language based on OMeta for Python 3 and 2",
-    "homepage": "https://pypi.org/project/PyMeta3/",
+    "homepage": "https://github.com/wbond/pymeta3",
     "latest": "0.5.1"
   },
   "pytesseract": {
     "name": "pytesseract",
     "author": "Matthias Lee",
     "summary": "Python-tesseract is a python wrapper for Google's Tesseract-OCR",
-    "homepage": "https://pypi.org/project/pytesseract/",
+    "homepage": "https://github.com/madmaze/pytesseract",
     "latest": "0.3.8"
   },
   "snuggs": {
     "name": "snuggs",
     "author": "Sean Gillies",
     "summary": "Snuggs are s-expressions for Numpy",
-    "homepage": "https://pypi.org/project/snuggs/",
+    "homepage": "https://github.com/mapbox/snuggs",
     "latest": "1.4.7"
   },
   "whitenoise": {
     "name": "whitenoise",
     "author": "David Evans",
     "summary": "Radically simplified static file serving for WSGI applications",
-    "homepage": "https://pypi.org/project/whitenoise/",
+    "homepage": "https://whitenoise.evans.io",
     "latest": "5.3.0"
   },
   "PyQtWebEngine": {
     "name": "PyQtWebEngine",
     "author": "Riverbank Computing Limited",
     "summary": "Python bindings for the Qt WebEngine framework",
-    "homepage": "https://pypi.org/project/PyQtWebEngine/",
+    "homepage": "https://www.riverbankcomputing.com/software/pyqtwebengine/",
     "latest": "5.15.4"
   },
   "shodan": {
     "name": "shodan",
     "author": "John Matherly",
     "summary": "Python library and command-line utility for Shodan (https://developer.shodan.io)",
-    "homepage": "https://pypi.org/project/shodan/",
+    "homepage": "http://github.com/achillean/shodan-python/tree/master",
     "latest": "1.25.0"
   },
   "pycosat": {
     "name": "pycosat",
     "author": "Ilan Schnell",
     "summary": "bindings to picosat (a SAT solver)",
-    "homepage": "https://pypi.org/project/pycosat/",
+    "homepage": "https://github.com/ContinuumIO/pycosat",
     "latest": "0.6.3"
   },
   "jedi": {
     "name": "jedi",
     "author": "David Halter",
     "summary": "An autocompletion tool for Python that can be used for text editors.",
-    "homepage": "https://pypi.org/project/jedi/",
+    "homepage": "https://github.com/davidhalter/jedi",
     "latest": "0.18.0"
   },
   "nbconvert": {
     "name": "nbconvert",
     "author": "Jupyter Development Team",
     "summary": "Converting Jupyter Notebooks",
-    "homepage": "https://pypi.org/project/nbconvert/",
+    "homepage": "https://jupyter.org",
     "latest": "6.1.0"
   },
   "ViTables": {
     "name": "ViTables",
     "author": "Vicent Mas",
     "summary": "A viewer for PyTables package",
-    "homepage": "https://pypi.org/project/ViTables/",
+    "homepage": "https://vitables.org",
     "latest": "3.0.2"
   },
   "reportlab": {
     "name": "reportlab",
     "author": "Andy Robinson, Robin Becker, the ReportLab team and the community",
     "summary": "The Reportlab Toolkit",
-    "homepage": "https://pypi.org/project/reportlab/",
+    "homepage": "http://www.reportlab.com/",
     "latest": "3.6.1"
   },
   "pytz": {
     "name": "pytz",
     "author": "Stuart Bishop",
     "summary": "World timezone definitions, modern and historical",
-    "homepage": "https://pypi.org/project/pytz/",
+    "homepage": "http://pythonhosted.org/pytz",
     "latest": "2021.1"
   },
   "Flask-Mail": {
     "name": "Flask-Mail",
     "author": "Ron DuPlain",
     "summary": "Flask extension for sending email",
-    "homepage": "https://pypi.org/project/Flask-Mail/",
+    "homepage": "https://github.com/rduplain/flask-mail",
     "latest": "0.9.1"
   },
   "python-Levenshtein": {
     "name": "python-Levenshtein",
     "author": "Antti Haapala",
     "summary": "Python extension for computing string edit distances and similarities.",
-    "homepage": "https://pypi.org/project/python-Levenshtein/",
+    "homepage": "http://github.com/ztane/python-Levenshtein",
     "latest": "0.12.2"
   },
   "pybind11": {
     "name": "pybind11",
     "author": "Wenzel Jakob",
     "summary": "Seamless operability between C++11 and Python",
-    "homepage": "https://pypi.org/project/pybind11/",
+    "homepage": "https://github.com/pybind/pybind11",
     "latest": "2.7.1"
   },
   "click-default-group": {
     "name": "click-default-group",
     "author": "Heungsub Lee",
     "summary": "Extends click.Group to invoke a command without explicit subcommand name",
-    "homepage": "https://pypi.org/project/click-default-group/",
+    "homepage": "https://github.com/sublee/click-default-group/",
     "latest": "1.2.2"
   },
   "python-dotenv": {
     "name": "python-dotenv",
     "author": "Saurabh Kumar",
     "summary": "Read key-value pairs from a .env file and set them as environment variables",
-    "homepage": "https://pypi.org/project/python-dotenv/",
+    "homepage": "https://github.com/theskumar/python-dotenv",
     "latest": "0.19.0"
   },
   "python-slugify": {
     "name": "python-slugify",
     "author": "Val Neekman",
     "summary": "A Python Slugify application that handles Unicode",
-    "homepage": "https://pypi.org/project/python-slugify/",
+    "homepage": "https://github.com/un33k/python-slugify",
     "latest": "5.0.2"
   },
   "voila-gridstack": {
     "name": "voila-gridstack",
     "author": "Voila Development Team",
     "summary": "A GridStack template for Voila.",
-    "homepage": "https://pypi.org/project/voila-gridstack/",
+    "homepage": "https://github.com/voila-dashboards/voila-gridstack",
     "latest": "0.2.0"
   },
   "pyflakes": {
     "name": "pyflakes",
     "author": "A lot of people",
     "summary": "passive checker of Python programs",
-    "homepage": "https://pypi.org/project/pyflakes/",
+    "homepage": "https://github.com/PyCQA/pyflakes",
     "latest": "2.3.1"
   },
   "brewer2mpl": {
     "name": "brewer2mpl",
     "author": "Matt Davis",
     "summary": "Connect colorbrewer2.org color maps to Python and matplotlib",
-    "homepage": "https://pypi.org/project/brewer2mpl/",
+    "homepage": "https://github.com/jiffyclub/brewer2mpl/wiki",
     "latest": "1.4.1"
   },
   "jupyterlab-widgets": {
     "name": "jupyterlab-widgets",
     "author": "Jupyter Development Team",
     "summary": "A JupyterLab extension.",
-    "homepage": "https://pypi.org/project/jupyterlab-widgets/",
+    "homepage": "https://github.com/jupyter-widgets/ipywidgets",
     "latest": "1.0.0"
   },
   "flask-restx": {
     "name": "flask-restx",
     "author": "python-restx Authors",
     "summary": "Fully featured framework for fast, easy and documented API development with Flask",
-    "homepage": "https://pypi.org/project/flask-restx/",
+    "homepage": "https://github.com/python-restx/flask-restx",
     "latest": "0.5.0"
   },
   "pyls-spyder": {
     "name": "pyls-spyder",
     "author": "Spyder Project Contributors",
     "summary": "Spyder extensions for the python-lsp-server",
-    "homepage": "https://pypi.org/project/pyls-spyder/",
+    "homepage": "https://github.com/spyder-ide/pyls-spyder",
     "latest": "0.4.0"
   },
   "text-unidecode": {
     "name": "text-unidecode",
     "author": "Mikhail Korobov",
     "summary": "The most basic Text::Unidecode port",
-    "homepage": "https://pypi.org/project/text-unidecode/",
+    "homepage": "https://github.com/kmike/text-unidecode/",
     "latest": "1.3"
   },
   "wasmer": {
     "name": "wasmer",
     "author": "Wasmer Engineering Team <engineering@wasmer.io>",
     "summary": "Python extension to run WebAssembly binaries",
-    "homepage": "https://pypi.org/project/wasmer/",
+    "homepage": "",
     "latest": "1.0.0"
   },
   "panel": {
     "name": "panel",
     "author": "HoloViz",
     "summary": "A high level app and dashboarding solution for Python.",
-    "homepage": "https://pypi.org/project/panel/",
+    "homepage": "http://panel.holoviz.org",
     "latest": "0.12.1"
   },
   "diff-match-patch": {
     "name": "diff-match-patch",
     "author": "Neil Fraser",
     "summary": "Repackaging of Google's Diff Match and Patch libraries. Offers robust algorithms to perform the operations required for synchronizing plain text.",
-    "homepage": "https://pypi.org/project/diff-match-patch/",
+    "homepage": "https://github.com/diff-match-patch-python/diff-match-patch",
     "latest": "20200713"
   },
   "tabulate": {
     "name": "tabulate",
     "author": "Sergey Astanin",
     "summary": "Pretty-print tabular data",
-    "homepage": "https://pypi.org/project/tabulate/",
+    "homepage": "https://github.com/astanin/python-tabulate",
     "latest": "0.8.9"
   },
   "prettytable": {
     "name": "prettytable",
     "author": "Luke Maurits",
     "summary": "A simple Python library for easily displaying tabular data in a visually appealing ASCII table format",
-    "homepage": "https://pypi.org/project/prettytable/",
-    "latest": "2.1.0"
+    "homepage": "https://github.com/jazzband/prettytable",
+    "latest": "2.2.0"
   },
   "nbformat": {
     "name": "nbformat",
     "author": "Jupyter Development Team",
     "summary": "The Jupyter Notebook format",
-    "homepage": "https://pypi.org/project/nbformat/",
+    "homepage": "http://jupyter.org",
     "latest": "5.1.3"
   },
   "descartes": {
     "name": "descartes",
     "author": "Sean Gillies",
     "summary": "Use geometric objects as matplotlib paths and patches",
-    "homepage": "https://pypi.org/project/descartes/",
+    "homepage": "http://bitbucket.org/sgillies/descartes/",
     "latest": "1.1.0"
   },
   "imageio": {
     "name": "imageio",
     "author": "imageio contributors",
     "summary": "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats.",
-    "homepage": "https://pypi.org/project/imageio/",
+    "homepage": "https://github.com/imageio/imageio",
     "latest": "2.9.0"
   },
   "gitdb": {
     "name": "gitdb",
     "author": "Sebastian Thiel",
     "summary": "Git Object Database",
-    "homepage": "https://pypi.org/project/gitdb/",
+    "homepage": "https://github.com/gitpython-developers/gitdb",
     "latest": "4.0.7"
   },
   "ptyprocess": {
     "name": "ptyprocess",
     "author": "Thomas Kluyver",
     "summary": "Run a subprocess in a pseudo terminal",
-    "homepage": "https://pypi.org/project/ptyprocess/",
+    "homepage": "https://github.com/pexpect/ptyprocess",
     "latest": "0.7.0"
   },
   "mergedeep": {
     "name": "mergedeep",
     "author": "Travis Clarke",
     "summary": "A deep merge function for 🐍.",
-    "homepage": "https://pypi.org/project/mergedeep/",
+    "homepage": "https://github.com/clarketm/mergedeep",
     "latest": "1.3.4"
   },
   "multipledispatch": {
     "name": "multipledispatch",
     "author": "Matthew Rocklin",
     "summary": "Multiple dispatch",
-    "homepage": "https://pypi.org/project/multipledispatch/",
+    "homepage": "http://github.com/mrocklin/multipledispatch/",
     "latest": "0.6.0"
   },
   "cffi": {
     "name": "cffi",
     "author": "Armin Rigo, Maciej Fijalkowski",
     "summary": "Foreign Function Interface for Python calling C code.",
-    "homepage": "https://pypi.org/project/cffi/",
+    "homepage": "http://cffi.readthedocs.org",
     "latest": "1.14.6"
   },
   "fasteners": {
     "name": "fasteners",
     "author": "Joshua Harlow",
     "summary": "A python package that provides useful locks.",
-    "homepage": "https://pypi.org/project/fasteners/",
+    "homepage": "https://github.com/harlowja/fasteners",
     "latest": "0.16.3"
   },
   "fastparquet": {
     "name": "fastparquet",
     "author": "Martin Durant",
     "summary": "Python support for Parquet file format",
-    "homepage": "https://pypi.org/project/fastparquet/",
+    "homepage": "https://github.com/dask/fastparquet/",
     "latest": "0.7.1"
   },
   "altair-transform": {
     "name": "altair-transform",
     "author": "Jake VanderPlas",
     "summary": "A python engine for evaluating Altair transforms.",
-    "homepage": "https://pypi.org/project/altair-transform/",
+    "homepage": "http://github.com/altair-viz/altair-transform/",
     "latest": "0.2.0"
   },
   "python-language-server": {
     "name": "python-language-server",
     "author": "Palantir Technologies, Inc.",
     "summary": "Python Language Server for the Language Server Protocol",
-    "homepage": "https://pypi.org/project/python-language-server/",
+    "homepage": "https://github.com/palantir/python-language-server",
     "latest": "0.36.2"
   },
   "netCDF4": {
     "name": "netCDF4",
     "author": "Jeff Whitaker",
     "summary": "Provides an object-oriented python interface to the netCDF version 4 library.",
-    "homepage": "https://pypi.org/project/netCDF4/",
+    "homepage": "http://github.com/Unidata/netcdf4-python",
     "latest": "1.5.7"
   },
   "numpy": {
     "name": "numpy",
     "author": "Travis E. Oliphant et al.",
     "summary": "NumPy is the fundamental package for array computing with Python.",
-    "homepage": "https://pypi.org/project/numpy/",
+    "homepage": "https://www.numpy.org",
     "latest": "1.21.2"
   },
   "Shapely": {
     "name": "Shapely",
     "author": "Sean Gillies",
     "summary": "Geometric objects, predicates, and operations",
-    "homepage": "https://pypi.org/project/Shapely/",
+    "homepage": "https://github.com/Toblerity/Shapely",
     "latest": "1.7.1"
   },
   "backports-abc": {
     "name": "backports_abc",
     "author": "Stefan Behnel et al.",
     "summary": "A backport of recent additions to the 'collections.abc' module.",
-    "homepage": "https://pypi.org/project/backports_abc/",
+    "homepage": "https://github.com/cython/backports_abc",
     "latest": "0.5"
   },
   "zipp": {
     "name": "zipp",
     "author": "Jason R. Coombs",
     "summary": "Backport of pathlib-compatible object wrapper for zip files",
-    "homepage": "https://pypi.org/project/zipp/",
+    "homepage": "https://github.com/jaraco/zipp",
     "latest": "3.5.0"
   },
   "pystache": {
     "name": "pystache",
     "author": "Chris Jerdonek",
     "summary": "Mustache for Python",
-    "homepage": "https://pypi.org/project/pystache/",
+    "homepage": "http://github.com/defunkt/pystache",
     "latest": "0.5.4"
   },
   "clrmagic": {
     "name": "clrmagic",
     "author": "Xavier Dupré, Denis Akhiyarov",
     "summary": "IPython cell magic to use .NET languages",
-    "homepage": "https://pypi.org/project/clrmagic/",
+    "homepage": "https://github.com/pythonnet/clrmagic",
     "latest": "0.0.1a2"
   },
   "cloudpickle": {
     "name": "cloudpickle",
     "author": "Cloudpipe",
     "summary": "Extended pickling support for Python objects",
-    "homepage": "https://pypi.org/project/cloudpickle/",
+    "homepage": "https://github.com/cloudpipe/cloudpickle",
     "latest": "1.6.0"
   },
   "pywikibot": {
     "name": "pywikibot",
     "author": "",
     "summary": "Python MediaWiki Bot Framework",
-    "homepage": "https://pypi.org/project/pywikibot/",
+    "homepage": "https://www.mediawiki.org/wiki/Manual:Pywikibot",
     "latest": "6.5.0"
   },
   "toml": {
     "name": "toml",
     "author": "William Pearson",
     "summary": "Python Library for Tom's Obvious, Minimal Language",
-    "homepage": "https://pypi.org/project/toml/",
+    "homepage": "https://github.com/uiri/toml",
     "latest": "0.10.2"
   },
   "dask-image": {
     "name": "dask-image",
     "author": "John Kirkham",
     "summary": "Distributed image processing",
-    "homepage": "https://pypi.org/project/dask-image/",
+    "homepage": "https://github.com/dask/dask-image",
     "latest": "0.6.0"
   },
   "asteval": {
     "name": "asteval",
     "author": "Matthew Newville",
     "summary": "Safe, minimalistic evaluator of python expression using ast module",
-    "homepage": "https://pypi.org/project/asteval/",
+    "homepage": "http://github.com/newville/asteval",
     "latest": "0.9.25"
   },
   "pypandoc": {
     "name": "pypandoc",
     "author": "b'Juho Veps\\xc3\\xa4l\\xc3\\xa4inen'",
     "summary": "Thin wrapper for pandoc.",
-    "homepage": "https://pypi.org/project/pypandoc/",
+    "homepage": "https://github.com/bebraw/pypandoc",
     "latest": "1.6.3"
   },
   "datashader": {
     "name": "datashader",
     "author": "",
     "summary": "Data visualization toolchain based on aggregating into a grid",
-    "homepage": "https://pypi.org/project/datashader/",
+    "homepage": "https://datashader.org",
     "latest": "0.13.0"
   },
   "Flask-Caching": {
     "name": "Flask-Caching",
     "author": "Peter Justin",
     "summary": "Adds caching support to your Flask application",
-    "homepage": "https://pypi.org/project/Flask-Caching/",
+    "homepage": "https://github.com/sh4nks/flask-caching",
     "latest": "1.10.1"
   },
   "keyring": {
     "name": "keyring",
     "author": "Kang Zhang",
     "summary": "Store and access your passwords safely.",
-    "homepage": "https://pypi.org/project/keyring/",
+    "homepage": "https://github.com/jaraco/keyring",
     "latest": "23.1.0"
   },
   "httpie": {
     "name": "httpie",
     "author": "Jakub Roztocil",
     "summary": "HTTPie: command-line HTTP client for the API era.",
-    "homepage": "https://pypi.org/project/httpie/",
+    "homepage": "https://httpie.org/",
     "latest": "2.4.0"
   },
   "wasmer-compiler-cranelift": {
     "name": "wasmer-compiler-cranelift",
     "author": "Wasmer Engineering Team <engineering@wasmer.io>",
     "summary": "The Cranelift compiler for the `wasmer` package (to compile WebAssembly module)",
-    "homepage": "https://pypi.org/project/wasmer-compiler-cranelift/",
+    "homepage": "",
     "latest": "1.0.0"
   },
   "fs": {
     "name": "fs",
     "author": "Will McGugan",
     "summary": "Python's filesystem abstraction layer",
-    "homepage": "https://pypi.org/project/fs/",
+    "homepage": "https://github.com/PyFilesystem/pyfilesystem2",
     "latest": "2.4.13"
   },
   "numdifftools": {
     "name": "numdifftools",
     "author": "Per A. Brodtkorb",
     "summary": "Solves automatic numerical differentiation problems in one or more variables.",
-    "homepage": "https://pypi.org/project/numdifftools/",
+    "homepage": "https://github.com/pbrod/numdifftools",
     "latest": "0.9.40"
   },
   "Pygments": {
     "name": "Pygments",
     "author": "Georg Brandl",
     "summary": "Pygments is a syntax highlighting package written in Python.",
-    "homepage": "https://pypi.org/project/Pygments/",
+    "homepage": "https://pygments.org/",
     "latest": "2.10.0"
   },
   "cligj": {
     "name": "cligj",
     "author": "Sean Gillies",
     "summary": "Click params for commmand line interfaces to GeoJSON",
-    "homepage": "https://pypi.org/project/cligj/",
+    "homepage": "https://github.com/mapbox/cligj",
     "latest": "0.7.2"
   },
   "simpervisor": {
     "name": "simpervisor",
     "author": "Yuvi Panda",
     "summary": "Simple async process supervisor",
-    "homepage": "https://pypi.org/project/simpervisor/",
+    "homepage": "https://github.com/yuvipanda/simpervisor",
     "latest": "0.4"
   },
   "python-jsonrpc-server": {
     "name": "python-jsonrpc-server",
     "author": "Palantir Technologies, Inc.",
     "summary": "JSON RPC 2.0 server library",
-    "homepage": "https://pypi.org/project/python-jsonrpc-server/",
+    "homepage": "https://github.com/palantir/python-jsonrpc-server",
     "latest": "0.4.0"
   },
   "botorch": {
     "name": "botorch",
     "author": "Facebook, Inc.",
     "summary": "Bayesian Optimization in PyTorch",
-    "homepage": "https://pypi.org/project/botorch/",
+    "homepage": "https://botorch.org",
     "latest": "0.5.0"
   },
   "PuLP": {
     "name": "PuLP",
     "author": "J.S. Roy and S.A. Mitchell and F. Peschiera",
     "summary": "PuLP is an LP modeler written in python. PuLP can generate MPS or LP files and call GLPK, COIN CLP/CBC, CPLEX, and GUROBI to solve linear problems.",
-    "homepage": "https://pypi.org/project/PuLP/",
+    "homepage": "https://github.com/coin-or/pulp",
     "latest": "2.5.0"
   },
   "pyarrow": {
     "name": "pyarrow",
     "author": "",
     "summary": "Python library for Apache Arrow",
-    "homepage": "https://pypi.org/project/pyarrow/",
+    "homepage": "https://arrow.apache.org/",
     "latest": "5.0.0"
   },
   "jupyter-bokeh": {
     "name": "jupyter-bokeh",
     "author": "Bokeh team",
     "summary": "A Jupyter extension for rendering Bokeh content.",
-    "homepage": "https://pypi.org/project/jupyter-bokeh/",
+    "homepage": "https://github.com/bokeh/jupyter_bokeh",
     "latest": "3.0.2"
   },
   "mkl-service": {
     "name": "mkl-service",
     "author": "Intel",
     "summary": "MKL Support Functions",
-    "homepage": "https://pypi.org/project/mkl-service/",
+    "homepage": "https://github.com/IntelPython/mkl-service",
     "latest": "2.4.0"
   },
   "hvplot": {
     "name": "hvplot",
     "author": "Philipp Rudiger",
     "summary": "A high-level plotting API for the PyData ecosystem built on HoloViews.",
-    "homepage": "https://pypi.org/project/hvplot/",
+    "homepage": "https://hvplot.pyviz.org",
     "latest": "0.7.3"
   },
   "partd": {
     "name": "partd",
     "author": "",
     "summary": "Appendable key-value storage",
-    "homepage": "https://pypi.org/project/partd/",
+    "homepage": "http://github.com/dask/partd/",
     "latest": "1.2.0"
   },
   "orjson": {
     "name": "orjson",
     "author": "ijl <ijl@mailbox.org>",
     "summary": "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy",
-    "homepage": "https://pypi.org/project/orjson/",
+    "homepage": "https://github.com/ijl/orjson",
     "latest": "3.6.3"
   },
   "wsproto": {
     "name": "wsproto",
     "author": "Benno Rice",
     "summary": "WebSockets state-machine based protocol implementation",
-    "homepage": "https://pypi.org/project/wsproto/",
+    "homepage": "https://github.com/python-hyper/wsproto/",
     "latest": "1.0.0"
   },
   "Pillow": {
     "name": "Pillow",
     "author": "Alex Clark (PIL Fork Author)",
     "summary": "Python Imaging Library (Fork)",
-    "homepage": "https://pypi.org/project/Pillow/",
+    "homepage": "https://python-pillow.org",
     "latest": "8.3.1"
   },
   "aiohttp": {
     "name": "aiohttp",
     "author": "Nikolay Kim",
     "summary": "Async http client/server framework (asyncio)",
-    "homepage": "https://pypi.org/project/aiohttp/",
+    "homepage": "https://github.com/aio-libs/aiohttp",
     "latest": "3.7.4.post0"
   },
   "asciitree": {
     "name": "asciitree",
     "author": "Marc Brinkmann",
     "summary": "Draws ASCII trees.",
-    "homepage": "https://pypi.org/project/asciitree/",
+    "homepage": "http://github.com/mbr/asciitree",
     "latest": "0.3.3"
   },
   "starlette": {
     "name": "starlette",
     "author": "Tom Christie",
     "summary": "The little ASGI library that shines.",
-    "homepage": "https://pypi.org/project/starlette/",
+    "homepage": "https://github.com/encode/starlette",
     "latest": "0.16.0"
   },
   "autopep8": {
     "name": "autopep8",
     "author": "Hideo Hattori",
     "summary": "A tool that automatically formats Python code to conform to the PEP 8 style guide",
-    "homepage": "https://pypi.org/project/autopep8/",
+    "homepage": "https://github.com/hhatto/autopep8",
     "latest": "1.5.7"
   },
   "ipympl": {
     "name": "ipympl",
     "author": "Matplotlib Development Team",
     "summary": "Matplotlib Jupyter Extension",
-    "homepage": "https://pypi.org/project/ipympl/",
+    "homepage": "http://matplotlib.org",
     "latest": "0.7.0"
   },
   "appdirs": {
     "name": "appdirs",
     "author": "Trent Mick",
     "summary": "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\".",
-    "homepage": "https://pypi.org/project/appdirs/",
+    "homepage": "http://github.com/ActiveState/appdirs",
     "latest": "1.4.4"
   },
   "mpldatacursor": {
     "name": "mpldatacursor",
     "author": "Joe Kington",
     "summary": "Interactive data cursors for Matplotlib",
-    "homepage": "https://pypi.org/project/mpldatacursor/",
+    "homepage": "https://github.com/joferkington/mpldatacursor/",
     "latest": "0.7.1"
   },
   "dash-ui": {
     "name": "dash_ui",
     "author": "Ryan rmarren1",
     "summary": "Some abstractions to make creating UIs easier in Dash.",
-    "homepage": "https://pypi.org/project/dash_ui/",
+    "homepage": "",
     "latest": "0.4.0"
   },
   "jupyter-core": {
     "name": "jupyter-core",
     "author": "Jupyter Development Team",
     "summary": "Jupyter core package. A base package on which Jupyter projects rely.",
-    "homepage": "https://pypi.org/project/jupyter-core/",
+    "homepage": "https://jupyter.org",
     "latest": "4.7.1"
   },
   "cx-Freeze": {
     "name": "cx-Freeze",
     "author": "Anthony Tuininga",
     "summary": "Create standalone executables from Python scripts",
-    "homepage": "https://pypi.org/project/cx-Freeze/",
+    "homepage": "https://marcelotduarte.github.io/cx_Freeze",
     "latest": "6.7"
   },
   "murmurhash": {
     "name": "murmurhash",
     "author": "Matthew Honnibal",
     "summary": "Cython bindings for MurmurHash",
-    "homepage": "https://pypi.org/project/murmurhash/",
+    "homepage": "https://github.com/explosion/murmurhash",
     "latest": "1.0.5"
   },
   "ppci": {
     "name": "ppci",
     "author": "Windel Bouwman",
     "summary": "A compiler for ARM, X86, MSP430, xtensa and more implemented in pure Python",
-    "homepage": "https://pypi.org/project/ppci/",
+    "homepage": "https://ppci.readthedocs.io/",
     "latest": "0.5.8"
   },
   "mlxtend": {
     "name": "mlxtend",
     "author": "Sebastian Raschka",
     "summary": "Machine Learning Library Extensions",
-    "homepage": "https://pypi.org/project/mlxtend/",
+    "homepage": "https://github.com/rasbt/mlxtend",
     "latest": "0.18.0"
   },
   "geopandas": {
     "name": "geopandas",
     "author": "GeoPandas contributors",
     "summary": "Geographic pandas extensions",
-    "homepage": "https://pypi.org/project/geopandas/",
+    "homepage": "http://geopandas.org",
     "latest": "0.9.0"
   },
   "branca": {
     "name": "branca",
     "author": "Martin Journois",
     "summary": "Generate complex HTML+JS pages with Python",
-    "homepage": "https://pypi.org/project/branca/",
+    "homepage": "https://github.com/python-visualization/branca",
     "latest": "0.4.2"
   },
   "sounddevice": {
     "name": "sounddevice",
     "author": "Matthias Geier",
     "summary": "Play and Record Sound with Python",
-    "homepage": "https://pypi.org/project/sounddevice/",
+    "homepage": "http://python-sounddevice.readthedocs.io/",
     "latest": "0.4.2"
   },
   "watchdog": {
     "name": "watchdog",
     "author": "Yesudeep Mangalapilly",
     "summary": "Filesystem events monitoring",
-    "homepage": "https://pypi.org/project/watchdog/",
+    "homepage": "https://github.com/gorakhargosh/watchdog",
     "latest": "2.1.5"
   },
   "aiofiles": {
     "name": "aiofiles",
     "author": "Tin Tvrtkovic",
     "summary": "File support for asyncio.",
-    "homepage": "https://pypi.org/project/aiofiles/",
+    "homepage": "",
     "latest": "0.7.0"
   },
   "zstandard": {
     "name": "zstandard",
     "author": "Gregory Szorc",
     "summary": "Zstandard bindings for Python",
-    "homepage": "https://pypi.org/project/zstandard/",
+    "homepage": "https://github.com/indygreg/python-zstandard",
     "latest": "0.15.2"
   },
   "ipython-sql": {
     "name": "ipython-sql",
     "author": "Catherine Devlin",
     "summary": "RDBMS access via IPython",
-    "homepage": "https://pypi.org/project/ipython-sql/",
+    "homepage": "https://pypi.python.org/pypi/ipython-sql",
     "latest": "0.4.0"
   },
   "patsy": {
     "name": "patsy",
     "author": "Nathaniel J. Smith",
     "summary": "A Python package for describing statistical models and for building design matrices.",
-    "homepage": "https://pypi.org/project/patsy/",
+    "homepage": "https://github.com/pydata/patsy",
     "latest": "0.5.1"
   },
   "msgpack": {
     "name": "msgpack",
     "author": "Inada Naoki",
     "summary": "MessagePack (de)serializer.",
-    "homepage": "https://pypi.org/project/msgpack/",
+    "homepage": "https://msgpack.org/",
     "latest": "1.0.2"
   },
   "slicerator": {
     "name": "slicerator",
     "author": "Daniel B. Allan",
     "summary": "A lazy-loading, fancy-sliceable iterable.",
-    "homepage": "https://pypi.org/project/slicerator/",
+    "homepage": "http://github.com/soft-matter/slicerator",
     "latest": "1.0.0"
   },
   "typed-ast": {
     "name": "typed-ast",
     "author": "David Fisher",
     "summary": "a fork of Python 2 and 3 ast modules with type comment support",
-    "homepage": "https://pypi.org/project/typed-ast/",
+    "homepage": "https://github.com/python/typed_ast",
     "latest": "1.4.3"
   },
   "pydeck": {
     "name": "pydeck",
     "author": "Andrew Duberstein",
     "summary": "Widget for deck.gl maps",
-    "homepage": "https://pypi.org/project/pydeck/",
-    "latest": "0.6.2"
+    "homepage": "https://github.com/visgl/deck.gl/tree/master/bindings/pydeck",
+    "latest": "0.7.0"
   },
   "sphinxcontrib-serializinghtml": {
     "name": "sphinxcontrib-serializinghtml",
     "author": "Georg Brandl",
     "summary": "sphinxcontrib-serializinghtml is a sphinx extension which outputs \"serialized\" HTML files (json and pickle).",
-    "homepage": "https://pypi.org/project/sphinxcontrib-serializinghtml/",
+    "homepage": "http://sphinx-doc.org/",
     "latest": "1.1.5"
   },
   "lmfit": {
     "name": "lmfit",
     "author": "LMFit Development Team",
     "summary": "Least-Squares Minimization with Bounds and Constraints",
-    "homepage": "https://pypi.org/project/lmfit/",
+    "homepage": "https://lmfit.github.io/lmfit-py/",
     "latest": "1.0.2"
   },
   "opencv-contrib-python": {
     "name": "opencv-contrib-python",
     "author": "",
     "summary": "Wrapper package for OpenCV python bindings.",
-    "homepage": "https://pypi.org/project/opencv-contrib-python/",
+    "homepage": "https://github.com/skvark/opencv-python",
     "latest": "4.5.3.56"
   },
   "entrypoints": {
     "name": "entrypoints",
     "author": "Thomas Kluyver",
     "summary": "Discover and load entry points from installed packages.",
-    "homepage": "https://pypi.org/project/entrypoints/",
+    "homepage": "https://github.com/takluyver/entrypoints",
     "latest": "0.3"
   },
   "pynndescent": {
     "name": "pynndescent",
     "author": "Leland McInnes",
     "summary": "Nearest Neighbor Descent",
-    "homepage": "https://pypi.org/project/pynndescent/",
+    "homepage": "http://github.com/lmcinnes/pynndescent",
     "latest": "0.5.4"
   },
   "scikit-fuzzy": {
     "name": "scikit-fuzzy",
     "author": "",
     "summary": "Fuzzy logic toolkit for SciPy",
-    "homepage": "https://pypi.org/project/scikit-fuzzy/",
+    "homepage": "https://pypi.python.org/pypi/scikit-fuzzy",
     "latest": "0.4.2"
   },
   "alabaster": {
     "name": "alabaster",
     "author": "Jeff Forcier",
     "summary": "A configurable sidebar-enabled Sphinx theme",
-    "homepage": "https://pypi.org/project/alabaster/",
+    "homepage": "https://alabaster.readthedocs.io",
     "latest": "0.7.12"
   },
   "hyperframe": {
     "name": "hyperframe",
     "author": "Cory Benfield",
     "summary": "HTTP/2 framing layer for Python",
-    "homepage": "https://pypi.org/project/hyperframe/",
+    "homepage": "https://github.com/python-hyper/hyperframe/",
     "latest": "6.0.1"
   },
   "traittypes": {
     "name": "traittypes",
     "author": "IPython Development Team",
     "summary": "Scipy trait types",
-    "homepage": "https://pypi.org/project/traittypes/",
+    "homepage": "http://ipython.org",
     "latest": "0.2.1"
   },
   "dask-glm": {
     "name": "dask-glm",
     "author": "",
     "summary": "Generalized Linear Models with Dask",
-    "homepage": "https://pypi.org/project/dask-glm/",
+    "homepage": "http://github.com/dask/dask-glm/",
     "latest": "0.2.0"
   },
   "pyserial": {
     "name": "pyserial",
     "author": "Chris Liechti",
     "summary": "Python Serial Port Extension",
-    "homepage": "https://pypi.org/project/pyserial/",
+    "homepage": "https://github.com/pyserial/pyserial",
     "latest": "3.5"
   },
   "holoviews": {
     "name": "holoviews",
     "author": "Jean-Luc Stevens and Philipp Rudiger",
     "summary": "Stop plotting your data - annotate your data and let it visualize itself.",
-    "homepage": "https://pypi.org/project/holoviews/",
+    "homepage": "https://www.holoviews.org",
     "latest": "1.14.5"
   },
   "ipython-genutils": {
     "name": "ipython_genutils",
     "author": "IPython Development Team",
     "summary": "Vestigial utilities from IPython",
-    "homepage": "https://pypi.org/project/ipython_genutils/",
+    "homepage": "http://ipython.org",
     "latest": "0.2.0"
   },
   "mpmath": {
     "name": "mpmath",
     "author": "Fredrik Johansson",
     "summary": "Python library for arbitrary-precision floating-point arithmetic",
-    "homepage": "https://pypi.org/project/mpmath/",
+    "homepage": "http://mpmath.org/",
     "latest": "1.2.1"
   },
   "paramiko": {
     "name": "paramiko",
     "author": "Jeff Forcier",
     "summary": "SSH2 protocol library",
-    "homepage": "https://pypi.org/project/paramiko/",
+    "homepage": "https://github.com/paramiko/paramiko/",
     "latest": "2.7.2"
   },
   "PyNaCl": {
     "name": "PyNaCl",
     "author": "The PyNaCl developers",
     "summary": "Python binding to the Networking and Cryptography (NaCl) library",
-    "homepage": "https://pypi.org/project/PyNaCl/",
+    "homepage": "https://github.com/pyca/pynacl/",
     "latest": "1.4.0"
   },
   "simplegeneric": {
     "name": "simplegeneric",
     "author": "Phillip J. Eby",
     "summary": "Simple generic functions (similar to Python's own len(), pickle.dump(), etc.)",
-    "homepage": "https://pypi.org/project/simplegeneric/",
+    "homepage": "http://cheeseshop.python.org/pypi/simplegeneric",
     "latest": "0.8.1"
   },
   "tifffile": {
     "name": "tifffile",
     "author": "Christoph Gohlke",
     "summary": "Read and write TIFF files",
-    "homepage": "https://pypi.org/project/tifffile/",
+    "homepage": "https://www.lfd.uci.edu/~gohlke/",
     "latest": "2021.8.8"
   },
   "spyder": {
     "name": "spyder",
     "author": "The Spyder Project Contributors",
     "summary": "The Scientific Python Development Environment",
-    "homepage": "https://pypi.org/project/spyder/",
+    "homepage": "https://www.spyder-ide.org/",
     "latest": "5.1.1"
   },
   "tqdm": {
     "name": "tqdm",
     "author": "",
     "summary": "Fast, Extensible Progress Meter",
-    "homepage": "https://pypi.org/project/tqdm/",
+    "homepage": "https://tqdm.github.io",
     "latest": "4.62.2"
   },
   "helpdev": {
     "name": "helpdev",
     "author": "Daniel Cosmo Pizetta",
     "summary": "HelpDev - Extracts information about the Python environment easily.",
-    "homepage": "https://pypi.org/project/helpdev/",
+    "homepage": "https://gitlab.com/dpizetta/helpdev",
     "latest": "0.7.1"
   },
   "jupyterlab": {
     "name": "jupyterlab",
     "author": "Jupyter Development Team",
     "summary": "JupyterLab computational environment",
-    "homepage": "https://pypi.org/project/jupyterlab/",
+    "homepage": "https://jupyter.org",
     "latest": "3.1.9"
   },
   "qtconsole": {
     "name": "qtconsole",
     "author": "Jupyter Development Team",
     "summary": "Jupyter Qt console",
-    "homepage": "https://pypi.org/project/qtconsole/",
+    "homepage": "http://jupyter.org",
     "latest": "5.1.1"
   },
   "jupyterlab-server": {
     "name": "jupyterlab-server",
     "author": "Jupyter Development Team",
     "summary": "A set of server components for JupyterLab and JupyterLab like applications .",
-    "homepage": "https://pypi.org/project/jupyterlab-server/",
+    "homepage": "https://jupyter.org",
     "latest": "2.7.2"
   },
   "numcodecs": {
     "name": "numcodecs",
     "author": "Alistair Miles",
     "summary": "A Python package providing buffer compression and transformation codecs for use in data storage and communication applications.",
-    "homepage": "https://pypi.org/project/numcodecs/",
+    "homepage": "https://github.com/zarr-developers/numcodecs",
     "latest": "0.9.0"
   },
   "scikit-optimize": {
     "name": "scikit-optimize",
     "author": "The scikit-optimize contributors",
     "summary": "Sequential model-based optimization toolbox.",
-    "homepage": "https://pypi.org/project/scikit-optimize/",
+    "homepage": "https://scikit-optimize.github.io/",
     "latest": "0.8.1"
   },
   "astroid": {
     "name": "astroid",
     "author": "Python Code Quality Authority",
     "summary": "An abstract syntax tree for Python with inference support.",
-    "homepage": "https://pypi.org/project/astroid/",
+    "homepage": "https://github.com/PyCQA/astroid",
     "latest": "2.7.2"
   },
   "pyls-black": {
     "name": "pyls-black",
     "author": "Rupert Bedford",
     "summary": "Black plugin for the Python Language Server",
-    "homepage": "https://pypi.org/project/pyls-black/",
+    "homepage": "https://github.com/rupert/pyls-black",
     "latest": "0.4.7"
   },
   "pydocstyle": {
     "name": "pydocstyle",
     "author": "Amir Rachum",
     "summary": "Python docstring style checker",
-    "homepage": "https://pypi.org/project/pydocstyle/",
+    "homepage": "https://github.com/PyCQA/pydocstyle/",
     "latest": "6.1.1"
   },
   "baresql": {
     "name": "baresql",
     "author": "stonebig",
     "summary": "playing SQL directly on Python datas",
-    "homepage": "https://pypi.org/project/baresql/",
+    "homepage": "https://github.com/stonebig/baresql",
     "latest": "0.7.4"
   },
   "pywinusb": {
     "name": "pywinusb",
     "author": "Rene F. Aguirre",
     "summary": "A package that simplifies USB/HID communications on windows",
-    "homepage": "https://pypi.org/project/pywinusb/",
+    "homepage": "https://github.com/rene-aguirre/pywinusb",
     "latest": "0.4.2"
   },
   "formlayout": {
     "name": "formlayout",
     "author": "Pierre Raybaut",
     "summary": "The most easy way to create Qt form dialogs and widgets with Python",
-    "homepage": "https://pypi.org/project/formlayout/",
+    "homepage": "https://github.com/PierreRaybaut/formlayout",
     "latest": "1.2.0"
   },
   "feather-format": {
     "name": "feather-format",
     "author": "Wes McKinney",
     "summary": "Simple wrapper library to the Apache Arrow-based Feather File Format",
-    "homepage": "https://pypi.org/project/feather-format/",
+    "homepage": "http://github.com/wesm/feather",
     "latest": "0.4.1"
   },
   "xlwings": {
     "name": "xlwings",
     "author": "Zoomer Analytics LLC",
     "summary": "Make Excel fly: Interact with Excel from Python and vice versa.",
-    "homepage": "https://pypi.org/project/xlwings/",
+    "homepage": "https://www.xlwings.org",
     "latest": "0.24.9"
   },
   "onnxruntime": {
     "name": "onnxruntime",
     "author": "Microsoft Corporation",
     "summary": "ONNX Runtime is a runtime accelerator for Machine Learning models",
-    "homepage": "https://pypi.org/project/onnxruntime/",
+    "homepage": "https://onnxruntime.ai",
     "latest": "1.8.1"
   },
   "thinc": {
     "name": "thinc",
     "author": "Explosion",
     "summary": "A refreshing functional take on deep learning, compatible with your favorite libraries",
-    "homepage": "https://pypi.org/project/thinc/",
+    "homepage": "https://github.com/explosion/thinc",
     "latest": "8.0.8"
   },
   "virtualenv": {
     "name": "virtualenv",
     "author": "Bernat Gabor",
     "summary": "Virtual Python Environment builder",
-    "homepage": "https://pypi.org/project/virtualenv/",
+    "homepage": "https://virtualenv.pypa.io/",
     "latest": "20.7.2"
   },
   "wasmer-compiler-singlepass": {
     "name": "wasmer-compiler-singlepass",
     "author": "Wasmer Engineering Team <engineering@wasmer.io>",
     "summary": "Python extension to run WebAssembly binaries",
-    "homepage": "https://pypi.org/project/wasmer-compiler-singlepass/",
+    "homepage": "",
     "latest": "1.0.0"
   },
   "supersmoother": {
     "name": "supersmoother",
     "author": "Jake VanderPlas",
     "summary": "Python implementation of Friedman's Supersmoother",
-    "homepage": "https://pypi.org/project/supersmoother/",
+    "homepage": "http://github.com/jakevdp/supersmoother",
     "latest": "0.4"
   },
   "hupper": {
     "name": "hupper",
     "author": "Michael Merickel",
     "summary": "Integrated process monitor for developing and reloading daemons.",
-    "homepage": "https://pypi.org/project/hupper/",
+    "homepage": "https://github.com/Pylons/hupper",
     "latest": "1.10.3"
   },
   "preshed": {
     "name": "preshed",
     "author": "Matthew Honnibal",
     "summary": "Cython hash table that trusts the keys are pre-hashed",
-    "homepage": "https://pypi.org/project/preshed/",
+    "homepage": "https://github.com/explosion/preshed",
     "latest": "3.0.5"
   },
   "sphinx-rtd-theme": {
     "name": "sphinx-rtd-theme",
     "author": "Dave Snider, Read the Docs, Inc. & contributors",
     "summary": "Read the Docs theme for Sphinx",
-    "homepage": "https://pypi.org/project/sphinx-rtd-theme/",
+    "homepage": "https://github.com/readthedocs/sphinx_rtd_theme",
     "latest": "0.5.2"
   },
   "SQLAlchemy": {
     "name": "SQLAlchemy",
     "author": "Mike Bayer",
     "summary": "Database Abstraction Library",
-    "homepage": "https://pypi.org/project/SQLAlchemy/",
+    "homepage": "https://www.sqlalchemy.org",
     "latest": "1.4.23"
   },
   "qstylizer": {
     "name": "qstylizer",
     "author": "Brett Lambright",
     "summary": "Stylesheet Generator for PyQt{4-5}/PySide{1-2}",
-    "homepage": "https://pypi.org/project/qstylizer/",
+    "homepage": "https://github.com/blambright/qstylizer",
     "latest": "0.2.1"
   },
   "pathy": {
     "name": "pathy",
     "author": "Justin DuJardin",
     "summary": "pathlib.Path subclasses for local and cloud bucket storage",
-    "homepage": "https://pypi.org/project/pathy/",
+    "homepage": "https://github.com/justindujardin/pathy",
     "latest": "0.6.0"
   },
   "docrepr": {
     "name": "docrepr",
     "author": "The Spyder Development Team",
     "summary": "docrepr renders Python docstrings in HTML",
-    "homepage": "https://pypi.org/project/docrepr/",
+    "homepage": "https://github.com/spyder-ide/docrepr",
     "latest": "0.1.1"
   },
   "husl": {
     "name": "husl",
     "author": "UNKNOWN",
     "summary": "Human-friendly HSL",
-    "homepage": "https://pypi.org/project/husl/",
+    "homepage": "http://www.husl-colors.org",
     "latest": "4.0.3"
   },
   "sortedcontainers": {
     "name": "sortedcontainers",
     "author": "Grant Jenks",
     "summary": "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set",
-    "homepage": "https://pypi.org/project/sortedcontainers/",
+    "homepage": "http://www.grantjenks.com/docs/sortedcontainers/",
     "latest": "2.4.0"
   },
   "jsonpatch": {
     "name": "jsonpatch",
     "author": "Stefan Kögl",
     "summary": "Apply JSON-Patches (RFC 6902)",
-    "homepage": "https://pypi.org/project/jsonpatch/",
+    "homepage": "https://github.com/stefankoegl/python-json-patch",
     "latest": "1.32"
   },
   "sklearn-contrib-lightning": {
     "name": "sklearn-contrib-lightning",
     "author": "",
     "summary": "Large-scale sparse linear classification, regression and ranking in Python",
-    "homepage": "https://pypi.org/project/sklearn-contrib-lightning/",
+    "homepage": "https://github.com/scikit-learn-contrib/lightning",
     "latest": "0.6.1"
   },
   "pythonnet": {
     "name": "pythonnet",
     "author": "The Contributors of the Python.NET Project",
     "summary": ".Net and Mono integration for Python",
-    "homepage": "https://pypi.org/project/pythonnet/",
+    "homepage": "https://pythonnet.github.io/",
     "latest": "2.5.2"
   },
   "tenacity": {
     "name": "tenacity",
     "author": "Julien Danjou",
     "summary": "Retry code until it succeeds",
-    "homepage": "https://pypi.org/project/tenacity/",
+    "homepage": "https://github.com/jd/tenacity",
     "latest": "8.0.1"
   },
   "torchaudio": {
     "name": "torchaudio",
     "author": "Soumith Chintala, David Pollack, Sean Naren, Peter Goldsborough",
     "summary": "An audio package for PyTorch",
-    "homepage": "https://pypi.org/project/torchaudio/",
+    "homepage": "https://github.com/pytorch/audio",
     "latest": "0.9.0"
   },
   "winrt": {
     "name": "winrt",
     "author": "Microsoft Corporation",
     "summary": "Access Windows Runtime APIs from Python",
-    "homepage": "https://pypi.org/project/winrt/",
+    "homepage": "https://github.com/Microsoft/xlang/tree/master/src/package/pywinrt/projection",
     "latest": "1.0.21033.1"
   },
   "blinker": {
     "name": "blinker",
     "author": "Jason Kirtland",
     "summary": "Fast, simple object-to-object and broadcast signaling",
-    "homepage": "https://pypi.org/project/blinker/",
+    "homepage": "http://pythonhosted.org/blinker/",
     "latest": "1.4"
   },
   "pytest": {
     "name": "pytest",
     "author": "Holger Krekel, Bruno Oliveira, Ronny Pfannschmidt, Floris Bruynooghe, Brianna Laugher, Florian Bruhin and others",
     "summary": "pytest: simple powerful testing with Python",
-    "homepage": "https://pypi.org/project/pytest/",
+    "homepage": "https://docs.pytest.org/en/latest/",
     "latest": "6.2.4"
   },
   "pony": {
     "name": "pony",
     "author": "Alexander Kozlovsky, Alexey Malashkevich",
     "summary": "Pony Object-Relational Mapper",
-    "homepage": "https://pypi.org/project/pony/",
+    "homepage": "https://ponyorm.com",
     "latest": "0.7.14"
   },
   "more-itertools": {
     "name": "more-itertools",
     "author": "Erik Rose",
     "summary": "More routines for operating on iterables, beyond itertools",
-    "homepage": "https://pypi.org/project/more-itertools/",
+    "homepage": "https://github.com/more-itertools/more-itertools",
     "latest": "8.8.0"
   },
   "importlib-metadata": {
     "name": "importlib-metadata",
     "author": "Jason R. Coombs",
     "summary": "Read metadata from Python packages",
-    "homepage": "https://pypi.org/project/importlib-metadata/",
-    "latest": "4.7.1"
+    "homepage": "https://github.com/python/importlib_metadata",
+    "latest": "4.8.1"
   },
   "rise": {
     "name": "rise",
     "author": "Damian Avila",
     "summary": "Reveal.js - Jupyter/IPython Slideshow Extension",
-    "homepage": "https://pypi.org/project/rise/",
+    "homepage": "",
     "latest": "5.7.1"
   },
   "tzlocal": {
     "name": "tzlocal",
     "author": "Lennart Regebro",
     "summary": "tzinfo object for the local timezone",
-    "homepage": "https://pypi.org/project/tzlocal/",
+    "homepage": "",
     "latest": "3.0"
   },
   "oct2py": {
     "name": "oct2py",
     "author": "",
     "summary": "Python to GNU Octave bridge --> run m-files from python.",
-    "homepage": "https://pypi.org/project/oct2py/",
+    "homepage": "http://github.com/blink1073/oct2py",
     "latest": "5.2.0"
   },
   "nbdime": {
     "name": "nbdime",
     "author": "Jupyter Development Team",
     "summary": "Diff and merge of Jupyter Notebooks",
-    "homepage": "https://pypi.org/project/nbdime/",
+    "homepage": "https://nbdime.readthedocs.io",
     "latest": "3.1.0"
   },
   "async-timeout": {
     "name": "async-timeout",
     "author": "Andrew Svetlov",
     "summary": "Timeout context manager for asyncio programs",
-    "homepage": "https://pypi.org/project/async-timeout/",
+    "homepage": "https://github.com/aio-libs/async_timeout/",
     "latest": "3.0.1"
   },
   "pipdeptree": {
     "name": "pipdeptree",
     "author": "Vineet Naik",
     "summary": "Command line utility to show dependency tree of packages",
-    "homepage": "https://pypi.org/project/pipdeptree/",
+    "homepage": "https://github.com/naiquevin/pipdeptree",
     "latest": "2.1.0"
   },
   "pandas-datareader": {
     "name": "pandas-datareader",
     "author": "The PyData Development Team",
     "summary": "Data readers extracted from the pandas codebase,should be compatible with recent pandas versions",
-    "homepage": "https://pypi.org/project/pandas-datareader/",
+    "homepage": "https://github.com/pydata/pandas-datareader",
     "latest": "0.10.0"
   },
   "click-plugins": {
     "name": "click-plugins",
     "author": "Kevin Wurster, Sean Gillies",
     "summary": "An extension module for click to enable registering CLI commands via setuptools entry-points.",
-    "homepage": "https://pypi.org/project/click-plugins/",
+    "homepage": "https://github.com/click-contrib/click-plugins",
     "latest": "1.1.1"
   },
   "fastai": {
     "name": "fastai",
     "author": "Jeremy Howard, Sylvain Gugger, and contributors",
     "summary": "fastai simplifies training fast and accurate neural nets using modern best practices",
-    "homepage": "https://pypi.org/project/fastai/",
+    "homepage": "https://github.com/fastai/fastai/tree/master/",
     "latest": "2.5.2"
   },
   "jupyter-sphinx": {
     "name": "jupyter-sphinx",
     "author": "Jupyter Development Team",
     "summary": "Jupyter Sphinx Extensions",
-    "homepage": "https://pypi.org/project/jupyter-sphinx/",
+    "homepage": "https://github.com/jupyter/jupyter-sphinx/",
     "latest": "0.3.2"
   },
   "scikit-image": {
     "name": "scikit-image",
     "author": "",
     "summary": "Image processing in Python",
-    "homepage": "https://pypi.org/project/scikit-image/",
+    "homepage": "https://scikit-image.org",
     "latest": "0.18.3"
   },
   "PyYAML": {
     "name": "PyYAML",
     "author": "Kirill Simonov",
     "summary": "YAML parser and emitter for Python",
-    "homepage": "https://pypi.org/project/PyYAML/",
+    "homepage": "https://pyyaml.org/",
     "latest": "5.4.1"
   },
   "snakeviz": {
     "name": "snakeviz",
     "author": "Matt Davis",
     "summary": "A web-based viewer for Python profiler output",
-    "homepage": "https://pypi.org/project/snakeviz/",
+    "homepage": "https://github.com/jiffyclub/snakeviz",
     "latest": "2.1.0"
   },
   "pyhdf": {
     "name": "pyhdf",
     "author": "Andre Gosselin et al.",
     "summary": "pyhdf: Python interface to the NCSA HDF4 library.",
-    "homepage": "https://pypi.org/project/pyhdf/",
+    "homepage": "https://github.com/fhs/pyhdf",
     "latest": "0.10.3"
   },
   "arrow": {
     "name": "arrow",
     "author": "Chris Smith",
     "summary": "Better dates & times for Python",
-    "homepage": "https://pypi.org/project/arrow/",
+    "homepage": "https://arrow.readthedocs.io",
     "latest": "1.1.1"
   },
   "py": {
     "name": "py",
     "author": "holger krekel, Ronny Pfannschmidt, Benjamin Peterson and others",
     "summary": "library with cross-python path, ini-parsing, io, code, log facilities",
-    "homepage": "https://pypi.org/project/py/",
+    "homepage": "https://py.readthedocs.io/",
     "latest": "1.10.0"
   },
   "gpytorch": {
     "name": "gpytorch",
     "author": "Jake Gardner, Geoff Pleiss",
     "summary": "An implementation of Gaussian Processes in Pytorch",
-    "homepage": "https://pypi.org/project/gpytorch/",
+    "homepage": "https://gpytorch.ai",
     "latest": "1.5.0"
   },
   "lazy-object-proxy": {
     "name": "lazy-object-proxy",
     "author": "Ionel Cristian Mărieș",
     "summary": "A fast and thorough lazy object proxy.",
-    "homepage": "https://pypi.org/project/lazy-object-proxy/",
+    "homepage": "https://github.com/ionelmc/python-lazy-object-proxy",
     "latest": "1.6.0"
   },
   "Markdown": {
     "name": "Markdown",
     "author": "Manfred Stienstra, Yuri takhteyev and Waylan limberg",
     "summary": "Python implementation of Markdown.",
-    "homepage": "https://pypi.org/project/Markdown/",
+    "homepage": "https://Python-Markdown.github.io/",
     "latest": "3.3.4"
   },
   "nbclassic": {
     "name": "nbclassic",
     "author": "Jupyter Development Team",
     "summary": "Jupyter Notebook as a Jupyter Server Extension.",
-    "homepage": "https://pypi.org/project/nbclassic/",
+    "homepage": "http://jupyter.org",
     "latest": "0.3.1"
   },
   "gunicorn": {
     "name": "gunicorn",
     "author": "Benoit Chesneau",
     "summary": "WSGI HTTP Server for UNIX",
-    "homepage": "https://pypi.org/project/gunicorn/",
+    "homepage": "https://gunicorn.org",
     "latest": "20.1.0"
   },
   "multidict": {
     "name": "multidict",
     "author": "Andrew Svetlov",
     "summary": "multidict implementation",
-    "homepage": "https://pypi.org/project/multidict/",
+    "homepage": "https://github.com/aio-libs/multidict",
     "latest": "5.1.0"
   },
   "pg8000": {
     "name": "pg8000",
     "author": "Mathieu Fenniak",
     "summary": "PostgreSQL interface library",
-    "homepage": "https://pypi.org/project/pg8000/",
+    "homepage": "https://github.com/tlocke/pg8000",
     "latest": "1.21.1"
   },
   "guiqwt": {
     "name": "guiqwt",
     "author": "Pierre Raybaut",
     "summary": "guiqwt is a set of tools for curve and image plotting (extension to PythonQwt)",
-    "homepage": "https://pypi.org/project/guiqwt/",
+    "homepage": "https://github.com/PierreRaybaut/guiqwt",
     "latest": "3.0.7"
   },
   "rdflib": {
     "name": "rdflib",
     "author": "Daniel 'eikeon' Krech",
     "summary": "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information.",
-    "homepage": "https://pypi.org/project/rdflib/",
+    "homepage": "https://github.com/RDFLib/rdflib",
     "latest": "6.0.0"
   },
   "pyproj": {
     "name": "pyproj",
     "author": "Jeff Whitaker",
     "summary": "Python interface to PROJ (cartographic projections and coordinate transformations library)",
-    "homepage": "https://pypi.org/project/pyproj/",
+    "homepage": "https://github.com/pyproj4/pyproj",
     "latest": "3.1.0"
   },
   "datasette": {
     "name": "datasette",
     "author": "Simon Willison",
     "summary": "An open source multi-tool for exploring and publishing data",
-    "homepage": "https://pypi.org/project/datasette/",
+    "homepage": "https://datasette.io/",
     "latest": "0.58.1"
   },
   "mpl-scatter-density": {
     "name": "mpl-scatter-density",
     "author": "Thomas Robitaille",
     "summary": "Matplotlib helpers to make density scatter plots",
-    "homepage": "https://pypi.org/project/mpl-scatter-density/",
+    "homepage": "https://github.com/astrofrog/mpl-scatter-density",
     "latest": "0.7"
   },
   "pydantic": {
     "name": "pydantic",
     "author": "Samuel Colvin",
     "summary": "Data validation and settings management using python 3.6 type hinting",
-    "homepage": "https://pypi.org/project/pydantic/",
+    "homepage": "https://github.com/samuelcolvin/pydantic",
     "latest": "1.8.2"
   },
   "rpy2": {
     "name": "rpy2",
     "author": "Laurent Gautier",
     "summary": "Python interface to the R language (embedded R)",
-    "homepage": "https://pypi.org/project/rpy2/",
+    "homepage": "https://rpy2.github.io",
     "latest": "3.4.5"
   },
   "httpcore": {
     "name": "httpcore",
     "author": "Tom Christie",
     "summary": "A minimal low-level HTTP client.",
-    "homepage": "https://pypi.org/project/httpcore/",
+    "homepage": "https://github.com/encode/httpcore",
     "latest": "0.13.6"
   },
   "Hypercorn": {
     "name": "Hypercorn",
     "author": "P G Jones",
     "summary": "A ASGI Server based on Hyper libraries and inspired by Gunicorn.",
-    "homepage": "https://pypi.org/project/Hypercorn/",
+    "homepage": "https://gitlab.com/pgjones/hypercorn/",
     "latest": "0.11.2"
   },
   "julia": {
     "name": "julia",
     "author": "The Julia and IPython development teams.",
     "summary": "Julia/Python bridge with IPython support.",
-    "homepage": "https://pypi.org/project/julia/",
+    "homepage": "http://julialang.org",
     "latest": "0.5.6"
   },
   "requests-toolbelt": {
     "name": "requests-toolbelt",
     "author": "Ian Cordasco, Cory Benfield",
     "summary": "A utility belt for advanced users of python-requests",
-    "homepage": "https://pypi.org/project/requests-toolbelt/",
+    "homepage": "https://toolbelt.readthedocs.org",
     "latest": "0.9.1"
   },
   "flaskerize": {
     "name": "flaskerize",
     "author": "AJ Pryor",
     "summary": "Python CLI build/dev tool for templated code generation and project modification. Think Angular schematics for Python.",
-    "homepage": "https://pypi.org/project/flaskerize/",
+    "homepage": "http://alanpryorjr.com/",
     "latest": "0.14.0"
   },
   "imagesize": {
     "name": "imagesize",
     "author": "Yoshiki Shibukawa",
     "summary": "Getting image size from png/jpeg/jpeg2000/gif file",
-    "homepage": "https://pypi.org/project/imagesize/",
+    "homepage": "https://github.com/shibukawa/imagesize_py",
     "latest": "1.2.0"
   },
   "parso": {
     "name": "parso",
     "author": "David Halter",
     "summary": "A Python Parser",
-    "homepage": "https://pypi.org/project/parso/",
+    "homepage": "https://github.com/davidhalter/parso",
     "latest": "0.8.2"
   },
   "imageio-ffmpeg": {
     "name": "imageio-ffmpeg",
     "author": "imageio contributors",
     "summary": "FFMPEG wrapper for Python",
-    "homepage": "https://pypi.org/project/imageio-ffmpeg/",
+    "homepage": "https://github.com/imageio/imageio-ffmpeg",
     "latest": "0.4.5"
   },
   "mpld3": {
     "name": "mpld3",
     "author": "Jake VanderPlas",
     "summary": "D3 Viewer for Matplotlib",
-    "homepage": "https://pypi.org/project/mpld3/",
+    "homepage": "http://mpld3.github.com",
     "latest": "0.5.5"
   },
   "tornado": {
     "name": "tornado",
     "author": "Facebook",
     "summary": "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.",
-    "homepage": "https://pypi.org/project/tornado/",
+    "homepage": "http://www.tornadoweb.org/",
     "latest": "6.1"
   },
   "pickleshare": {
     "name": "pickleshare",
     "author": "Ville Vainio",
     "summary": "Tiny 'shelve'-like database with concurrency support",
-    "homepage": "https://pypi.org/project/pickleshare/",
+    "homepage": "https://github.com/pickleshare/pickleshare",
     "latest": "0.7.5"
   },
   "pyodbc": {
     "name": "pyodbc",
     "author": "",
     "summary": "DB API Module for ODBC",
-    "homepage": "https://pypi.org/project/pyodbc/",
+    "homepage": "https://github.com/mkleehammer/pyodbc",
     "latest": "4.0.32"
   },
   "affine": {
     "name": "affine",
     "author": "Sean Gillies",
     "summary": "Matrices describing affine transformation of the plane.",
-    "homepage": "https://pypi.org/project/affine/",
+    "homepage": "https://github.com/sgillies/affine",
     "latest": "2.3.0"
   },
   "cvxpy": {
     "name": "cvxpy",
     "author": "Steven Diamond, Eric Chu, Stephen Boyd",
     "summary": "A domain-specific language for modeling convex optimization problems in Python.",
-    "homepage": "https://pypi.org/project/cvxpy/",
+    "homepage": "http://github.com/cvxgrp/cvxpy/",
     "latest": "1.1.15"
   },
   "MarkupSafe": {
     "name": "MarkupSafe",
     "author": "Armin Ronacher",
     "summary": "Safely add untrusted strings to HTML/XML markup.",
-    "homepage": "https://pypi.org/project/MarkupSafe/",
+    "homepage": "https://palletsprojects.com/p/markupsafe/",
     "latest": "2.0.1"
   },
   "Cartopy": {
     "name": "Cartopy",
     "author": "UK Met Office",
     "summary": "A cartographic python library with Matplotlib support for visualisation",
-    "homepage": "https://pypi.org/project/Cartopy/",
+    "homepage": "https://scitools.org.uk/cartopy/docs/latest/",
     "latest": "0.19.0.post1"
   },
   "pyinstaller-hooks-contrib": {
     "name": "pyinstaller-hooks-contrib",
     "author": "",
     "summary": "Community maintained hooks for PyInstaller",
-    "homepage": "https://pypi.org/project/pyinstaller-hooks-contrib/",
+    "homepage": "https://github.com/pyinstaller/pyinstaller-hooks-contrib",
     "latest": "2021.3"
   },
   "locket": {
     "name": "locket",
     "author": "Michael Williamson",
     "summary": "File-based locks for Python for Linux and Windows",
-    "homepage": "https://pypi.org/project/locket/",
+    "homepage": "http://github.com/mwilliamson/locket.py",
     "latest": "0.2.1"
   },
   "msvc-runtime": {
     "name": "msvc-runtime",
     "author": "",
     "summary": "Install the Microsoft™ Visual C++™ runtime DLLs to the sys.prefix and Scripts directories",
-    "homepage": "https://pypi.org/project/msvc-runtime/",
+    "homepage": "",
     "latest": "14.29.30133"
   },
   "PySocks": {
     "name": "PySocks",
     "author": "Anorov",
     "summary": "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information.",
-    "homepage": "https://pypi.org/project/PySocks/",
+    "homepage": "https://github.com/Anorov/PySocks",
     "latest": "1.7.1"
   },
   "sphinxcontrib-devhelp": {
     "name": "sphinxcontrib-devhelp",
     "author": "Georg Brandl",
     "summary": "sphinxcontrib-devhelp is a sphinx extension which outputs Devhelp document.",
-    "homepage": "https://pypi.org/project/sphinxcontrib-devhelp/",
+    "homepage": "http://sphinx-doc.org/",
     "latest": "1.0.2"
   },
   "umap-learn": {
     "name": "umap-learn",
     "author": "Leland McInnes",
     "summary": "Uniform Manifold Approximation and Projection",
-    "homepage": "https://pypi.org/project/umap-learn/",
+    "homepage": "http://github.com/lmcinnes/umap",
     "latest": "0.5.1"
   },
   "HeapDict": {
     "name": "HeapDict",
     "author": "Stutzbach Enterprises, LLC",
     "summary": "a heap with decrease-key and increase-key operations",
-    "homepage": "https://pypi.org/project/HeapDict/",
+    "homepage": "http://stutzbachenterprises.com/",
     "latest": "1.0.1"
   },
   "algopy": {
     "name": "algopy",
     "author": "Sebastian F. Walter",
     "summary": "ALGOPY: Taylor Arithmetic Computation and Algorithmic Differentiation",
-    "homepage": "https://pypi.org/project/algopy/",
+    "homepage": "http://packages.python.org/algopy",
     "latest": "0.5.7"
   },
   "loky": {
     "name": "loky",
     "author": "Thomas Moreau",
     "summary": "A robust implementation of concurrent.futures.ProcessPoolExecutor",
-    "homepage": "https://pypi.org/project/loky/",
+    "homepage": "https://github.com/joblib/loky/",
     "latest": "2.9.0"
   },
   "python-picard": {
     "name": "python-picard",
     "author": "",
     "summary": "Preconditoned ICA for Real Data",
-    "homepage": "https://pypi.org/project/python-picard/",
+    "homepage": "https://pierreablin.github.io/picard",
     "latest": "0.6"
   },
   "pretty-poly": {
@@ -2012,42 +2012,42 @@
     "name": "Flask",
     "author": "Armin Ronacher",
     "summary": "A simple framework for building complex web applications.",
-    "homepage": "https://pypi.org/project/Flask/",
+    "homepage": "https://palletsprojects.com/p/flask",
     "latest": "2.0.1"
   },
   "pyepsg": {
     "name": "pyepsg",
     "author": "Richard Hattersley",
     "summary": "Easy access to the EPSG database via http://epsg.io/",
-    "homepage": "https://pypi.org/project/pyepsg/",
+    "homepage": "https://github.com/rhattersley/pyepsg",
     "latest": "0.4.0"
   },
   "ipyleaflet": {
     "name": "ipyleaflet",
     "author": "Project Jupyter",
     "summary": "A Jupyter widget for dynamic Leaflet maps",
-    "homepage": "https://pypi.org/project/ipyleaflet/",
+    "homepage": "https://github.com/jupyter-widgets/ipyleaflet",
     "latest": "0.14.0"
   },
   "matplotlib-inline": {
     "name": "matplotlib-inline",
     "author": "IPython Development Team",
     "summary": "Inline Matplotlib backend for Jupyter",
-    "homepage": "https://pypi.org/project/matplotlib-inline/",
+    "homepage": "https://github.com/martinRenou/matplotlib-inline",
     "latest": "0.1.2"
   },
   "PyOpenGL": {
     "name": "PyOpenGL",
     "author": "Mike C. Fletcher",
     "summary": "Standard OpenGL bindings for Python",
-    "homepage": "https://pypi.org/project/PyOpenGL/",
+    "homepage": "http://pyopengl.sourceforge.net",
     "latest": "3.1.5"
   },
   "pdfrw": {
     "name": "pdfrw",
     "author": "Patrick Maupin",
     "summary": "PDF file reader/writer library",
-    "homepage": "https://pypi.org/project/pdfrw/",
+    "homepage": "https://github.com/pmaupin/pdfrw",
     "latest": "0.4"
   },
   "exact-cover": {
@@ -2061,322 +2061,322 @@
     "name": "click",
     "author": "Armin Ronacher",
     "summary": "Composable command line interface toolkit",
-    "homepage": "https://pypi.org/project/click/",
+    "homepage": "https://palletsprojects.com/p/click/",
     "latest": "8.0.1"
   },
   "nltk": {
     "name": "nltk",
     "author": "Steven Bird",
     "summary": "Natural Language Toolkit",
-    "homepage": "https://pypi.org/project/nltk/",
+    "homepage": "http://nltk.org/",
     "latest": "3.6.2"
   },
   "future": {
     "name": "future",
     "author": "Ed Schofield",
     "summary": "Clean single-source support for Python 3 and 2",
-    "homepage": "https://pypi.org/project/future/",
+    "homepage": "https://python-future.org",
     "latest": "0.18.2"
   },
   "requests": {
     "name": "requests",
     "author": "Kenneth Reitz",
     "summary": "Python HTTP for Humans.",
-    "homepage": "https://pypi.org/project/requests/",
+    "homepage": "https://requests.readthedocs.io",
     "latest": "2.26.0"
   },
   "pefile": {
     "name": "pefile",
     "author": "Ero Carrera",
     "summary": "Python PE parsing module",
-    "homepage": "https://pypi.org/project/pefile/",
+    "homepage": "https://github.com/erocarrera/pefile",
     "latest": "2021.5.24"
   },
   "Brotli": {
     "name": "Brotli",
     "author": "The Brotli Authors",
     "summary": "Python bindings for the Brotli compression library",
-    "homepage": "https://pypi.org/project/Brotli/",
+    "homepage": "https://github.com/google/brotli",
     "latest": "1.0.9"
   },
   "winpython": {
     "name": "winpython",
     "author": "Pierre Raybaut",
     "summary": "WinPython distribution tools, including WPPM",
-    "homepage": "https://pypi.org/project/winpython/",
+    "homepage": "http://winpython.sourceforge.net/",
     "latest": "1.0"
   },
   "thrift": {
     "name": "thrift",
     "author": "Apache Thrift Developers",
     "summary": "Python bindings for the Apache Thrift RPC system",
-    "homepage": "https://pypi.org/project/thrift/",
+    "homepage": "https://thrift.apache.org",
     "latest": "0.13.0"
   },
   "ipycanvas": {
     "name": "ipycanvas",
     "author": "Martin Renou",
     "summary": "Interactive widgets library exposing the browser's Canvas API",
-    "homepage": "https://pypi.org/project/ipycanvas/",
+    "homepage": "https://github.com/martinRenou/ipycanvas",
     "latest": "0.9.0"
   },
   "flit": {
     "name": "flit",
     "author": "",
     "summary": "A simple packaging tool for simple packages.",
-    "homepage": "https://pypi.org/project/flit/",
+    "homepage": "",
     "latest": "3.3.0"
   },
   "geographiclib": {
     "name": "geographiclib",
     "author": "Charles Karney",
     "summary": "The geodesic routines from GeographicLib",
-    "homepage": "https://pypi.org/project/geographiclib/",
+    "homepage": "https://geographiclib.sourceforge.io/1.52/python",
     "latest": "1.52"
   },
   "vega-datasets": {
     "name": "vega-datasets",
     "author": "Jake VanderPlas",
     "summary": "A Python package for offline access to Vega datasets",
-    "homepage": "https://pypi.org/project/vega-datasets/",
+    "homepage": "http://github.com/altair-viz/vega_datasets",
     "latest": "0.9.0"
   },
   "scs": {
     "name": "scs",
     "author": "Brendan O'Donoghue",
     "summary": "scs: splitting conic solver",
-    "homepage": "https://pypi.org/project/scs/",
+    "homepage": "http://github.com/cvxgrp/scs",
     "latest": "2.1.4"
   },
   "smart-open": {
     "name": "smart-open",
     "author": "Radim Rehurek",
     "summary": "Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...)",
-    "homepage": "https://pypi.org/project/smart-open/",
-    "latest": "5.2.0"
+    "homepage": "https://github.com/piskvorky/smart_open",
+    "latest": "5.2.1"
   },
   "bcrypt": {
     "name": "bcrypt",
     "author": "The Python Cryptographic Authority developers",
     "summary": "Modern password hashing for your software and your servers",
-    "homepage": "https://pypi.org/project/bcrypt/",
+    "homepage": "https://github.com/pyca/bcrypt/",
     "latest": "3.2.0"
   },
   "sqlite-bro": {
     "name": "sqlite-bro",
     "author": "stonebig",
     "summary": "a graphic SQLite Client in 1 Python file",
-    "homepage": "https://pypi.org/project/sqlite-bro/",
+    "homepage": "https://github.com/stonebig/sqlite_bro",
     "latest": "0.12.1"
   },
   "GitPython": {
     "name": "GitPython",
     "author": "Sebastian Thiel, Michael Trier",
     "summary": "Python Git Library",
-    "homepage": "https://pypi.org/project/GitPython/",
+    "homepage": "https://github.com/gitpython-developers/GitPython",
     "latest": "3.1.18"
   },
   "Flask-Session": {
     "name": "Flask-Session",
     "author": "Shipeng Feng",
     "summary": "Adds server-side session support to your Flask application",
-    "homepage": "https://pypi.org/project/Flask-Session/",
+    "homepage": "https://github.com/fengsp/flask-session",
     "latest": "0.4.0"
   },
   "geoviews": {
     "name": "geoviews",
     "author": "",
     "summary": "GeoViews is a Python library that makes it easy to explore and visualize geographical, meteorological, and oceanographic datasets, such as those used in weather, climate, and remote sensing research.",
-    "homepage": "https://pypi.org/project/geoviews/",
+    "homepage": "https://geoviews.org",
     "latest": "1.9.1"
   },
   "pyinstaller": {
     "name": "pyinstaller",
     "author": "Hartmut Goebel, Giovanni Bajo, David Vierra, David Cortesi, Martin Zibricky",
     "summary": "PyInstaller bundles a Python application and all its dependencies into a single package.",
-    "homepage": "https://pypi.org/project/pyinstaller/",
+    "homepage": "http://www.pyinstaller.org/",
     "latest": "4.5.1"
   },
   "retrying": {
     "name": "retrying",
     "author": "Ray Holder",
     "summary": "Retrying",
-    "homepage": "https://pypi.org/project/retrying/",
+    "homepage": "https://github.com/rholder/retrying",
     "latest": "1.3.3"
   },
   "pybars3": {
     "name": "pybars3",
     "author": "wbond, mjumbewu",
     "summary": "Handlebars.js templating for Python 3 and 2",
-    "homepage": "https://pypi.org/project/pybars3/",
+    "homepage": "https://github.com/wbond/pybars3",
     "latest": "0.9.7"
   },
   "testpath": {
     "name": "testpath",
     "author": "",
     "summary": "Test utilities for code working with files and commands",
-    "homepage": "https://pypi.org/project/testpath/",
+    "homepage": "",
     "latest": "0.5.0"
   },
   "dateparser": {
     "name": "dateparser",
     "author": "Scrapinghub",
     "summary": "Date parsing library designed to parse dates from HTML pages",
-    "homepage": "https://pypi.org/project/dateparser/",
+    "homepage": "https://github.com/scrapinghub/dateparser",
     "latest": "1.0.0"
   },
   "Rtree": {
     "name": "Rtree",
     "author": "Sean Gillies",
     "summary": "R-Tree spatial index for Python GIS",
-    "homepage": "https://pypi.org/project/Rtree/",
+    "homepage": "https://github.com/Toblerity/rtree",
     "latest": "0.9.7"
   },
   "widgetsnbextension": {
     "name": "widgetsnbextension",
     "author": "IPython Development Team",
     "summary": "IPython HTML widgets for Jupyter",
-    "homepage": "https://pypi.org/project/widgetsnbextension/",
+    "homepage": "http://ipython.org",
     "latest": "3.5.1"
   },
   "mccabe": {
     "name": "mccabe",
     "author": "Ian Cordasco",
     "summary": "McCabe checker, plugin for flake8",
-    "homepage": "https://pypi.org/project/mccabe/",
+    "homepage": "https://github.com/pycqa/mccabe",
     "latest": "0.6.1"
   },
   "scikit-learn": {
     "name": "scikit-learn",
     "author": "",
     "summary": "A set of python modules for machine learning and data mining",
-    "homepage": "https://pypi.org/project/scikit-learn/",
+    "homepage": "http://scikit-learn.org",
     "latest": "0.24.2"
   },
   "proglog": {
     "name": "proglog",
     "author": "Zulko",
     "summary": "Log and progress bar manager for console, notebooks, web...",
-    "homepage": "https://pypi.org/project/proglog/",
+    "homepage": "",
     "latest": "0.1.9"
   },
   "pexpect": {
     "name": "pexpect",
     "author": "Noah Spurrier; Thomas Kluyver; Jeff Quast",
     "summary": "Pexpect allows easy control of interactive console applications.",
-    "homepage": "https://pypi.org/project/pexpect/",
+    "homepage": "https://pexpect.readthedocs.io/",
     "latest": "4.8.0"
   },
   "sympy": {
     "name": "sympy",
     "author": "SymPy development team",
     "summary": "Computer algebra system (CAS) in Python",
-    "homepage": "https://pypi.org/project/sympy/",
+    "homepage": "https://sympy.org",
     "latest": "1.8"
   },
   "wcwidth": {
     "name": "wcwidth",
     "author": "Jeff Quast",
     "summary": "Measures the displayed width of unicode strings in a terminal",
-    "homepage": "https://pypi.org/project/wcwidth/",
+    "homepage": "https://github.com/jquast/wcwidth",
     "latest": "0.2.5"
   },
   "pep8": {
     "name": "pep8",
     "author": "Ian Lee",
     "summary": "Python style guide checker",
-    "homepage": "https://pypi.org/project/pep8/",
+    "homepage": "http://pep8.readthedocs.org/",
     "latest": "1.7.1"
   },
   "spyder-kernels": {
     "name": "spyder-kernels",
     "author": "Spyder Development Team",
     "summary": "Jupyter kernels for Spyder's console",
-    "homepage": "https://pypi.org/project/spyder-kernels/",
+    "homepage": "https://github.com/spyder-ide/spyder-kernels",
     "latest": "2.1.0"
   },
   "pyparsing": {
     "name": "pyparsing",
     "author": "Paul McGuire",
     "summary": "Python parsing module",
-    "homepage": "https://pypi.org/project/pyparsing/",
+    "homepage": "https://github.com/pyparsing/pyparsing/",
     "latest": "2.4.7"
   },
   "yarl": {
     "name": "yarl",
     "author": "Andrew Svetlov",
     "summary": "Yet another URL library",
-    "homepage": "https://pypi.org/project/yarl/",
+    "homepage": "https://github.com/aio-libs/yarl/",
     "latest": "1.6.3"
   },
   "bloscpack": {
     "name": "bloscpack",
     "author": "Valentin Haenel",
     "summary": "Command line interface to and serialization format for Blosc",
-    "homepage": "https://pypi.org/project/bloscpack/",
+    "homepage": "https://github.com/blosc/bloscpack",
     "latest": "0.16.0"
   },
   "cachelib": {
     "name": "cachelib",
     "author": "",
     "summary": "A collection of cache libraries in the same API interface.",
-    "homepage": "https://pypi.org/project/cachelib/",
+    "homepage": "https://github.com/pallets/cachelib/",
     "latest": "0.3.0"
   },
   "db.py": {
     "name": "db.py",
     "author": "Greg Lamp",
     "summary": "a db package that doesn't suck",
-    "homepage": "https://pypi.org/project/db.py/",
+    "homepage": "https://github.com/yhat/db.py",
     "latest": "0.5.3"
   },
   "websocket-client": {
     "name": "websocket-client",
     "author": "liris",
     "summary": "WebSocket client for Python with low level API options",
-    "homepage": "https://pypi.org/project/websocket-client/",
+    "homepage": "https://github.com/websocket-client/websocket-client.git",
     "latest": "1.2.1"
   },
   "notebook": {
     "name": "notebook",
     "author": "Jupyter Development Team",
     "summary": "A web-based notebook environment for interactive computing",
-    "homepage": "https://pypi.org/project/notebook/",
+    "homepage": "http://jupyter.org",
     "latest": "6.4.3"
   },
   "qdldl": {
     "name": "qdldl",
     "author": "Bartolomeo Stellato, Paul Goulart, Goran Banjac",
     "summary": "QDLDL, a free LDL factorization routine.",
-    "homepage": "https://pypi.org/project/qdldl/",
+    "homepage": "https://github.com/oxfordcontrol/qdldl-python/",
     "latest": "0.1.5.post0"
   },
   "six": {
     "name": "six",
     "author": "Benjamin Peterson",
     "summary": "Python 2 and 3 compatibility utilities",
-    "homepage": "https://pypi.org/project/six/",
+    "homepage": "https://github.com/benjaminp/six",
     "latest": "1.16.0"
   },
   "cryptography": {
     "name": "cryptography",
     "author": "The Python Cryptographic Authority and individual contributors",
     "summary": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
-    "homepage": "https://pypi.org/project/cryptography/",
+    "homepage": "https://github.com/pyca/cryptography",
     "latest": "3.4.8"
   },
   "textwrap3": {
     "name": "textwrap3",
     "author": "Jonathan Eunice",
     "summary": "textwrap from Python 3.6 backport (plus a few tweaks)",
-    "homepage": "https://pypi.org/project/textwrap3/",
+    "homepage": "https://github.com/jonathaneunice/textwrap3",
     "latest": "0.9.2"
   },
   "distributed": {
     "name": "distributed",
     "author": "",
     "summary": "Distributed scheduler for Dask",
-    "homepage": "https://pypi.org/project/distributed/",
+    "homepage": "https://distributed.dask.org",
     "latest": "2021.8.1"
   },
   "polyomino": {
@@ -2390,1617 +2390,1617 @@
     "name": "Rx",
     "author": "Dag Brattli",
     "summary": "Reactive Extensions (Rx) for Python",
-    "homepage": "https://pypi.org/project/Rx/",
+    "homepage": "http://reactivex.io",
     "latest": "3.2.0"
   },
   "xarray": {
     "name": "xarray",
     "author": "xarray Developers",
     "summary": "N-D labeled arrays and datasets in Python",
-    "homepage": "https://pypi.org/project/xarray/",
+    "homepage": "https://github.com/pydata/xarray",
     "latest": "0.19.0"
   },
   "pyaml": {
     "name": "pyaml",
     "author": "Mike Kazantsev",
     "summary": "PyYAML-based module to produce pretty and readable YAML-serialized data",
-    "homepage": "https://pypi.org/project/pyaml/",
+    "homepage": "https://github.com/mk-fg/pretty-yaml",
     "latest": "21.8.3"
   },
   "dask-ml": {
     "name": "dask-ml",
     "author": "Tom Augspurger",
     "summary": "A library for distributed and parallel machine learning",
-    "homepage": "https://pypi.org/project/dask-ml/",
+    "homepage": "https://github.com/dask/dask-ml",
     "latest": "1.9.0"
   },
   "Deprecated": {
     "name": "Deprecated",
     "author": "Laurent LAPORTE",
     "summary": "Python @deprecated decorator to deprecate old python classes, functions or methods.",
-    "homepage": "https://pypi.org/project/Deprecated/",
+    "homepage": "https://github.com/tantale/deprecated",
     "latest": "1.2.12"
   },
   "metakernel": {
     "name": "metakernel",
     "author": "Steven Silvester",
     "summary": "Metakernel for Jupyter",
-    "homepage": "https://pypi.org/project/metakernel/",
+    "homepage": "https://github.com/Calysto/metakernel",
     "latest": "0.27.5"
   },
   "pygbm": {
     "name": "pygbm",
     "author": "Olivier Grisel",
     "summary": "Experimental, numba-based Gradient Boosting Machines",
-    "homepage": "https://pypi.org/project/pygbm/",
+    "homepage": "https://github.com/ogrisel/pygbm/",
     "latest": "0.1.0"
   },
   "pyqt5-tools": {
     "name": "pyqt5-tools",
     "author": "Kyle Altendorf",
     "summary": "PyQt Designer and QML plugins",
-    "homepage": "https://pypi.org/project/pyqt5-tools/",
+    "homepage": "https://github.com/altendky/pyqt-tools",
     "latest": "5.15.4.3.2"
   },
   "mysql-connector-python": {
     "name": "mysql-connector-python",
     "author": "Oracle and/or its affiliates",
     "summary": "MySQL driver written in Python",
-    "homepage": "https://pypi.org/project/mysql-connector-python/",
+    "homepage": "http://dev.mysql.com/doc/connector-python/en/index.html",
     "latest": "8.0.26"
   },
   "sphinxcontrib-htmlhelp": {
     "name": "sphinxcontrib-htmlhelp",
     "author": "Georg Brandl",
     "summary": "sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files",
-    "homepage": "https://pypi.org/project/sphinxcontrib-htmlhelp/",
+    "homepage": "http://sphinx-doc.org/",
     "latest": "2.0.0"
   },
   "cymem": {
     "name": "cymem",
     "author": "Matthew Honnibal",
     "summary": "Manage calls to calloc/free through Cython",
-    "homepage": "https://pypi.org/project/cymem/",
+    "homepage": "https://github.com/explosion/cymem",
     "latest": "2.0.5"
   },
   "prompt-toolkit": {
     "name": "prompt-toolkit",
     "author": "Jonathan Slenders",
     "summary": "Library for building powerful interactive command lines in Python",
-    "homepage": "https://pypi.org/project/prompt-toolkit/",
+    "homepage": "https://github.com/prompt-toolkit/python-prompt-toolkit",
     "latest": "3.0.20"
   },
   "pyflux": {
     "name": "pyflux",
     "author": "Ross Taylor",
     "summary": "PyFlux: A time-series analysis library for Python",
-    "homepage": "https://pypi.org/project/pyflux/",
+    "homepage": "https://github.com/rjt1990/pyflux",
     "latest": "0.4.15"
   },
   "ujson": {
     "name": "ujson",
     "author": "Jonas Tarnstrom",
     "summary": "Ultra fast JSON encoder and decoder for Python",
-    "homepage": "https://pypi.org/project/ujson/",
+    "homepage": "https://github.com/ultrajson/ultrajson",
     "latest": "4.1.0"
   },
   "rope": {
     "name": "rope",
     "author": "Ali Gholami Rudi",
     "summary": "a python refactoring library...",
-    "homepage": "https://pypi.org/project/rope/",
+    "homepage": "https://github.com/python-rope/rope",
     "latest": "0.19.0"
   },
   "jupyter-client": {
     "name": "jupyter-client",
     "author": "Jupyter Development Team",
     "summary": "Jupyter protocol implementation and client libraries",
-    "homepage": "https://pypi.org/project/jupyter-client/",
+    "homepage": "https://jupyter.org",
     "latest": "7.0.1"
   },
   "twine": {
     "name": "twine",
     "author": "Donald Stufft and individual contributors",
     "summary": "Collection of utilities for publishing packages on PyPI",
-    "homepage": "https://pypi.org/project/twine/",
+    "homepage": "https://twine.readthedocs.io/",
     "latest": "3.4.2"
   },
   "jupyterlab-pygments": {
     "name": "jupyterlab-pygments",
     "author": "Jupyter Development Team",
     "summary": "Pygments theme using JupyterLab CSS variables",
-    "homepage": "https://pypi.org/project/jupyterlab-pygments/",
+    "homepage": "http://jupyter.org",
     "latest": "0.1.2"
   },
   "httpx": {
     "name": "httpx",
     "author": "Tom Christie",
     "summary": "The next generation HTTP client.",
-    "homepage": "https://pypi.org/project/httpx/",
+    "homepage": "https://github.com/encode/httpx",
     "latest": "0.19.0"
   },
   "srsly": {
     "name": "srsly",
     "author": "Explosion",
     "summary": "Modern high-performance serialization utilities for Python",
-    "homepage": "https://pypi.org/project/srsly/",
+    "homepage": "https://github.com/explosion/srsly",
     "latest": "2.4.1"
   },
   "folium": {
     "name": "folium",
     "author": "Rob Story",
     "summary": "Make beautiful maps with Leaflet.js & Python",
-    "homepage": "https://pypi.org/project/folium/",
+    "homepage": "https://github.com/python-visualization/folium",
     "latest": "0.12.1"
   },
   "spacy-legacy": {
     "name": "spacy-legacy",
     "author": "Explosion",
     "summary": "Legacy registered functions for spaCy backwards compatibility",
-    "homepage": "https://pypi.org/project/spacy-legacy/",
+    "homepage": "https://spacy.io",
     "latest": "3.0.8"
   },
   "ipython": {
     "name": "ipython",
     "author": "The IPython Development Team",
     "summary": "IPython: Productive Interactive Computing",
-    "homepage": "https://pypi.org/project/ipython/",
-    "latest": "7.26.0"
+    "homepage": "https://ipython.org",
+    "latest": "7.27.0"
   },
   "plotly": {
     "name": "plotly",
     "author": "Chris P",
     "summary": "An open-source, interactive data visualization library for Python",
-    "homepage": "https://pypi.org/project/plotly/",
-    "latest": "5.2.2"
+    "homepage": "https://plotly.com/python/",
+    "latest": "5.3.0"
   },
   "papermill": {
     "name": "papermill",
     "author": "nteract contributors",
     "summary": "Parametrize and run Jupyter and nteract Notebooks",
-    "homepage": "https://pypi.org/project/papermill/",
+    "homepage": "https://github.com/nteract/papermill",
     "latest": "2.3.3"
   },
   "jupyter-server-mathjax": {
     "name": "jupyter-server-mathjax",
     "author": "Jupyter Development Team",
     "summary": "MathJax resources as a Jupyter Server Extension.",
-    "homepage": "https://pypi.org/project/jupyter-server-mathjax/",
+    "homepage": "http://jupyter.org",
     "latest": "0.2.3"
   },
   "atomicwrites": {
     "name": "atomicwrites",
     "author": "Markus Unterwaditzer",
     "summary": "Atomic file writes.",
-    "homepage": "https://pypi.org/project/atomicwrites/",
+    "homepage": "https://github.com/untitaker/python-atomicwrites",
     "latest": "1.4.0"
   },
   "textdistance": {
     "name": "textdistance",
     "author": "orsinium",
     "summary": "Compute distance between the two texts.",
-    "homepage": "https://pypi.org/project/textdistance/",
+    "homepage": "https://github.com/orsinium/textdistance",
     "latest": "4.2.1"
   },
   "selenium": {
     "name": "selenium",
     "author": "",
     "summary": "Python bindings for Selenium",
-    "homepage": "https://pypi.org/project/selenium/",
+    "homepage": "https://github.com/SeleniumHQ/selenium/",
     "latest": "3.141.0"
   },
   "isodate": {
     "name": "isodate",
     "author": "Gerhard Weis",
     "summary": "An ISO 8601 date/time/duration parser and formatter",
-    "homepage": "https://pypi.org/project/isodate/",
+    "homepage": "https://github.com/gweis/isodate/",
     "latest": "0.6.0"
   },
   "plotnine": {
     "name": "plotnine",
     "author": "",
     "summary": "A grammar of graphics for python",
-    "homepage": "https://pypi.org/project/plotnine/",
+    "homepage": "https://github.com/has2k1/plotnine",
     "latest": "0.8.0"
   },
   "poyo": {
     "name": "poyo",
     "author": "Raphael Pierzina",
     "summary": "A lightweight YAML Parser for Python. 🐓",
-    "homepage": "https://pypi.org/project/poyo/",
+    "homepage": "https://github.com/hackebrot/poyo",
     "latest": "0.5.0"
   },
   "shap": {
     "name": "shap",
     "author": "Scott Lundberg",
     "summary": "A unified approach to explain the output of any machine learning model.",
-    "homepage": "https://pypi.org/project/shap/",
+    "homepage": "http://github.com/slundberg/shap",
     "latest": "0.39.0"
   },
   "pyqtgraph": {
     "name": "pyqtgraph",
     "author": "Luke Campagnola",
     "summary": "Scientific Graphics and GUI Library for Python",
-    "homepage": "https://pypi.org/project/pyqtgraph/",
+    "homepage": "http://www.pyqtgraph.org",
     "latest": "0.12.2"
   },
   "janus": {
     "name": "janus",
     "author": "Andrew Svetlov",
     "summary": "Mixed sync-async queue to interoperate between asyncio tasks and classic threads",
-    "homepage": "https://pypi.org/project/janus/",
+    "homepage": "https://github.com/aio-libs/janus/",
     "latest": "0.6.1"
   },
   "ruamel.yaml": {
     "name": "ruamel.yaml",
     "author": "Anthon van der Neut",
     "summary": "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order",
-    "homepage": "https://pypi.org/project/ruamel.yaml/",
-    "latest": "0.17.14"
+    "homepage": "https://sourceforge.net/p/ruamel-yaml/code/ci/default/tree",
+    "latest": "0.17.16"
   },
   "readme-renderer": {
     "name": "readme-renderer",
     "author": "The Python Packaging Authority",
     "summary": "readme_renderer is a library for rendering \"readme\" descriptions for Warehouse",
-    "homepage": "https://pypi.org/project/readme-renderer/",
+    "homepage": "https://github.com/pypa/readme_renderer",
     "latest": "29.0"
   },
   "html5lib": {
     "name": "html5lib",
     "author": "",
     "summary": "HTML parser based on the WHATWG HTML specification",
-    "homepage": "https://pypi.org/project/html5lib/",
+    "homepage": "https://github.com/html5lib/html5lib-python",
     "latest": "1.1"
   },
   "fastprogress": {
     "name": "fastprogress",
     "author": "Sylvain Gugger",
     "summary": "A nested progress with plotting options for fastai",
-    "homepage": "https://pypi.org/project/fastprogress/",
+    "homepage": "https://github.com/fastai/fastprogress",
     "latest": "1.0.0"
   },
   "cytoolz": {
     "name": "cytoolz",
     "author": "https://raw.github.com/pytoolz/cytoolz/master/AUTHORS.md",
     "summary": "Cython implementation of Toolz: High performance functional utilities",
-    "homepage": "https://pypi.org/project/cytoolz/",
+    "homepage": "https://github.com/pytoolz/cytoolz",
     "latest": "0.11.0"
   },
   "dash-bootstrap-components": {
     "name": "dash-bootstrap-components",
     "author": "Faculty",
     "summary": "Bootstrap themed components for use in Plotly Dash",
-    "homepage": "https://pypi.org/project/dash-bootstrap-components/",
+    "homepage": "https://dash-bootstrap-components.opensource.faculty.ai/",
     "latest": "0.13.0"
   },
   "threadpoolctl": {
     "name": "threadpoolctl",
     "author": "Thomas Moreau",
     "summary": "threadpoolctl",
-    "homepage": "https://pypi.org/project/threadpoolctl/",
+    "homepage": "https://github.com/joblib/threadpoolctl",
     "latest": "2.2.0"
   },
   "NLopt": {
     "name": "nlopt",
     "author": "Daniel Bok",
     "summary": "Library for nonlinear optimization, wrapping many algorithms for global and local, constrained or unconstrained, optimization",
-    "homepage": "https://pypi.org/project/nlopt/",
+    "homepage": "",
     "latest": "2.7.0"
   },
   "fsspec": {
     "name": "fsspec",
     "author": "",
     "summary": "File-system specification",
-    "homepage": "https://pypi.org/project/fsspec/",
+    "homepage": "http://github.com/intake/filesystem_spec",
     "latest": "2021.7.0"
   },
   "tblib": {
     "name": "tblib",
     "author": "Ionel Cristian Mărieș",
     "summary": "Traceback serialization library.",
-    "homepage": "https://pypi.org/project/tblib/",
+    "homepage": "https://github.com/ionelmc/python-tblib",
     "latest": "1.7.0"
   },
   "pyrsistent": {
     "name": "pyrsistent",
     "author": "Tobias Gustafsson",
     "summary": "Persistent/Functional/Immutable data structures",
-    "homepage": "https://pypi.org/project/pyrsistent/",
+    "homepage": "http://github.com/tobgu/pyrsistent/",
     "latest": "0.18.0"
   },
   "dash-renderer": {
     "name": "dash-renderer",
     "author": "Chris Parmer",
     "summary": "Front-end component renderer for Dash",
-    "homepage": "https://pypi.org/project/dash-renderer/",
+    "homepage": "",
     "latest": "1.9.1"
   },
   "docutils": {
     "name": "docutils",
     "author": "David Goodger",
     "summary": "Docutils -- Python Documentation Utilities",
-    "homepage": "https://pypi.org/project/docutils/",
+    "homepage": "http://docutils.sourceforge.net/",
     "latest": "0.17.1"
   },
   "amply": {
     "name": "amply",
     "author": "Will Usher,Christophe-Marie Duquesne,Stuart Mitchell,Franco Peschiera,Stu,smit023,Q. Lim",
     "summary": "Amply allows you to load and manipulate AMPL/GLPK data as Python data structures",
-    "homepage": "https://pypi.org/project/amply/",
+    "homepage": "http://github.com/willu47/amply",
     "latest": "0.1.4"
   },
   "cftime": {
     "name": "cftime",
     "author": "Jeff Whitaker",
     "summary": "Time-handling functionality from netcdf4-python",
-    "homepage": "https://pypi.org/project/cftime/",
+    "homepage": "",
     "latest": "1.5.0"
   },
   "webencodings": {
     "name": "webencodings",
     "author": "Geoffrey Sneddon",
     "summary": "Character encoding aliases for legacy web content",
-    "homepage": "https://pypi.org/project/webencodings/",
+    "homepage": "https://github.com/SimonSapin/python-webencodings",
     "latest": "0.5.1"
   },
   "octave-kernel": {
     "name": "octave-kernel",
     "author": "",
     "summary": "A Jupyter kernel for Octave.",
-    "homepage": "https://pypi.org/project/octave-kernel/",
+    "homepage": "http://github.com/Calysto/octave_kernel",
     "latest": "0.32.0"
   },
   "ipykernel": {
     "name": "ipykernel",
     "author": "IPython Development Team",
     "summary": "IPython Kernel for Jupyter",
-    "homepage": "https://pypi.org/project/ipykernel/",
+    "homepage": "https://ipython.org",
     "latest": "6.2.0"
   },
   "statsmodels": {
     "name": "statsmodels",
     "author": "",
     "summary": "Statistical computations and models for Python",
-    "homepage": "https://pypi.org/project/statsmodels/",
+    "homepage": "https://www.statsmodels.org/",
     "latest": "0.12.2"
   },
   "wrapt": {
     "name": "wrapt",
     "author": "Graham Dumpleton",
     "summary": "Module for decorators, wrappers and monkey patching.",
-    "homepage": "https://pypi.org/project/wrapt/",
+    "homepage": "https://github.com/GrahamDumpleton/wrapt",
     "latest": "1.12.1"
   },
   "nbclient": {
     "name": "nbclient",
     "author": "Jupyter Development Team",
     "summary": "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor.",
-    "homepage": "https://pypi.org/project/nbclient/",
+    "homepage": "https://jupyter.org",
     "latest": "0.5.4"
   },
   "colorcet": {
     "name": "colorcet",
     "author": "James A. Bednar",
     "summary": "Collection of perceptually uniform colormaps",
-    "homepage": "https://pypi.org/project/colorcet/",
+    "homepage": "https://colorcet.holoviz.org",
     "latest": "2.0.6"
   },
   "redis": {
     "name": "redis",
     "author": "Andy McCurdy",
     "summary": "Python client for Redis key-value store",
-    "homepage": "https://pypi.org/project/redis/",
+    "homepage": "https://github.com/andymccurdy/redis-py",
     "latest": "3.5.3"
   },
   "zarr": {
     "name": "zarr",
     "author": "",
     "summary": "An implementation of chunked, compressed, N-dimensional arrays for Python.",
-    "homepage": "https://pypi.org/project/zarr/",
+    "homepage": "https://github.com/zarr-developers/zarr-python",
     "latest": "2.9.3"
   },
   "psycopg2": {
     "name": "psycopg2",
     "author": "Federico Di Gregorio",
     "summary": "psycopg2 - Python-PostgreSQL Database Adapter",
-    "homepage": "https://pypi.org/project/psycopg2/",
+    "homepage": "https://psycopg.org/",
     "latest": "2.9.1"
   },
   "isort": {
     "name": "isort",
     "author": "Timothy Crosley",
     "summary": "A Python utility / library to sort Python imports.",
-    "homepage": "https://pypi.org/project/isort/",
+    "homepage": "https://pycqa.github.io/isort/",
     "latest": "5.9.3"
   },
   "qpsolvers": {
     "name": "qpsolvers",
     "author": "Stéphane Caron",
     "summary": "Quadratic programming solvers in Python with a unified API",
-    "homepage": "https://pypi.org/project/qpsolvers/",
+    "homepage": "https://github.com/stephane-caron/qpsolvers",
     "latest": "1.6.1"
   },
   "numba": {
     "name": "numba",
     "author": "Anaconda, Inc.",
     "summary": "compiling Python code using LLVM",
-    "homepage": "https://pypi.org/project/numba/",
+    "homepage": "https://numba.pydata.org",
     "latest": "0.54.0"
   },
   "PyQt5-sip": {
     "name": "PyQt5-sip",
     "author": "Riverbank Computing Limited",
     "summary": "The sip module support for PyQt5",
-    "homepage": "https://pypi.org/project/PyQt5-sip/",
+    "homepage": "https://www.riverbankcomputing.com/software/sip/",
     "latest": "12.9.0"
   },
   "intervaltree": {
     "name": "intervaltree",
     "author": "Chaim Leib Halbert, Konstantin Tretyakov",
     "summary": "Editable interval tree data structure for Python 2 and 3",
-    "homepage": "https://pypi.org/project/intervaltree/",
+    "homepage": "https://github.com/chaimleib/intervaltree",
     "latest": "3.1.0"
   },
   "portpicker": {
     "name": "portpicker",
     "author": "",
     "summary": "A library to choose unique available network ports.",
-    "homepage": "https://pypi.org/project/portpicker/",
+    "homepage": "https://github.com/google/python_portpicker",
     "latest": "1.4.0"
   },
   "trio-asyncio": {
     "name": "trio-asyncio",
     "author": "Matthias Urlichs",
     "summary": "A re-implementation of the asyncio mainloop on top of Trio",
-    "homepage": "https://pypi.org/project/trio-asyncio/",
+    "homepage": "https://github.com/python-trio/trio-asyncio",
     "latest": "0.12.0"
   },
   "fastapi": {
     "name": "fastapi",
     "author": "Sebastián Ramírez",
     "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
-    "homepage": "https://pypi.org/project/fastapi/",
+    "homepage": "https://github.com/tiangolo/fastapi",
     "latest": "0.68.1"
   },
   "psutil": {
     "name": "psutil",
     "author": "Giampaolo Rodola",
     "summary": "Cross-platform lib for process and system monitoring in Python.",
-    "homepage": "https://pypi.org/project/psutil/",
+    "homepage": "https://github.com/giampaolo/psutil",
     "latest": "5.8.0"
   },
   "paramnb": {
     "name": "paramnb",
     "author": "PyViz",
     "summary": "Generate ipywidgets from Parameterized objects in the notebook",
-    "homepage": "https://pypi.org/project/paramnb/",
+    "homepage": "https://paramnb.pyviz.org",
     "latest": "2.0.4"
   },
   "astroML": {
     "name": "astroML",
     "author": "Jake VanderPlas",
     "summary": "tools for machine learning and data mining in Astronomy",
-    "homepage": "https://pypi.org/project/astroML/",
+    "homepage": "http://astroML.github.com",
     "latest": "0.4.1"
   },
   "mizani": {
     "name": "mizani",
     "author": "",
     "summary": "Scales for Python",
-    "homepage": "https://pypi.org/project/mizani/",
+    "homepage": "https://github.com/has2k1/mizani",
     "latest": "0.7.3"
   },
   "protobuf": {
     "name": "protobuf",
     "author": "",
     "summary": "Protocol Buffers",
-    "homepage": "https://pypi.org/project/protobuf/",
+    "homepage": "https://developers.google.com/protocol-buffers/",
     "latest": "3.17.3"
   },
   "async-generator": {
     "name": "async_generator",
     "author": "Nathaniel J. Smith",
     "summary": "Async generators and context managers for Python 3.5+",
-    "homepage": "https://pypi.org/project/async_generator/",
+    "homepage": "https://github.com/python-trio/async_generator",
     "latest": "1.10"
   },
   "astropy": {
     "name": "astropy",
     "author": "The Astropy Developers",
     "summary": "Astronomy and astrophysics core library",
-    "homepage": "https://pypi.org/project/astropy/",
+    "homepage": "http://astropy.org",
     "latest": "4.3.1"
   },
   "h2": {
     "name": "h2",
     "author": "Cory Benfield",
     "summary": "HTTP/2 State-Machine based protocol implementation",
-    "homepage": "https://pypi.org/project/h2/",
+    "homepage": "https://github.com/python-hyper/hyper-h2",
     "latest": "4.0.0"
   },
   "Flask-Login": {
     "name": "Flask-Login",
     "author": "Matthew Frazier",
     "summary": "User session management for Flask",
-    "homepage": "https://pypi.org/project/Flask-Login/",
+    "homepage": "https://github.com/maxcountryman/flask-login",
     "latest": "0.5.0"
   },
   "wasabi": {
     "name": "wasabi",
     "author": "Ines Montani",
     "summary": "A lightweight console printing and formatting toolkit",
-    "homepage": "https://pypi.org/project/wasabi/",
+    "homepage": "https://ines.io",
     "latest": "0.8.2"
   },
   "marshmallow": {
     "name": "marshmallow",
     "author": "Steven Loria",
     "summary": "A lightweight library for converting complex datatypes to and from native Python datatypes.",
-    "homepage": "https://pypi.org/project/marshmallow/",
+    "homepage": "https://github.com/marshmallow-code/marshmallow",
     "latest": "3.13.0"
   },
   "jupyter": {
     "name": "jupyter",
     "author": "Jupyter Development Team",
     "summary": "Jupyter metapackage. Install all the Jupyter components in one go.",
-    "homepage": "https://pypi.org/project/jupyter/",
+    "homepage": "http://jupyter.org",
     "latest": "1.0.0"
   },
   "anyio": {
     "name": "anyio",
     "author": "Alex Grönholm",
     "summary": "High level compatibility layer for multiple asynchronous event loop implementations",
-    "homepage": "https://pypi.org/project/anyio/",
+    "homepage": "",
     "latest": "3.3.0"
   },
   "datasette-graphql": {
     "name": "datasette-graphql",
     "author": "Simon Willison",
     "summary": "Datasette plugin providing an automatic GraphQL API for your SQLite databases",
-    "homepage": "https://pypi.org/project/datasette-graphql/",
+    "homepage": "https://github.com/simonw/datasette-graphql",
     "latest": "1.5"
   },
   "Werkzeug": {
     "name": "Werkzeug",
     "author": "Armin Ronacher",
     "summary": "The comprehensive WSGI web application library.",
-    "homepage": "https://pypi.org/project/Werkzeug/",
+    "homepage": "https://palletsprojects.com/p/werkzeug/",
     "latest": "2.0.1"
   },
   "pymc": {
     "name": "pymc",
     "author": "Christopher Fonnesbeck, Anand Patil and David Huard",
     "summary": "Markov Chain Monte Carlo sampling toolkit.",
-    "homepage": "https://pypi.org/project/pymc/",
+    "homepage": "http://github.com/pymc-devs/pymc",
     "latest": "2.3.8"
   },
   "itsdangerous": {
     "name": "itsdangerous",
     "author": "Armin Ronacher",
     "summary": "Safely pass data to untrusted environments and back.",
-    "homepage": "https://pypi.org/project/itsdangerous/",
+    "homepage": "https://palletsprojects.com/p/itsdangerous/",
     "latest": "2.0.1"
   },
   "vega": {
     "name": "vega",
     "author": "Dominik Moritz",
     "summary": "A Jupyter widget for Vega 5 and Vega-Lite 4",
-    "homepage": "https://pypi.org/project/vega/",
+    "homepage": "https://github.com/vega/ipyvega",
     "latest": "3.5.0"
   },
   "munch": {
     "name": "munch",
     "author": "Rotem Yaari",
     "summary": "A dot-accessible dictionary (a la JavaScript objects)",
-    "homepage": "https://pypi.org/project/munch/",
+    "homepage": "https://github.com/Infinidat/munch",
     "latest": "2.5.0"
   },
   "rasterio": {
     "name": "rasterio",
     "author": "Sean Gillies",
     "summary": "Fast and direct raster I/O for use with Numpy and SciPy",
-    "homepage": "https://pypi.org/project/rasterio/",
+    "homepage": "https://github.com/mapbox/rasterio",
     "latest": "1.2.6"
   },
   "torch": {
     "name": "torch",
     "author": "PyTorch Team",
     "summary": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-    "homepage": "https://pypi.org/project/torch/",
+    "homepage": "https://pytorch.org/",
     "latest": "1.9.0"
   },
   "graphql-core": {
     "name": "graphql-core",
     "author": "Christoph Zwerschke",
     "summary": "GraphQL implementation for Python, a port of GraphQL.js, the JavaScript reference implementation for GraphQL.",
-    "homepage": "https://pypi.org/project/graphql-core/",
+    "homepage": "https://github.com/graphql-python/graphql-core",
     "latest": "3.1.6"
   },
   "python-baseconv": {
     "name": "python-baseconv",
     "author": "Guilherme Gondim",
     "summary": "Convert numbers from base 10 integers to base X strings and back again.",
-    "homepage": "https://pypi.org/project/python-baseconv/",
+    "homepage": "https://github.com/semente/python-baseconv",
     "latest": "1.2.2"
   },
   "streamz": {
     "name": "streamz",
     "author": "",
     "summary": "Streams",
-    "homepage": "https://pypi.org/project/streamz/",
+    "homepage": "http://github.com/python-streamz/streamz/",
     "latest": "0.6.2"
   },
   "wordcloud": {
     "name": "wordcloud",
     "author": "Andreas Mueller",
     "summary": "A little word cloud generator",
-    "homepage": "https://pypi.org/project/wordcloud/",
+    "homepage": "https://github.com/amueller/word_cloud",
     "latest": "1.8.1"
   },
   "pywin32-ctypes": {
     "name": "pywin32-ctypes",
     "author": "Enthought Inc",
     "summary": "",
-    "homepage": "https://pypi.org/project/pywin32-ctypes/",
+    "homepage": "https://github.com/enthought/pywin32-ctypes",
     "latest": "0.2.0"
   },
   "seaborn": {
     "name": "seaborn",
     "author": "Michael Waskom",
     "summary": "seaborn: statistical data visualization",
-    "homepage": "https://pypi.org/project/seaborn/",
+    "homepage": "https://seaborn.pydata.org",
     "latest": "0.11.2"
   },
   "Send2Trash": {
     "name": "Send2Trash",
     "author": "Andrew Senetar",
     "summary": "Send file to trash natively under Mac OS X, Windows and Linux.",
-    "homepage": "https://pypi.org/project/Send2Trash/",
+    "homepage": "https://github.com/arsenetar/send2trash",
     "latest": "1.8.0"
   },
   "asgiref": {
     "name": "asgiref",
     "author": "Django Software Foundation",
     "summary": "ASGI specs, helper code, and adapters",
-    "homepage": "https://pypi.org/project/asgiref/",
+    "homepage": "https://github.com/django/asgiref/",
     "latest": "3.4.1"
   },
   "cycler": {
     "name": "Cycler",
     "author": "Thomas A Caswell",
     "summary": "Composable style cycles",
-    "homepage": "https://pypi.org/project/Cycler/",
+    "homepage": "http://github.com/matplotlib/cycler",
     "latest": "0.10.0"
   },
   "sphinxcontrib-jsmath": {
     "name": "sphinxcontrib-jsmath",
     "author": "Georg Brandl",
     "summary": "A sphinx extension which renders display math in HTML via JavaScript",
-    "homepage": "https://pypi.org/project/sphinxcontrib-jsmath/",
+    "homepage": "http://sphinx-doc.org/",
     "latest": "1.0.1"
   },
   "pandas": {
     "name": "pandas",
     "author": "The Pandas Development Team",
     "summary": "Powerful data structures for data analysis, time series, and statistics",
-    "homepage": "https://pypi.org/project/pandas/",
+    "homepage": "https://pandas.pydata.org",
     "latest": "1.3.2"
   },
   "bokeh": {
     "name": "bokeh",
     "author": "Bokeh Team",
     "summary": "Interactive plots and applications in the browser from Python",
-    "homepage": "https://pypi.org/project/bokeh/",
+    "homepage": "http://github.com/bokeh/bokeh",
     "latest": "2.3.3"
   },
   "slicer": {
     "name": "slicer",
     "author": "InterpretML",
     "summary": "A small package for big slicing.",
-    "homepage": "https://pypi.org/project/slicer/",
+    "homepage": "https://github.com/interpretml/slicer",
     "latest": "0.0.7"
   },
   "jsonpointer": {
     "name": "jsonpointer",
     "author": "Stefan Kögl",
     "summary": "Identify specific nodes in a JSON document (RFC 6901)",
-    "homepage": "https://pypi.org/project/jsonpointer/",
+    "homepage": "https://github.com/stefankoegl/python-json-pointer",
     "latest": "2.1"
   },
   "chardet": {
     "name": "chardet",
     "author": "Mark Pilgrim",
     "summary": "Universal encoding detector for Python 2 and 3",
-    "homepage": "https://pypi.org/project/chardet/",
+    "homepage": "https://github.com/chardet/chardet",
     "latest": "4.0.0"
   },
   "moviepy": {
     "name": "moviepy",
     "author": "Zulko 2017",
     "summary": "Video editing with Python",
-    "homepage": "https://pypi.org/project/moviepy/",
+    "homepage": "https://zulko.github.io/moviepy/",
     "latest": "1.0.3"
   },
   "numexpr": {
     "name": "numexpr",
     "author": "David M. Cooke, Francesc Alted and others",
     "summary": "Fast numerical expression evaluator for NumPy",
-    "homepage": "https://pypi.org/project/numexpr/",
+    "homepage": "https://github.com/pydata/numexpr",
     "latest": "2.7.3"
   },
   "ansiwrap": {
     "name": "ansiwrap",
     "author": "Jonathan Eunice",
     "summary": "textwrap, but savvy to ANSI colors and styles",
-    "homepage": "https://pypi.org/project/ansiwrap/",
+    "homepage": "https://github.com/jonathaneunice/ansiwrap",
     "latest": "0.8.4"
   },
   "xlrd": {
     "name": "xlrd",
     "author": "Chris Withers",
     "summary": "Library for developers to extract data from Microsoft Excel (tm) .xls spreadsheet files",
-    "homepage": "https://pypi.org/project/xlrd/",
+    "homepage": "http://www.python-excel.org/",
     "latest": "2.0.1"
   },
   "promise": {
     "name": "promise",
     "author": "Syrus Akbary",
     "summary": "Promises/A+ implementation for Python",
-    "homepage": "https://pypi.org/project/promise/",
+    "homepage": "https://github.com/syrusakbary/promise",
     "latest": "2.3"
   },
   "tables": {
     "name": "tables",
     "author": "Francesc Alted, Ivan Vilata,Antonio Valentino, Anthony Scopatz et al.",
     "summary": "Hierarchical datasets for Python",
-    "homepage": "https://pypi.org/project/tables/",
+    "homepage": "http://www.pytables.org/",
     "latest": "3.6.1"
   },
   "pygame": {
     "name": "pygame",
     "author": "A community project.",
     "summary": "Python Game Development",
-    "homepage": "https://pypi.org/project/pygame/",
+    "homepage": "https://www.pygame.org",
     "latest": "2.0.1"
   },
   "idlex": {
     "name": "idlex",
     "author": "Roger D. Serwy",
     "summary": "IDLE Extensions for Python",
-    "homepage": "https://pypi.org/project/idlex/",
+    "homepage": "http://idlex.sourceforge.net",
     "latest": "1.18"
   },
   "Bottleneck": {
     "name": "Bottleneck",
     "author": "",
     "summary": "Fast NumPy array functions written in C",
-    "homepage": "https://pypi.org/project/Bottleneck/",
+    "homepage": "https://github.com/pydata/bottleneck",
     "latest": "1.3.2"
   },
   "backcall": {
     "name": "backcall",
     "author": "Thomas Kluyver",
     "summary": "Specifications for callback functions passed in to an API",
-    "homepage": "https://pypi.org/project/backcall/",
+    "homepage": "https://github.com/takluyver/backcall",
     "latest": "0.2.0"
   },
   "simplejson": {
     "name": "simplejson",
     "author": "Bob Ippolito",
     "summary": "Simple, fast, extensible JSON encoder/decoder for Python",
-    "homepage": "https://pypi.org/project/simplejson/",
+    "homepage": "https://github.com/simplejson/simplejson",
     "latest": "3.17.5"
   },
   "docopt": {
     "name": "docopt",
     "author": "Vladimir Keleshev",
     "summary": "Pythonic argument parser, that will make you smile",
-    "homepage": "https://pypi.org/project/docopt/",
+    "homepage": "http://docopt.org",
     "latest": "0.6.2"
   },
   "pluggy": {
     "name": "pluggy",
     "author": "Holger Krekel",
     "summary": "plugin and hook calling mechanisms for python",
-    "homepage": "https://pypi.org/project/pluggy/",
+    "homepage": "https://github.com/pytest-dev/pluggy",
     "latest": "1.0.0"
   },
   "blosc": {
     "name": "blosc",
     "author": "The Blosc development team",
     "summary": "Blosc data compressor",
-    "homepage": "https://pypi.org/project/blosc/",
+    "homepage": "http://github.com/blosc/python-blosc",
     "latest": "1.10.4"
   },
   "geopy": {
     "name": "geopy",
     "author": "",
     "summary": "Python Geocoding Toolbox",
-    "homepage": "https://pypi.org/project/geopy/",
+    "homepage": "https://github.com/geopy/geopy",
     "latest": "2.2.0"
   },
   "sphinxcontrib-applehelp": {
     "name": "sphinxcontrib-applehelp",
     "author": "Georg Brandl",
     "summary": "sphinxcontrib-applehelp is a sphinx extension which outputs Apple help books",
-    "homepage": "https://pypi.org/project/sphinxcontrib-applehelp/",
+    "homepage": "http://sphinx-doc.org/",
     "latest": "1.0.2"
   },
   "aniso8601": {
     "name": "aniso8601",
     "author": "Brandon Nielsen",
     "summary": "A library for parsing ISO 8601 strings.",
-    "homepage": "https://pypi.org/project/aniso8601/",
+    "homepage": "https://bitbucket.org/nielsenb/aniso8601",
     "latest": "9.0.1"
   },
   "urllib3": {
     "name": "urllib3",
     "author": "Andrey Petrov",
     "summary": "HTTP library with thread-safe connection pooling, file post, and more.",
-    "homepage": "https://pypi.org/project/urllib3/",
+    "homepage": "https://urllib3.readthedocs.io/",
     "latest": "1.26.6"
   },
   "et-xmlfile": {
     "name": "et-xmlfile",
     "author": "See ATUHORS.txt",
     "summary": "An implementation of lxml.xmlfile for the standard library",
-    "homepage": "https://pypi.org/project/et-xmlfile/",
+    "homepage": "https://foss.heptapod.net/openpyxl/et_xmlfile",
     "latest": "1.1.0"
   },
   "tranquilizer": {
     "name": "tranquilizer",
     "author": "Albert DeFusco",
     "summary": "Put your functions to REST",
-    "homepage": "https://pypi.org/project/tranquilizer/",
+    "homepage": "https://github.com/AlbertDeFusco/tranquilizer",
     "latest": "0.6.0"
   },
   "smmap": {
     "name": "smmap",
     "author": "Sebastian Thiel",
     "summary": "A pure Python implementation of a sliding window memory map manager",
-    "homepage": "https://pypi.org/project/smmap/",
+    "homepage": "https://github.com/gitpython-developers/smmap",
     "latest": "4.0.0"
   },
   "bleach": {
     "name": "bleach",
     "author": "",
     "summary": "An easy safelist-based HTML-sanitizing tool.",
-    "homepage": "https://pypi.org/project/bleach/",
+    "homepage": "https://github.com/mozilla/bleach",
     "latest": "4.1.0"
   },
   "defusedxml": {
     "name": "defusedxml",
     "author": "Christian Heimes",
     "summary": "XML bomb protection for Python stdlib modules",
-    "homepage": "https://pypi.org/project/defusedxml/",
+    "homepage": "https://github.com/tiran/defusedxml",
     "latest": "0.7.1"
   },
   "coverage": {
     "name": "coverage",
     "author": "Ned Batchelder and 142 others",
     "summary": "Code coverage measurement for Python",
-    "homepage": "https://pypi.org/project/coverage/",
+    "homepage": "https://github.com/nedbat/coveragepy",
     "latest": "5.5"
   },
   "networkx": {
     "name": "networkx",
     "author": "Aric Hagberg",
     "summary": "Python package for creating and manipulating graphs and networks",
-    "homepage": "https://pypi.org/project/networkx/",
+    "homepage": "https://networkx.org/",
     "latest": "2.6.2"
   },
   "idna": {
     "name": "idna",
     "author": "Kim Davies",
     "summary": "Internationalized Domain Names in Applications (IDNA)",
-    "homepage": "https://pypi.org/project/idna/",
+    "homepage": "https://github.com/kjd/idna",
     "latest": "3.2"
   },
   "adodbapi": {
     "name": "adodbapi",
     "author": "Henrik Ekelund, Vernon Cole, et.al.",
     "summary": "A pure Python package implementing PEP 249 DB-API using Microsoft ADO.",
-    "homepage": "https://pypi.org/project/adodbapi/",
+    "homepage": "http://sourceforge.net/projects/adodbapi",
     "latest": "2.6.2.0"
   },
   "pymongo": {
     "name": "pymongo",
     "author": "Bernie Hackett",
     "summary": "Python driver for MongoDB <http://www.mongodb.org>",
-    "homepage": "https://pypi.org/project/pymongo/",
+    "homepage": "http://github.com/mongodb/mongo-python-driver",
     "latest": "3.12.0"
   },
   "snowballstemmer": {
     "name": "snowballstemmer",
     "author": "Snowball Developers",
     "summary": "This package provides 29 stemmers for 28 languages generated from Snowball algorithms.",
-    "homepage": "https://pypi.org/project/snowballstemmer/",
+    "homepage": "https://github.com/snowballstem/snowball",
     "latest": "2.1.0"
   },
   "torchvision": {
     "name": "torchvision",
     "author": "PyTorch Core Team",
     "summary": "image and video datasets and models for torch deep learning",
-    "homepage": "https://pypi.org/project/torchvision/",
+    "homepage": "https://github.com/pytorch/vision",
     "latest": "0.10.0"
   },
   "dash-table": {
     "name": "dash-table",
     "author": "Chris Parmer <chris@plotly.com>",
     "summary": "Dash table",
-    "homepage": "https://pypi.org/project/dash-table/",
+    "homepage": "",
     "latest": "4.12.0"
   },
   "greenlet": {
     "name": "greenlet",
     "author": "",
     "summary": "Lightweight in-process concurrent programming",
-    "homepage": "https://pypi.org/project/greenlet/",
+    "homepage": "https://greenlet.readthedocs.io/",
     "latest": "1.1.1"
   },
   "GDAL": {
     "name": "GDAL",
     "author": "Frank Warmerdam",
     "summary": "GDAL: Geospatial Data Abstraction Library",
-    "homepage": "https://pypi.org/project/GDAL/",
+    "homepage": "http://www.gdal.org",
     "latest": "3.3.1"
   },
   "h11": {
     "name": "h11",
     "author": "Nathaniel J. Smith",
     "summary": "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1",
-    "homepage": "https://pypi.org/project/h11/",
+    "homepage": "https://github.com/python-hyper/h11",
     "latest": "0.12.0"
   },
   "pandocfilters": {
     "name": "pandocfilters",
     "author": "John MacFarlane",
     "summary": "Utilities for writing pandoc filters in python",
-    "homepage": "https://pypi.org/project/pandocfilters/",
+    "homepage": "http://github.com/jgm/pandocfilters",
     "latest": "1.4.3"
   },
   "yapf": {
     "name": "yapf",
     "author": "Google Inc.",
     "summary": "A formatter for Python code.",
-    "homepage": "https://pypi.org/project/yapf/",
+    "homepage": "",
     "latest": "0.31.0"
   },
   "great-expectations": {
     "name": "great-expectations",
     "author": "The Great Expectations Team",
     "summary": "Always know what to expect from your data.",
-    "homepage": "https://pypi.org/project/great-expectations/",
+    "homepage": "https://github.com/great-expectations/great_expectations",
     "latest": "0.13.31"
   },
   "distlib": {
     "name": "distlib",
     "author": "Vinay Sajip",
     "summary": "Distribution utilities",
-    "homepage": "https://pypi.org/project/distlib/",
+    "homepage": "https://bitbucket.org/pypa/distlib",
     "latest": "0.3.2"
   },
   "pywin32": {
     "name": "pywin32",
     "author": "Mark Hammond (et al)",
     "summary": "Python for Window Extensions",
-    "homepage": "https://pypi.org/project/pywin32/",
+    "homepage": "https://github.com/mhammond/pywin32",
     "latest": "301"
   },
   "uncertainties": {
     "name": "uncertainties",
     "author": "Eric O. LEBIGOT (EOL)",
     "summary": "Transparent calculations with uncertainties on the quantities involved (aka error propagation); fast calculation of derivatives",
-    "homepage": "https://pypi.org/project/uncertainties/",
+    "homepage": "http://uncertainties-python-package.readthedocs.io/",
     "latest": "3.1.6"
   },
   "parambokeh": {
     "name": "parambokeh",
     "author": "PyViz",
     "summary": "ParamBokeh provides an easy way to generate a UI for param based classes in the notebook or on bokeh server.",
-    "homepage": "https://pypi.org/project/parambokeh/",
+    "homepage": "https://parambokeh.pyviz.org",
     "latest": "0.2.3"
   },
   "imbalanced-learn": {
     "name": "imbalanced-learn",
     "author": "",
     "summary": "Toolbox for imbalanced dataset in machine learning.",
-    "homepage": "https://pypi.org/project/imbalanced-learn/",
+    "homepage": "https://github.com/scikit-learn-contrib/imbalanced-learn",
     "latest": "0.8.0"
   },
   "mercantile": {
     "name": "mercantile",
     "author": "Sean Gillies",
     "summary": "Web mercator XYZ tile utilities",
-    "homepage": "https://pypi.org/project/mercantile/",
+    "homepage": "https://github.com/mapbox/mercantile",
     "latest": "1.2.1"
   },
   "three-merge": {
     "name": "three-merge",
     "author": "Spyder Project Contributors",
     "summary": "Simple library for merging two strings with respect to a base one",
-    "homepage": "https://pypi.org/project/three-merge/",
+    "homepage": "https://github.com/spyder-ide/three-merge",
     "latest": "0.1.1"
   },
   "PythonQwt": {
     "name": "PythonQwt",
     "author": "Pierre Raybaut",
     "summary": "Qt plotting widgets for Python",
-    "homepage": "https://pypi.org/project/PythonQwt/",
+    "homepage": "https://github.com/PierreRaybaut/PythonQwt",
     "latest": "0.9.2"
   },
   "dash-extensions": {
     "name": "dash-extensions",
     "author": "Emil Eriksen <emil.h.eriksen@gmail.com>",
     "summary": "Extensions for Plotly Dash.",
-    "homepage": "https://pypi.org/project/dash-extensions/",
+    "homepage": "https://github.com/thedirtyfew/dash-extensions/",
     "latest": "0.0.60"
   },
   "pyzmq": {
     "name": "pyzmq",
     "author": "Brian E. Granger, Min Ragan-Kelley",
     "summary": "Python bindings for 0MQ",
-    "homepage": "https://pypi.org/project/pyzmq/",
+    "homepage": "https://pyzmq.readthedocs.org",
     "latest": "22.2.1"
   },
   "bqplot": {
     "name": "bqplot",
     "author": "The BQplot Development Team",
     "summary": "Interactive plotting for the Jupyter notebook, using d3.js and ipywidgets.",
-    "homepage": "https://pypi.org/project/bqplot/",
+    "homepage": "https://github.com/bqplot/bqplot",
     "latest": "0.12.30"
   },
   "iniconfig": {
     "name": "iniconfig",
     "author": "Ronny Pfannschmidt, Holger Krekel",
     "summary": "iniconfig: brain-dead simple config-ini parsing",
-    "homepage": "https://pypi.org/project/iniconfig/",
+    "homepage": "http://github.com/RonnyPfannschmidt/iniconfig",
     "latest": "1.1.1"
   },
   "nest-asyncio": {
     "name": "nest-asyncio",
     "author": "Ewald R. de Wit",
     "summary": "Patch asyncio to allow nested event loops",
-    "homepage": "https://pypi.org/project/nest-asyncio/",
+    "homepage": "https://github.com/erdewit/nest_asyncio",
     "latest": "1.5.1"
   },
   "Yapsy": {
     "name": "Yapsy",
     "author": "Thibauld Nion",
     "summary": "Yet another plugin system",
-    "homepage": "https://pypi.org/project/Yapsy/",
+    "homepage": "http://yapsy.sourceforge.net",
     "latest": "1.12.2"
   },
   "blis": {
     "name": "blis",
     "author": "Matthew Honnibal",
     "summary": "The Blis BLAS-like linear algebra library, as a self-contained C-extension.",
-    "homepage": "https://pypi.org/project/blis/",
+    "homepage": "https://github.com/explosion/cython-blis",
     "latest": "0.7.4"
   },
   "ply": {
     "name": "ply",
     "author": "David Beazley",
     "summary": "Python Lex & Yacc",
-    "homepage": "https://pypi.org/project/ply/",
+    "homepage": "http://www.dabeaz.com/ply/",
     "latest": "3.11"
   },
   "altair-widgets": {
     "name": "altair_widgets",
     "author": "Scott Sievert",
     "summary": "Altair Widgets: An interactive visualization for statistical data for Python.",
-    "homepage": "https://pypi.org/project/altair_widgets/",
+    "homepage": "http://altair-viz.github.io",
     "latest": "0.2.2"
   },
   "gmpy2": {
     "name": "gmpy2",
     "author": "Case Van Horsen",
     "summary": "GMP/MPIR, MPFR, and MPC interface to Python 2.6+ and 3.x",
-    "homepage": "https://pypi.org/project/gmpy2/",
+    "homepage": "https://github.com/aleaxit/gmpy",
     "latest": "2.0.8"
   },
   "flit-core": {
     "name": "flit-core",
     "author": "Thomas Kluyver & contributors",
     "summary": "Distribution-building parts of Flit. See flit package for more information",
-    "homepage": "https://pypi.org/project/flit-core/",
+    "homepage": "https://github.com/takluyver/flit",
     "latest": "3.3.0"
   },
   "black": {
     "name": "black",
     "author": "Łukasz Langa",
     "summary": "The uncompromising code formatter.",
-    "homepage": "https://pypi.org/project/black/",
-    "latest": "21.7b0"
+    "homepage": "https://github.com/psf/black",
+    "latest": "21.8b0"
   },
   "quadprog": {
     "name": "quadprog",
     "author": "Robert T. McGibbon",
     "summary": "Quadratic Programming Solver",
-    "homepage": "https://pypi.org/project/quadprog/",
+    "homepage": "https://github.com/rmcgibbo/quadprog",
     "latest": "0.1.8"
   },
   "jinja2-time": {
     "name": "jinja2-time",
     "author": "Raphael Pierzina",
     "summary": "Jinja2 Extension for Dates and Times",
-    "homepage": "https://pypi.org/project/jinja2-time/",
+    "homepage": "https://github.com/hackebrot/jinja2-time",
     "latest": "0.2.0"
   },
   "soupsieve": {
     "name": "soupsieve",
     "author": "Isaac Muse",
     "summary": "A modern CSS selector implementation for Beautiful Soup.",
-    "homepage": "https://pypi.org/project/soupsieve/",
+    "homepage": "https://github.com/facelessuser/soupsieve",
     "latest": "2.2.1"
   },
   "termcolor": {
     "name": "termcolor",
     "author": "Konstantin Lepa",
     "summary": "ANSII Color formatting for output in terminal.",
-    "homepage": "https://pypi.org/project/termcolor/",
+    "homepage": "http://pypi.python.org/pypi/termcolor",
     "latest": "1.1.0"
   },
   "XlsxWriter": {
     "name": "XlsxWriter",
     "author": "John McNamara",
     "summary": "A Python module for creating Excel XLSX files.",
-    "homepage": "https://pypi.org/project/XlsxWriter/",
+    "homepage": "https://github.com/jmcnamara/XlsxWriter",
     "latest": "3.0.1"
   },
   "pdvega": {
     "name": "pdvega",
     "author": "Jake VanderPlas",
     "summary": "Pandas plotting interface to Vega and Vega-Lite",
-    "homepage": "https://pypi.org/project/pdvega/",
+    "homepage": "http://jakevdp.github.io/pdvega/",
     "latest": "0.1"
   },
   "pyshp": {
     "name": "pyshp",
     "author": "Joel Lawhead",
     "summary": "Pure Python read/write support for ESRI Shapefile format",
-    "homepage": "https://pypi.org/project/pyshp/",
+    "homepage": "https://github.com/GeospatialPython/pyshp",
     "latest": "2.1.3"
   },
   "jupyterlab-launcher": {
     "name": "jupyterlab-launcher",
     "author": "Jupyter Development Team",
     "summary": "Jupyter Launcher",
-    "homepage": "https://pypi.org/project/jupyterlab-launcher/",
+    "homepage": "http://jupyter.org",
     "latest": "0.13.1"
   },
   "lz4": {
     "name": "lz4",
     "author": "Jonathan Underwood",
     "summary": "LZ4 Bindings for Python",
-    "homepage": "https://pypi.org/project/lz4/",
+    "homepage": "https://github.com/python-lz4/python-lz4",
     "latest": "3.1.3"
   },
   "nbconvert-reportlab": {
     "name": "nbconvert_reportlab",
     "author": "Thomas Kluyver",
     "summary": "Convert notebooks to PDF using Reportlab",
-    "homepage": "https://pypi.org/project/nbconvert_reportlab/",
+    "homepage": "https://github.com/takluyver/nbconvert-reportlab",
     "latest": "0.2"
   },
   "matplotlib": {
     "name": "matplotlib",
     "author": "John D. Hunter, Michael Droettboom",
     "summary": "Python plotting package",
-    "homepage": "https://pypi.org/project/matplotlib/",
+    "homepage": "https://matplotlib.org",
     "latest": "3.4.3"
   },
   "openpyxl": {
     "name": "openpyxl",
     "author": "See AUTHORS",
     "summary": "A Python library to read/write Excel 2010 xlsx/xlsm files",
-    "homepage": "https://pypi.org/project/openpyxl/",
+    "homepage": "https://openpyxl.readthedocs.io",
     "latest": "3.0.7"
   },
   "uvicorn": {
     "name": "uvicorn",
     "author": "Tom Christie",
     "summary": "The lightning-fast ASGI server.",
-    "homepage": "https://pypi.org/project/uvicorn/",
+    "homepage": "https://www.uvicorn.org/",
     "latest": "0.15.0"
   },
   "fastcore": {
     "name": "fastcore",
     "author": "Jeremy Howard and Sylvain Gugger",
     "summary": "Python supercharged for fastai development",
-    "homepage": "https://pypi.org/project/fastcore/",
+    "homepage": "https://github.com/fastai/fastcore/tree/master/",
     "latest": "1.3.26"
   },
   "joblib": {
     "name": "joblib",
     "author": "Gael Varoquaux",
     "summary": "Lightweight pipelining with Python functions",
-    "homepage": "https://pypi.org/project/joblib/",
+    "homepage": "https://joblib.readthedocs.io",
     "latest": "1.0.1"
   },
   "argon2-cffi": {
     "name": "argon2-cffi",
     "author": "Hynek Schlawack",
     "summary": "The secure Argon2 password hashing algorithm.",
-    "homepage": "https://pypi.org/project/argon2-cffi/",
-    "latest": "20.1.0"
+    "homepage": "https://argon2-cffi.readthedocs.io/",
+    "latest": "21.1.0"
   },
   "jupyterlab-lsp": {
     "name": "jupyterlab-lsp",
     "author": "JupyterLab-LSP Development Team",
     "summary": "Coding assistance for JupyterLab with Language Server Protocol",
-    "homepage": "https://pypi.org/project/jupyterlab-lsp/",
+    "homepage": "",
     "latest": "3.8.1"
   },
   "Pint": {
     "name": "Pint",
     "author": "Hernan E. Grecco",
     "summary": "Physical quantities module",
-    "homepage": "https://pypi.org/project/Pint/",
+    "homepage": "https://github.com/hgrecco/pint",
     "latest": "0.17"
   },
   "QDarkStyle": {
     "name": "QDarkStyle",
     "author": "Colin Duquesnoy",
     "summary": "The most complete dark/light style sheet for C++/Python and Qt applications",
-    "homepage": "https://pypi.org/project/QDarkStyle/",
+    "homepage": "https://github.com/ColinDuquesnoy/QDarkStyleSheet",
     "latest": "3.0.2"
   },
   "pyerfa": {
     "name": "pyerfa",
     "author": "The PyERFA Developers",
     "summary": "Python bindings for ERFA",
-    "homepage": "https://pypi.org/project/pyerfa/",
+    "homepage": "https://github.com/liberfa/pyerfa",
     "latest": "2.0.0"
   },
   "Flask-Cors": {
     "name": "Flask-Cors",
     "author": "Cory Dolphin",
     "summary": "A Flask extension adding a decorator for CORS support",
-    "homepage": "https://pypi.org/project/Flask-Cors/",
+    "homepage": "https://github.com/corydolphin/flask-cors",
     "latest": "3.0.10"
   },
   "dash-tabulator": {
     "name": "dash-tabulator",
     "author": "patrick oleary <pjaol+dash@pjaol.com>",
     "summary": "Dash Plotly component providing Tabulator tables",
-    "homepage": "https://pypi.org/project/dash-tabulator/",
+    "homepage": "https://github.com/preftech/dash-tabulator",
     "latest": "0.4.2"
   },
   "altair-data-server": {
     "name": "altair-data-server",
     "author": "Jake VanderPlas",
     "summary": "A background data server for Altair charts.",
-    "homepage": "https://pypi.org/project/altair-data-server/",
+    "homepage": "http://github.com/altair-viz/altair_data_server/",
     "latest": "0.4.1"
   },
   "certifi": {
     "name": "certifi",
     "author": "Kenneth Reitz",
     "summary": "Python package for providing Mozilla's CA Bundle.",
-    "homepage": "https://pypi.org/project/certifi/",
+    "homepage": "https://certifiio.readthedocs.io/en/latest/",
     "latest": "2021.5.30"
   },
   "priority": {
     "name": "priority",
     "author": "Cory Benfield",
     "summary": "A pure-Python implementation of the HTTP/2 priority tree",
-    "homepage": "https://pypi.org/project/priority/",
+    "homepage": "https://github.com/python-hyper/priority/",
     "latest": "2.0.0"
   },
   "catalogue": {
     "name": "catalogue",
     "author": "Explosion",
     "summary": "Super lightweight function registries for your library",
-    "homepage": "https://pypi.org/project/catalogue/",
+    "homepage": "https://github.com/explosion/catalogue",
     "latest": "2.0.6"
   },
   "hpack": {
     "name": "hpack",
     "author": "Cory Benfield",
     "summary": "Pure-Python HPACK header compression",
-    "homepage": "https://pypi.org/project/hpack/",
+    "homepage": "https://github.com/python-hyper/hpack",
     "latest": "4.0.0"
   },
   "nbval": {
     "name": "nbval",
     "author": "Laslett, Cortes, Fauske, Kluyver, Pepper, Fangohr",
     "summary": "A py.test plugin to validate Jupyter notebooks",
-    "homepage": "https://pypi.org/project/nbval/",
+    "homepage": "https://github.com/computationalmodelling/nbval",
     "latest": "0.9.6"
   },
   "graphene": {
     "name": "graphene",
     "author": "Syrus Akbary",
     "summary": "GraphQL Framework for Python",
-    "homepage": "https://pypi.org/project/graphene/",
+    "homepage": "https://github.com/graphql-python/graphene",
     "latest": "2.1.9"
   },
   "dash": {
     "name": "dash",
     "author": "Chris Parmer",
     "summary": "A Python framework for building reactive web-apps. Developed by Plotly.",
-    "homepage": "https://pypi.org/project/dash/",
+    "homepage": "https://plotly.com/dash",
     "latest": "1.21.0"
   },
   "attrs": {
     "name": "attrs",
     "author": "Hynek Schlawack",
     "summary": "Classes Without Boilerplate",
-    "homepage": "https://pypi.org/project/attrs/",
+    "homepage": "https://www.attrs.org/",
     "latest": "21.2.0"
   },
   "pyviz-comms": {
     "name": "pyviz-comms",
     "author": "Philipp Rudiger",
     "summary": "Bidirectional communication for the HoloViz ecosystem.",
-    "homepage": "https://pypi.org/project/pyviz-comms/",
+    "homepage": "https://holoviz.org",
     "latest": "2.1.0"
   },
   "trio": {
     "name": "trio",
     "author": "Nathaniel J. Smith",
     "summary": "A friendly Python library for async concurrency and I/O",
-    "homepage": "https://pypi.org/project/trio/",
+    "homepage": "https://github.com/python-trio/trio",
     "latest": "0.19.0"
   },
   "ptpython": {
     "name": "ptpython",
     "author": "Jonathan Slenders",
     "summary": "Python REPL build on top of prompt_toolkit",
-    "homepage": "https://pypi.org/project/ptpython/",
+    "homepage": "https://github.com/prompt-toolkit/ptpython",
     "latest": "3.0.19"
   },
   "spacy": {
     "name": "spacy",
     "author": "Explosion",
     "summary": "Industrial-strength Natural Language Processing (NLP) in Python",
-    "homepage": "https://pypi.org/project/spacy/",
+    "homepage": "https://spacy.io",
     "latest": "3.1.2"
   },
   "colorama": {
     "name": "colorama",
     "author": "Jonathan Hartley",
     "summary": "Cross-platform colored terminal text.",
-    "homepage": "https://pypi.org/project/colorama/",
+    "homepage": "https://github.com/tartley/colorama",
     "latest": "0.4.4"
   },
   "kiwisolver": {
     "name": "kiwisolver",
     "author": "The Nucleic Development Team",
     "summary": "A fast implementation of the Cassowary constraint solver",
-    "homepage": "https://pypi.org/project/kiwisolver/",
-    "latest": "1.3.1"
+    "homepage": "https://github.com/nucleic/kiwi",
+    "latest": "1.3.2"
   },
   "Fiona": {
     "name": "Fiona",
     "author": "Sean Gillies",
     "summary": "Fiona reads and writes spatial data files",
-    "homepage": "https://pypi.org/project/Fiona/",
+    "homepage": "http://github.com/Toblerity/Fiona",
     "latest": "1.8.20"
   },
   "mypy": {
     "name": "mypy",
     "author": "Jukka Lehtosalo",
     "summary": "Optional static typing for Python",
-    "homepage": "https://pypi.org/project/mypy/",
+    "homepage": "http://www.mypy-lang.org/",
     "latest": "0.910"
   },
   "prometheus-client": {
     "name": "prometheus-client",
     "author": "Brian Brazil",
     "summary": "Python client for the Prometheus monitoring system.",
-    "homepage": "https://pypi.org/project/prometheus-client/",
+    "homepage": "https://github.com/prometheus/client_python",
     "latest": "0.11.0"
   },
   "Jinja2": {
     "name": "Jinja2",
     "author": "Armin Ronacher",
     "summary": "A very fast and expressive template engine.",
-    "homepage": "https://pypi.org/project/Jinja2/",
+    "homepage": "https://palletsprojects.com/p/jinja/",
     "latest": "3.0.1"
   },
   "pylint": {
     "name": "pylint",
     "author": "Python Code Quality Authority",
     "summary": "python code static checker",
-    "homepage": "https://pypi.org/project/pylint/",
+    "homepage": "https://github.com/PyCQA/pylint",
     "latest": "2.10.2"
   },
   "SPARQLWrapper": {
     "name": "SPARQLWrapper",
     "author": "Ivan Herman, Sergio Fernández, Carlos Tejo Alonso, Alexey Zakhlestin",
     "summary": "SPARQL Endpoint interface to Python",
-    "homepage": "https://pypi.org/project/SPARQLWrapper/",
+    "homepage": "http://rdflib.github.io/sparqlwrapper",
     "latest": "1.8.5"
   },
   "mistune": {
     "name": "mistune",
     "author": "Hsiaoming Yang",
     "summary": "The fastest markdown parser in pure Python",
-    "homepage": "https://pypi.org/project/mistune/",
+    "homepage": "https://github.com/lepture/mistune",
     "latest": "0.8.4"
   },
   "python-snappy": {
     "name": "python-snappy",
     "author": "Andres Moreira",
     "summary": "Python library for the snappy compression library from Google",
-    "homepage": "https://pypi.org/project/python-snappy/",
+    "homepage": "http://github.com/andrix/python-snappy",
     "latest": "0.6.0"
   },
   "hypothesis": {
     "name": "hypothesis",
     "author": "David R. MacIver and Zac Hatfield-Dodds",
     "summary": "A library for property-based testing",
-    "homepage": "https://pypi.org/project/hypothesis/",
-    "latest": "6.15.0"
+    "homepage": "https://hypothesis.works",
+    "latest": "6.17.1"
   },
   "dask": {
     "name": "dask",
     "author": "",
     "summary": "Parallel PyData with Task Scheduling",
-    "homepage": "https://pypi.org/project/dask/",
+    "homepage": "https://github.com/dask/dask/",
     "latest": "2021.8.1"
   },
   "zict": {
     "name": "zict",
     "author": "",
     "summary": "Mutable mapping tools",
-    "homepage": "https://pypi.org/project/zict/",
+    "homepage": "http://zict.readthedocs.io/en/latest/",
     "latest": "2.0.0"
   },
   "mypy-extensions": {
     "name": "mypy-extensions",
     "author": "The mypy developers",
     "summary": "Experimental type system extensions for programs checked with the mypy typechecker.",
-    "homepage": "https://pypi.org/project/mypy-extensions/",
+    "homepage": "https://github.com/python/mypy_extensions",
     "latest": "0.4.3"
   },
   "lxml": {
     "name": "lxml",
     "author": "lxml dev team",
     "summary": "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.",
-    "homepage": "https://pypi.org/project/lxml/",
+    "homepage": "https://lxml.de/",
     "latest": "4.6.3"
   },
   "altair": {
     "name": "altair",
     "author": "Brian E. Granger / Jake VanderPlas",
     "summary": "Altair: A declarative statistical visualization library for Python.",
-    "homepage": "https://pypi.org/project/altair/",
+    "homepage": "http://altair-viz.github.io",
     "latest": "4.1.0"
   },
   "emcee": {
     "name": "emcee",
     "author": "Daniel Foreman-Mackey",
     "summary": "The Python ensemble sampling toolkit for MCMC",
-    "homepage": "https://pypi.org/project/emcee/",
+    "homepage": "https://emcee.readthedocs.io",
     "latest": "3.1.1"
   },
   "dash-core-components": {
     "name": "dash-core-components",
     "author": "Chris Parmer <chris@plotly.com>",
     "summary": "Core component suite for Dash",
-    "homepage": "https://pypi.org/project/dash-core-components/",
+    "homepage": "",
     "latest": "1.17.1"
   },
   "tinycss2": {
     "name": "tinycss2",
     "author": "Simon Sapin",
     "summary": "tinycss2",
-    "homepage": "https://pypi.org/project/tinycss2/",
+    "homepage": "https://www.courtbouillon.org/tinycss2",
     "latest": "1.1.0"
   },
   "beautifulsoup4": {
     "name": "beautifulsoup4",
     "author": "Leonard Richardson",
     "summary": "Screen-scraping library",
-    "homepage": "https://pypi.org/project/beautifulsoup4/",
+    "homepage": "http://www.crummy.com/software/BeautifulSoup/bs4/",
     "latest": "4.9.3"
   },
   "scramp": {
     "name": "scramp",
     "author": "",
     "summary": "An implementation of the SCRAM protocol.",
-    "homepage": "https://pypi.org/project/scramp/",
+    "homepage": "https://github.com/tlocke/scramp",
     "latest": "1.4.1"
   },
   "sphinxcontrib-qthelp": {
     "name": "sphinxcontrib-qthelp",
     "author": "Georg Brandl",
     "summary": "sphinxcontrib-qthelp is a sphinx extension which outputs QtHelp document.",
-    "homepage": "https://pypi.org/project/sphinxcontrib-qthelp/",
+    "homepage": "http://sphinx-doc.org/",
     "latest": "1.0.3"
   },
   "ptvsd": {
     "name": "ptvsd",
     "author": "Microsoft Corporation",
     "summary": "Remote debugging server for Python support in Visual Studio and Visual Studio Code",
-    "homepage": "https://pypi.org/project/ptvsd/",
+    "homepage": "https://aka.ms/ptvs",
     "latest": "4.3.2"
   },
   "jupyter-lsp": {
     "name": "jupyter-lsp",
     "author": "jupyter-lsp Contributors",
     "summary": "Multi-Language Server WebSocket proxy for Jupyter Notebook/Lab server",
-    "homepage": "https://pypi.org/project/jupyter-lsp/",
+    "homepage": "",
     "latest": "1.4.1"
   },
   "pywinpty": {
     "name": "pywinpty",
     "author": "Edgar Andrés Margffoy Tuay <andfoy@gmail.com>",
     "summary": "Pseudo terminal support for Windows from Python.",
-    "homepage": "https://pypi.org/project/pywinpty/",
+    "homepage": "",
     "latest": "1.1.3"
   },
   "json5": {
     "name": "json5",
     "author": "Dirk Pranke",
     "summary": "A Python implementation of the JSON5 data format.",
-    "homepage": "https://pypi.org/project/json5/",
+    "homepage": "https://github.com/dpranke/pyjson5",
     "latest": "0.9.6"
   },
   "toolz": {
     "name": "toolz",
     "author": "https://raw.github.com/pytoolz/toolz/master/AUTHORS.md",
     "summary": "List processing tools and functional utilities",
-    "homepage": "https://pypi.org/project/toolz/",
+    "homepage": "https://github.com/pytoolz/toolz/",
     "latest": "0.11.1"
   },
   "filelock": {
     "name": "filelock",
     "author": "Benedikt Schmitt",
     "summary": "A platform independent file lock.",
-    "homepage": "https://pypi.org/project/filelock/",
+    "homepage": "https://github.com/benediktschmitt/py-filelock",
     "latest": "3.0.12"
   },
   "binaryornot": {
     "name": "binaryornot",
     "author": "Audrey Roy Greenfeld",
     "summary": "Ultra-lightweight pure Python package to check if a file is binary or text.",
-    "homepage": "https://pypi.org/project/binaryornot/",
+    "homepage": "https://github.com/audreyr/binaryornot",
     "latest": "0.4.4"
   },
   "altgraph": {
     "name": "altgraph",
     "author": "Ronald Oussoren",
     "summary": "Python graph (network) package",
-    "homepage": "https://pypi.org/project/altgraph/",
+    "homepage": "https://altgraph.readthedocs.io",
     "latest": "0.17"
   },
   "QtPy": {
     "name": "QtPy",
     "author": "Colin Duquesnoy and the Spyder Development Team",
     "summary": "Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets.",
-    "homepage": "https://pypi.org/project/QtPy/",
+    "homepage": "https://github.com/spyder-ide/qtpy",
     "latest": "1.10.0"
   },
   "dask-searchcv": {
     "name": "dask-searchcv",
     "author": "Jim Crist",
     "summary": "Tools for doing hyperparameter search with Scikit-Learn and Dask",
-    "homepage": "https://pypi.org/project/dask-searchcv/",
+    "homepage": "http://github.com/dask/dask-searchcv",
     "latest": "0.2.0"
   },
   "pkginfo": {
     "name": "pkginfo",
     "author": "Tres Seaver, Agendaless Consulting",
     "summary": "Query metadatdata from sdists / bdists / installed packages.",
-    "homepage": "https://pypi.org/project/pkginfo/",
+    "homepage": "https://code.launchpad.net/~tseaver/pkginfo/trunk",
     "latest": "1.7.1"
   },
   "dask-labextension": {
     "name": "dask-labextension",
     "author": "Ian Rose, Matt Rocklin, Jacob Tomlinson",
     "summary": "A JupyterLab extension for Dask.",
-    "homepage": "https://pypi.org/project/dask-labextension/",
+    "homepage": "https://github.com/dask/dask-labextension",
     "latest": "5.1.0"
   },
   "osqp": {
     "name": "osqp",
     "author": "Bartolomeo Stellato, Goran Banjac",
     "summary": "OSQP: The Operator Splitting QP Solver",
-    "homepage": "https://pypi.org/project/osqp/",
+    "homepage": "https://osqp.org/",
     "latest": "0.6.2.post0"
   }
 }

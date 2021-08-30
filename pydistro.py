@@ -93,7 +93,7 @@ class Pkgcomp:
         def on_info(pkname, pkinf):
             inf = {'name': pkinf.get('name', pkname), 'author': pkinf.get('author', ''),
                    'summary': pkinf.get('summary', ''), 
-                   'homepage': pkinf.get('package_url', pkinf.get('project_url', pkinf.get('home_page', '')))}
+                   'homepage': pkinf.get('home_page', pkinf.get('project_url', pkinf.get('package_url', '')))}
             if self.get_latest_vers:
                 inf['latest'] = pkinf.get('version', '')
             self._pkdict.update({pkname: inf})
@@ -206,13 +206,14 @@ def main():
     # envicronments to compare (None = current)
     envs = [None, r'c:\_PROG_\WPy64-3950\python-3.9.5.amd64\python.exe']
     # create class instance (don't update existing DB with latest versions, switch on debugging messages)
-    pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
+    pk = Pkgcomp(envs, get_latest_vers=True, debug=True)
     # generate comparison dataframe
     df = pk()
     # output to Excel book
-    df.to_excel('pk1.xlsx', index_label='packages')
+    df.to_excel('pk.xlsx', index_label='packages')
     
     # other output variants:
+    """
     # >> CSV
     df.to_csv('pk.csv', sep=';', index=False)
     # >> JSON
@@ -221,6 +222,7 @@ def main():
     # >> HTML
     with open('pk.html', 'w', encoding='utf-8') as file_:
         file_.write(df.to_html(na_rep='', render_links=True))
+    """
 
 ## ---------------------------------------------------------------------------------------------- ##
 if __name__ == '__main__':
