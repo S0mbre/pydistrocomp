@@ -4002,5 +4002,33 @@
     "summary": "OSQP: The Operator Splitting QP Solver",
     "homepage": "https://osqp.org/",
     "latest": "0.6.2.post0"
+  },
+  "nbconvert_reportlab": {
+    "name": "nbconvert_reportlab",
+    "author": "Thomas Kluyver",
+    "summary": "Convert notebooks to PDF using Reportlab",
+    "homepage": "https://github.com/takluyver/nbconvert-reportlab",
+    "latest": "0.2"
+  },
+  "flit_core": {
+    "name": "flit-core",
+    "author": "Thomas Kluyver & contributors",
+    "summary": "Distribution-building parts of Flit. See flit package for more information",
+    "homepage": "https://github.com/takluyver/flit",
+    "latest": "3.3.0"
+  },
+  "wasmer_compiler_cranelift": {
+    "name": "wasmer-compiler-cranelift",
+    "author": "Wasmer Engineering Team <engineering@wasmer.io>",
+    "summary": "The Cranelift compiler for the `wasmer` package (to compile WebAssembly module)",
+    "homepage": "",
+    "latest": "1.0.0"
+  },
+  "wasmer_compiler_singlepass": {
+    "name": "wasmer-compiler-singlepass",
+    "author": "Wasmer Engineering Team <engineering@wasmer.io>",
+    "summary": "Python extension to run WebAssembly binaries",
+    "homepage": "",
+    "latest": "1.0.0"
   }
 }

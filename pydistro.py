@@ -4,6 +4,9 @@ import requests, sys, os, json
 import subprocess as sp
 import concurrent.futures
 import pandas as pd
+from openpyxl import Workbook
+import packaging.version as pkvers
+from collections import Counter
 
 NL = '\n'
 WORKERS = 10
@@ -132,6 +135,23 @@ class Pkgcomp:
         df.fillna('', inplace=True)
         return df
 
+    def to_xl(self, pyexes=None, filepath='pk.xlsx'):
+        df = self.compare_env(pyexes)
+        try:
+            df.to_excel(filepath, index_label='packages')
+            wb = Workbook(filepath)
+            ws = wb.active
+            ws['A1'].style = 'Accent1'
+            wb.save()
+        except Exception as err:
+            print(err)
+
+    def _comp_versions(self, versions, level=2):
+        vv = [pkvers.Version('.'.join(v.strip().split('.')[:level])) for v in versions if v.strip()]
+        counts = Counter(vv)
+        vv_grouped = sorted([tuple([k] * counts[k]) if counts[k] > 1 else k for k in counts], key=lambda el: el[0] if isinstance(el, tuple) else el)
+        return [tuple(str(e) for e in el) if isinstance(el, tuple) else str(el) for el in vv_grouped]
+
     def _collect_env_packages(self, pyexes):
         if not pyexes: return None
         isdict = isinstance(pyexes, dict)
@@ -203,10 +223,13 @@ class Pkgcomp:
 ## ---------------------------------------------------------------------------------------------- ##
 
 def main():
-    # envicronments to compare (None = current)
+   
+    # environments to compare (None = current)
     envs = [None, r'c:\_PROG_\WPy64-3950\python-3.9.5.amd64\python.exe']
     # create class instance (don't update existing DB with latest versions, switch on debugging messages)
-    pk = Pkgcomp(envs, get_latest_vers=True, debug=True)
+    pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
+    pk.to_xl(filepath='pkk.xlsx')
+    return
     # generate comparison dataframe
     df = pk()
     # output to Excel book
