@@ -11,6 +11,10 @@ With a few code lines `pydistrocomp` will help you generate a comparison table (
 
 Reviewing this table, you can easily see what packages are included in which distro (last two columns highlighted green), match against the newest version (column "latest") and check out the basic package info: name, authors, homepage and summary.
 
+An even better effect is achieved in an Excel report:
+
+![](https://github.com/S0mbre/pydistrocomp/blob/main/screenshots/screen02.jpg)
+
 ## Usage
 Install the few required packages:
 ```bash
