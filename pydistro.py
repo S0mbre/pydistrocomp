@@ -31,7 +31,7 @@ class Pkgcomp:
     def __init__(self, pyexes=None, dbdir=None, use_procs=False, max_workers=WORKERS, 
                  get_latest_vers=True, timeout=TIMEOUT, save_on_exist=True, version_labels=True,
                  debug=False, request_args={}):
-        self.pyexes = pyexes or {0: None}
+        self.pyexes = pyexes or [sys.executable]
         self.dbdir = dbdir or os.path.dirname(os.path.realpath(__file__))
         self.dbfile = os.path.join(self.dbdir, 'pypkg.json')
         self.max_workers = max_workers
