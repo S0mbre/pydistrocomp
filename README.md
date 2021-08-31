@@ -23,6 +23,10 @@ cd pydistrocomp
 python -m pip install -r requirements.txt
 ```
 
+You can also run the code online (without downloading or installing anything) on Binder using this link: https://mybinder.org/v2/gh/S0mbre/pydistrocomp/main.
+- Follow the URL to open Binder and wait for the server to start
+- Open the `playground.ipynb` Jupyter notebook and run it
+
 See `pydistro.py` for examples in the `main()` function. 
 
 You pass a list of python executables (for each distro you want to review / compare) to the `Pkgcomp` class constructor:

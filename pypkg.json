@@ -235,7 +235,7 @@
     "author": "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee",
     "summary": "Backported and Experimental Type Hints for Python 3.5+",
     "homepage": "https://github.com/python/typing/blob/master/typing_extensions/README.rst",
-    "latest": "3.10.0.1"
+    "latest": "3.10.0.2"
   },
   "flatbuffers": {
     "name": "flatbuffers",
@@ -347,7 +347,7 @@
     "author": "IPython Development Team",
     "summary": "Traitlets Python configuration system",
     "homepage": "https://github.com/ipython/traitlets",
-    "latest": "5.0.5"
+    "latest": "5.1.0"
   },
   "simpy": {
     "name": "simpy",
@@ -424,7 +424,7 @@
     "author": "Sebastián Ramírez",
     "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints.",
     "homepage": "https://github.com/tiangolo/typer",
-    "latest": "0.3.2"
+    "latest": "0.4.0"
   },
   "Cython": {
     "name": "Cython",
@@ -1320,7 +1320,7 @@
     "author": "Christoph Gohlke",
     "summary": "Read and write TIFF files",
     "homepage": "https://www.lfd.uci.edu/~gohlke/",
-    "latest": "2021.8.8"
+    "latest": "2021.8.30"
   },
   "spyder": {
     "name": "spyder",
@@ -1383,7 +1383,7 @@
     "author": "Python Code Quality Authority",
     "summary": "An abstract syntax tree for Python with inference support.",
     "homepage": "https://github.com/PyCQA/astroid",
-    "latest": "2.7.2"
+    "latest": "2.7.3"
   },
   "pyls-black": {
     "name": "pyls-black",
@@ -1586,7 +1586,7 @@
     "author": "Holger Krekel, Bruno Oliveira, Ronny Pfannschmidt, Floris Bruynooghe, Brianna Laugher, Florian Bruhin and others",
     "summary": "pytest: simple powerful testing with Python",
     "homepage": "https://docs.pytest.org/en/latest/",
-    "latest": "6.2.4"
+    "latest": "6.2.5"
   },
   "pony": {
     "name": "pony",
@@ -2496,7 +2496,7 @@
     "author": "Jupyter Development Team",
     "summary": "Jupyter protocol implementation and client libraries",
     "homepage": "https://jupyter.org",
-    "latest": "7.0.1"
+    "latest": "7.0.2"
   },
   "twine": {
     "name": "twine",
@@ -2755,7 +2755,7 @@
     "author": "IPython Development Team",
     "summary": "IPython Kernel for Jupyter",
     "homepage": "https://ipython.org",
-    "latest": "6.2.0"
+    "latest": "6.3.1"
   },
   "statsmodels": {
     "name": "statsmodels",
@@ -2797,7 +2797,7 @@
     "author": "",
     "summary": "An implementation of chunked, compressed, N-dimensional arrays for Python.",
     "homepage": "https://github.com/zarr-developers/zarr-python",
-    "latest": "2.9.3"
+    "latest": "2.9.4"
   },
   "psycopg2": {
     "name": "psycopg2",
@@ -3833,7 +3833,7 @@
     "author": "David R. MacIver and Zac Hatfield-Dodds",
     "summary": "A library for property-based testing",
     "homepage": "https://hypothesis.works",
-    "latest": "6.17.1"
+    "latest": "6.17.4"
   },
   "dask": {
     "name": "dask",
@@ -4030,5 +4030,23 @@
     "summary": "Python extension to run WebAssembly binaries",
     "homepage": "",
     "latest": "1.0.0"
+  },
+  "wheel": {
+    "name": "wheel",
+    "author": "Daniel Holth",
+    "summary": "A built-package format for Python",
+    "homepage": "https://github.com/pypa/wheel"
+  },
+  "pip": {
+    "name": "pip",
+    "author": "The pip developers",
+    "summary": "The PyPA recommended tool for installing Python packages.",
+    "homepage": "https://pip.pypa.io/"
+  },
+  "setuptools": {
+    "name": "setuptools",
+    "author": "Python Packaging Authority",
+    "summary": "Easily download, build, install, upgrade, and uninstall Python packages",
+    "homepage": "https://github.com/pypa/setuptools"
   }
 }

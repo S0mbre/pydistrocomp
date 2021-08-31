@@ -96,7 +96,7 @@ class Pkgcomp:
 
     def list_packages_env(self, pyexe=None):
         pyexe = pyexe or sys.executable
-        return [tuple(s.strip().split('==')) for s in sp.check_output([pyexe, '-m', 'pip', 'freeze'], encoding='utf-8').split('\n') if s]
+        return [tuple(s.strip().split('==')) for s in sp.check_output([pyexe, '-m', 'pip', 'list', '--format', 'freeze'], encoding='utf-8').split('\n') if s]
 
     def update_db(self, pknames=None, update_existing=True, savedb=True):
         def on_info(pkname, pkinf):
@@ -267,8 +267,7 @@ class Pkgcomp:
 
 ## ---------------------------------------------------------------------------------------------- ##
 
-def main():
-   
+def main():   
     # environments to compare (None = current)
     envs = [None, r'c:\_PROG_\WPy64-3910\python-3.9.1.amd64\python.exe']
     # create class instance (don't update existing DB with latest versions, switch on debugging messages)
