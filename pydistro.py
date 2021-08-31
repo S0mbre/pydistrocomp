@@ -4,9 +4,8 @@ import requests, sys, os, json
 import subprocess as sp
 import concurrent.futures
 import pandas as pd
-from openpyxl import Workbook
+from openpyxl import load_workbook, worksheet, styles
 import packaging.version as pkvers
-from collections import Counter
 
 NL = '\n'
 WORKERS = 10
@@ -19,6 +18,13 @@ def is_iterable(obj):
         return True
     except:
         return False
+
+def num2az(num):
+    s = ''
+    while num > 0:
+        num, remainder = divmod(num - 1, 26)
+        s = chr(65 + remainder) + s
+    return s
 
 class Pkgcomp:
 
@@ -135,22 +141,61 @@ class Pkgcomp:
         df.fillna('', inplace=True)
         return df
 
-    def to_xl(self, pyexes=None, filepath='pk.xlsx'):
-        df = self.compare_env(pyexes)
+    def to_xl(self, filepath='pk.xlsx', pyexes=None, df=None, version_compare_level=2):
+        df = df or self.compare_env(pyexes)
+        ROWS = len(df) + 1
+        COLS = len(df.columns) + 1
         try:
             df.to_excel(filepath, index_label='packages')
-            wb = Workbook(filepath)
+            wb = load_workbook(filename=filepath)
             ws = wb.active
-            ws['A1'].style = 'Accent1'
-            wb.save()
+
+            # align first column left
+            for col in ws.iter_cols(max_col=1, min_row=2, max_row=ROWS):
+                for cell in col:
+                    cell.alignment = styles.Alignment(horizontal='left')
+
+            # format as table
+            tab = worksheet.table.Table(displayName='Table1', ref=f'a1:{num2az(COLS)}{ROWS}')
+            tab.tableStyleInfo = worksheet.table.TableStyleInfo(name='TableStyleMedium8', showFirstColumn=False, 
+                                                                showLastColumn=False, showRowStripes=False, showColumnStripes=False)
+            if 'Table1' in ws.tables:
+                del ws.tables['Table1']
+            ws.add_table(tab)
+
+            # adjust col widths
+            COLW = {'a': 27, 'b': 18, 'c': 35, 'd': 77, 'e': 44, 'f': 16}
+            for i in range(7, COLS + 1):
+                COLW[num2az(i)] = 16
+            for c in COLW:
+                ws.column_dimensions[c].width = COLW[c]
+
+            # highlight missing and latest versions
+            for row in ws.iter_rows(min_row=2, max_row=ROWS, min_col=7, max_col=COLS):
+                for cell in row:
+                    if not cell.value:
+                        cell.style = 'Accent2'
+                cells = list(row)
+                lv = self._get_latest_vers([c.value or '' for c in cells], version_compare_level)
+                if not lv is None:
+                    cells[lv].style = 'Accent1'
+            
+            # save workbook
+            wb.save(filename=filepath)
+
         except Exception as err:
             print(err)
 
     def _comp_versions(self, versions, level=2):
-        vv = [pkvers.Version('.'.join(v.strip().split('.')[:level])) for v in versions if v.strip()]
-        counts = Counter(vv)
-        vv_grouped = sorted([tuple([k] * counts[k]) if counts[k] > 1 else k for k in counts], key=lambda el: el[0] if isinstance(el, tuple) else el)
-        return [tuple(str(e) for e in el) if isinstance(el, tuple) else str(el) for el in vv_grouped]
+        getvers = lambda s: pkvers.Version('.'.join(s.strip().split('.')[:level]) if s.strip() else '0')
+        vv = list(enumerate([getvers(v) for v in versions]))
+        values = set(map(lambda x: x[1], vv))
+        newlist = sorted([[y for y in vv if y[1]==x] for x in values], key=lambda e: e[0][1])
+        return [tuple(x[0] for x in e) if len(e) > 1 else e[0][0] for e in newlist]
+
+    def _get_latest_vers(self, versions, level=2):
+        latest = self._comp_versions(versions, level)[-1]
+        return latest if not isinstance(latest, tuple) else None
 
     def _collect_env_packages(self, pyexes):
         if not pyexes: return None
@@ -225,18 +270,15 @@ class Pkgcomp:
 def main():
    
     # environments to compare (None = current)
-    envs = [None, r'c:\_PROG_\WPy64-3950\python-3.9.5.amd64\python.exe']
+    envs = [None, r'c:\_PROG_\WPy64-3910\python-3.9.1.amd64\python.exe']
     # create class instance (don't update existing DB with latest versions, switch on debugging messages)
     pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
-    pk.to_xl(filepath='pkk.xlsx')
-    return
-    # generate comparison dataframe
-    df = pk()
     # output to Excel book
-    df.to_excel('pk.xlsx', index_label='packages')
+    pk.to_xl('pk.xlsx', version_compare_level=3)
     
     # other output variants:
     """
+    df = pk()
     # >> CSV
     df.to_csv('pk.csv', sep=';', index=False)
     # >> JSON
