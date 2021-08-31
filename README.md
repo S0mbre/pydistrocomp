@@ -16,8 +16,10 @@ An even better effect is achieved in an Excel report:
 ![](https://github.com/S0mbre/pydistrocomp/blob/main/screenshots/screen02.jpg)
 
 ## Usage
-Install the few required packages:
+Clone the project and install the few required packages:
 ```bash
+git clone https://github.com/S0mbre/pydistrocomp.git
+cd pydistrocomp
 python -m pip install -r requirements.txt
 ```
 
@@ -41,7 +43,7 @@ The `Pkgcomp` parameters are:
 > The simplest case is just a list of python executables, e.g.:
 > ```python
 > envs = [r'c:\py37\python-3.7.5.amd64\python.exe', 
->         r'c:\py39\python-3.9.9.amd64\python.exe']
+>         r'c:\py39\python-3.9.5.amd64\python.exe']
 > ```
 > As mentioned, the list can also include `None` or an empty string (or just any falsy object) to tell the app to take the current executable (from `sys.executable`). By default, the list is empty (meaning that only the current executable will be analyzed). So to get the packages in your current python you can do just this:
 > ```python
@@ -50,7 +52,7 @@ The `Pkgcomp` parameters are:
 > The other option is a dictionary with python executables as keys and labels as values, e.g.:
 > ```python
 > envs = {r'c:\py37\python-3.7.5.amd64\python.exe': 'py37',
->         r'c:\py39\python-3.9.9.amd64\python.exe': 'latest_python'}
+>         r'c:\py39\python-3.9.5.amd64\python.exe': 'latest_python'}
 > ```
 > This option is available if you don't want to rely on automatic labeling (see `version_labels` parameter description below). To analyze the current python distro, you can also pass a falsy object here, e.g. `{None: 'my-python'}` (to use a custom label) or `{None: 0}` (to use automatic labeling).
 - `dbdir`: directory to store the package database (used for caching package info); default = current project path
