@@ -12,7 +12,7 @@ With a few code lines `pydistrocomp` will help you generate a comparison table (
 Reviewing this table, you can easily see what packages are included in which distro (last two columns highlighted green), match against the newest version (column "latest") and check out the basic package info: name, authors, homepage and summary.
 
 ## Usage
-Install the only two required packages:
+Install the few required packages:
 ```bash
 python -m pip install -r requirements.txt
 ```
@@ -66,9 +66,12 @@ The `Pkgcomp` parameters are:
 - export the comparison table to Excel:
 ```python
 pk = Pkgcomp([None, r'c:\WPy64-3950\python-3.9.5.amd64\python.exe'])
-df = pk()
-df.to_excel('pk.xlsx', index_label='packages')
+pk.to_xl('pk.xlsx', version_compare_level=2)
 ```
+> The inbuilt method `to_xl()` outputs the comparison table to a pretty Excel report, highlighting missing and latest packages in each environment.
+> The `version_compare_level` parameter lets you decide on the criterion for highlighting later versions. The value of `2` (default) means that only the major and minor versions are considered (e.g. `0.1` from `0.1.5`).
+> If you set this to `1`, only the first part of the version string (major version) will be considered. The value of `3` tells the app to consider the first 3 parts, and so on.
+
 - export to CSV (comma-separated text file):
 ```python
 pk = Pkgcomp([None, r'c:\WPy64-3950\python-3.9.5.amd64\python.exe'])
@@ -91,7 +94,7 @@ with  open('pk.html', 'w', encoding='utf-8') as  file_:
 ```
 
 ## To-Do List
-- automatic highlighting of table cells (in Excel and HTML reports) to indicate newer / older packages
 - generate `requirements.txt` or a similar list of packages required for installation based on a selected distro
 - automatic installation of missing / required packages from one distro to another, e.g. 
 `pk.install('3.7 > 3.9', latest=True)`
+- view package dependency trees (via [`pipdeptree`](https://github.com/naiquevin/pipdeptree))

@@ -274,7 +274,7 @@ def main():
     # create class instance (don't update existing DB with latest versions, switch on debugging messages)
     pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
     # output to Excel book
-    pk.to_xl('pk.xlsx', version_compare_level=3)
+    pk.to_xl('pk.xlsx', version_compare_level=2)
     
     # other output variants:
     """
