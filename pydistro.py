@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import requests, sys, os, json
 import subprocess as sp
 import concurrent.futures
@@ -7,26 +6,132 @@ import pandas as pd
 from openpyxl import load_workbook, worksheet, styles
 import packaging.version as pkvers
 from tabulate import tabulate
+from utils import Utils
+
+## ---------------------------------------------------------------------------------------------- ##
 
 NL = '\n'
 WORKERS = 10
 TIMEOUT = 4
+VERS_LEVEL = 2
 
-def is_iterable(obj):
-    if isinstance(obj, str): return False
-    try:
-        _ = iter(obj)
-        return True
-    except:
-        return False
+## ---------------------------------------------------------------------------------------------- ##
 
-def num2az(num):
-    s = ''
-    while num > 0:
-        num, remainder = divmod(num - 1, 26)
-        s = chr(65 + remainder) + s
-    return s
+class VersionCompare:
 
+    def __init__(self, level=VERS_LEVEL):
+        self.level = level
+
+    def _get_version(self, version_str):
+        version_str = version_str.strip() if version_str else ''
+        if not version_str: return pkvers.Version('0')
+        parts = version_str.split('.')
+        if len(parts) > self.level:
+            return pkvers.Version('.'.join(parts[:self.level])) 
+        return pkvers.Version(version_str)
+
+    def compare_binary(self, pk1, pk2, comp='<'):
+        v_1 = self._get_version(pk1)
+        v_2 = self._get_version(pk2)
+        if comp=='<':
+            return v_1 < v_2
+        if comp=='>':
+            return v_1 > v_2
+        if comp=='==':
+            return v_1 == v_2
+        if comp=='<=':
+            return v_1 <= v_2
+        if comp=='>=':
+            return v_1 >= v_2
+        raise Exception(f'Wrong operator: {comp}')
+
+    def sort_versions(self, versions):
+        vv = list(enumerate([self._get_version(v) for v in versions]))
+        values = set(map(lambda x: x[1], vv))
+        newlist = sorted([[y for y in vv if y[1]==x] for x in values], key=lambda e: e[0][1])
+        return [tuple(x[0] for x in e) if len(e) > 1 else e[0][0] for e in newlist]
+
+## ---------------------------------------------------------------------------------------------- ##
+class Package:
+
+    prop_names = ['name', 'author', 'summary', 'homepage', 'latest']
+
+    def __init__(self, pkname, version=None, force_update=False, timeout=TIMEOUT, on_error=None, request_args={}):
+        self._pkname = pkname.lower()
+        self.version = version
+        self.timeout = timeout
+        self.request_args = request_args
+        self.on_error = on_error
+        if not self._properties_set() or force_update:
+            self.update_properties()
+
+    def _properties_set(self):
+        return all(p in self.__dict__ for p in Package.prop_names)
+
+    def _get_pkg_info(self):
+        try:
+            res = requests.get('https://pypi.org/pypi/{}/json'.format(self._pkname), 
+                            headers={'Accept': 'application/json'}, timeout=self.timeout, **self.request_args)
+            if res.status_code != 200: 
+                raise Exception(f'HTTP Error {res.status_code}!{NL}{res.text}')
+            resjs = json.loads(res.content)
+            return resjs['info']
+
+        except Exception as err:
+            if self.on_error: 
+                self.on_error(self, err)
+            else:
+                raise
+
+        return dict()
+
+    def update_properties(self, pkinf=None):
+        pkinf = pkinf if not pkinf is None else self._get_pkg_info()
+        inf = {'name': pkinf.get('name', self._pkname), 'author': pkinf.get('author', ''),
+               'summary': pkinf.get('summary', ''), 'latest': pkinf.get('version', ''),
+               'homepage': pkinf.get('home_page', pkinf.get('project_url', pkinf.get('package_url', '')))}
+        self.__dict__.update(inf)
+
+    def asdict(self, name_as_key=True):
+        if not self._properties_set():
+            self.update_properties()
+        inf = {k: v for k, v in self.__dict__.items() if k in Package.prop_names}
+        return {self._pkname: inf} if name_as_key else inf
+
+    def is_outdated(self, vcomp_or_level=VERS_LEVEL):
+        if not isinstance(vcomp_or_level, VersionCompare):
+            vcomp_or_level = VersionCompare(vcomp_or_level)
+        return vcomp_or_level.compare_binary(self.version, getattr(self, 'latest', ''))
+
+    def install(self, pyexe=None, upgrade=True, force_version=None):
+        pyexe = pyexe or sys.executable
+        args = [pyexe, '-m', 'pip', 'install']
+        if upgrade:
+            args.append('--upgrade')
+        if force_version:
+            args.append('--force-reinstall')
+            args.append(f'{self._pkname}=={force_version}')
+        else:
+            args.append(self._pkname)
+        
+        def on_error_(cmd, returncode, stdout, stderr):
+            if self.on_error:
+                self.on_error(self, {'cmd': cmd, 'returncode': returncode, 'stdout': stdout, 'stderr': stderr})
+
+        return Utils.execute(args, on_error=on_error_ if self.on_error else None)
+
+## ---------------------------------------------------------------------------------------------- ##
+
+class Packages:
+
+    def __init__(self, pknames, force_update=False, timeout=TIMEOUT, on_error=None, request_args={}):
+        self._pknames = pknames
+        self.timeout = timeout
+        self.request_args = request_args
+        self.on_error = on_error
+        self.force_update = force_update
+
+## ---------------------------------------------------------------------------------------------- ##
 class Pkgcomp:
 
     def __init__(self, pyexes=None, dbdir=None, use_procs=False, max_workers=WORKERS, 
@@ -126,7 +231,7 @@ class Pkgcomp:
         if not pyexes:
             if self.debug: print('~~~ NO ENVS TO ANALYZE!')
             return None
-        if not isinstance(pyexes, dict) and not is_iterable(pyexes):
+        if not isinstance(pyexes, dict) and not Utils.is_iterable(pyexes):
             pyexes = [pyexes]
         packages, pknames = self._collect_env_packages(pyexes)
         if not pknames:
@@ -156,7 +261,7 @@ class Pkgcomp:
                     cell.alignment = styles.Alignment(horizontal='left')
 
             # format as table
-            tab = worksheet.table.Table(displayName='Table1', ref=f'a1:{num2az(COLS)}{ROWS}')
+            tab = worksheet.table.Table(displayName='Table1', ref=f'a1:{Utils.num2az(COLS)}{ROWS}')
             tab.tableStyleInfo = worksheet.table.TableStyleInfo(name='TableStyleMedium8', showFirstColumn=False, 
                                                                 showLastColumn=False, showRowStripes=False, showColumnStripes=False)
             if 'Table1' in ws.tables:
@@ -166,7 +271,7 @@ class Pkgcomp:
             # adjust col widths
             COLW = {'a': 27, 'b': 18, 'c': 35, 'd': 77, 'e': 44, 'f': 16}
             for i in range(7, COLS + 1):
-                COLW[num2az(i)] = 16
+                COLW[Utils.num2az(i)] = 16
             for c in COLW:
                 ws.column_dimensions[c].width = COLW[c]
 
