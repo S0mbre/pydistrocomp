@@ -27,7 +27,7 @@ You can also run the code online (without downloading or installing anything) on
 - Follow the URL to open Binder and wait for the server to start
 - Open the `playground.ipynb` Jupyter notebook and run it
 
-See `pydistro.py` for examples in the `main()` function. 
+See `pdcomp.py` for examples. 
 
 You pass a list of python executables (for each distro you want to review / compare) to the `Pkgcomp` class constructor:
 ```python
@@ -82,25 +82,30 @@ pk.to_xl('pk.xlsx', version_compare_level=2)
 > The `version_compare_level` parameter lets you decide on the criterion for highlighting later versions. The value of `2` (default) means that only the major and minor versions are considered (e.g. `0.1` from `0.1.5`).
 > If you set this to `1`, only the first part of the version string (major version) will be considered. The value of `3` tells the app to consider the first 3 parts, and so on.
 
-- export to CSV (comma-separated text file):
+- export to various formats:
 ```python
 pk = Pkgcomp([None, r'c:\WPy64-3950\python-3.9.5.amd64\python.exe'])
 df = pk()
-df.to_csv('pk.csv', sep=';', index=False)
+
+# >> CSV (comma-separated values):
+pk.to_csv('pk.csv', df=df)
+# >> JSON (with pretty printing):
+pk.to_json('pk.json', df=df)
+# >> HTML
+pk.to_html('pk.html', df=df)
+# >> pickle (python object)
+pk.to_pickle('pk.gz', df=df)
 ```
-- export to JSON (with pretty printing):
+
+- convert to string:
 ```python
 pk = Pkgcomp([None, r'c:\WPy64-3950\python-3.9.5.amd64\python.exe'])
 df = pk()
-with  open('pk.json', 'w', encoding='utf-8') as  file_:
-    file_.write(df.to_json(orient='index', indent=2))
-```
-- export to HTML:
-```python
-pk = Pkgcomp([None, r'c:\WPy64-3950\python-3.9.5.amd64\python.exe'])
-df = pk()
-with  open('pk.html', 'w', encoding='utf-8') as  file_:
-    file_.write(df.to_html(na_rep='', render_links=True))
+
+# simple string convertion (native Pandas):
+print(pk.to_string(df=df))
+# pretty string (with tabulate):
+print(pk.to_stringx(df=df, tablefmt='fancy_grid', maxwidth=200, filepath='pk.txt')) # also saved string to a text file
 ```
 
 ## To-Do List

@@ -1,3 +1,4 @@
 requests
 pandas
 openpyxl>=3.0.7
+tabulate>=0.8.9

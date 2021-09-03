@@ -4048,5 +4048,82 @@
     "author": "Python Packaging Authority",
     "summary": "Easily download, build, install, upgrade, and uninstall Python packages",
     "homepage": "https://github.com/pypa/setuptools"
+  },
+  "backports.entry-points-selectable": {
+    "name": "backports.entry-points-selectable",
+    "author": "Jason R. Coombs",
+    "summary": "Compatibility shim providing selectable entry points for older implementations",
+    "latest": "1.1.0",
+    "homepage": "https://github.com/jaraco/backports.entry_points_selectable"
+  },
+  "asn1crypto": {
+    "name": "asn1crypto",
+    "author": "wbond",
+    "summary": "Fast ASN.1 parser and serializer with definitions for private keys, public keys, certificates, CRL, OCSP, CMS, PKCS#3, PKCS#7, PKCS#8, PKCS#12, PKCS#5, X.509 and TSP",
+    "latest": "1.4.0",
+    "homepage": "https://github.com/wbond/asn1crypto"
+  },
+  "requests-unixsocket": {
+    "name": "requests-unixsocket",
+    "author": "Marc Abramowitz",
+    "summary": "Use requests to talk HTTP via a UNIX domain socket",
+    "latest": "0.2.0",
+    "homepage": "https://github.com/msabramo/requests-unixsocket"
+  },
+  "python-lsp-jsonrpc": {
+    "name": "python-lsp-jsonrpc",
+    "author": "Python Language Server Contributors",
+    "summary": "JSON RPC 2.0 server library",
+    "latest": "1.0.0",
+    "homepage": "https://github.com/python-lsp/python-lsp-jsonrpc"
+  },
+  "python-lsp-server": {
+    "name": "python-lsp-server",
+    "author": "Python Language Server Contributors",
+    "summary": "Python Language Server for the Language Server Protocol",
+    "latest": "1.2.2",
+    "homepage": "https://github.com/python-lsp/python-lsp-server"
+  },
+  "sqlite-fts4": {
+    "name": "sqlite-fts4",
+    "author": "Simon Willison",
+    "summary": "Python functions for working with SQLite FTS4 search",
+    "latest": "1.0.1",
+    "homepage": "https://github.com/simonw/sqlite-fts4"
+  },
+  "debugpy": {
+    "name": "debugpy",
+    "author": "Microsoft Corporation",
+    "summary": "An implementation of the Debug Adapter Protocol for Python",
+    "latest": "1.4.1",
+    "homepage": "https://aka.ms/debugpy"
+  },
+  "platformdirs": {
+    "name": "platformdirs",
+    "author": "",
+    "summary": "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\".",
+    "latest": "2.3.0",
+    "homepage": "https://github.com/platformdirs/platformdirs"
+  },
+  "charset-normalizer": {
+    "name": "charset-normalizer",
+    "author": "Ahmed TAHRI @Ousret",
+    "summary": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+    "latest": "2.0.4",
+    "homepage": "https://github.com/ousret/charset_normalizer"
+  },
+  "tomli": {
+    "name": "tomli",
+    "author": "",
+    "summary": "A lil' TOML parser",
+    "latest": "1.2.1",
+    "homepage": ""
+  },
+  "python-multipart": {
+    "name": "python-multipart",
+    "author": "Andrew Dunham",
+    "summary": "A streaming multipart parser for Python",
+    "latest": "0.0.5",
+    "homepage": "http://github.com/andrew-d/python-multipart"
   }
 }

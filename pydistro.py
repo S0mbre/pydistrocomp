@@ -6,6 +6,7 @@ import concurrent.futures
 import pandas as pd
 from openpyxl import load_workbook, worksheet, styles
 import packaging.version as pkvers
+from tabulate import tabulate
 
 NL = '\n'
 WORKERS = 10
@@ -101,10 +102,8 @@ class Pkgcomp:
     def update_db(self, pknames=None, update_existing=True, savedb=True):
         def on_info(pkname, pkinf):
             inf = {'name': pkinf.get('name', pkname), 'author': pkinf.get('author', ''),
-                   'summary': pkinf.get('summary', ''), 
+                   'summary': pkinf.get('summary', ''), 'latest': pkinf.get('version', ''),
                    'homepage': pkinf.get('home_page', pkinf.get('project_url', pkinf.get('package_url', '')))}
-            if self.get_latest_vers:
-                inf['latest'] = pkinf.get('version', '')
             self._pkdict.update({pkname: inf})
             if self.debug: print(f'>>> UPDATED PK: {pkname}')  
 
@@ -142,10 +141,11 @@ class Pkgcomp:
         return df
 
     def to_xl(self, filepath='pk.xlsx', pyexes=None, df=None, version_compare_level=2):
-        df = df or self.compare_env(pyexes)
+        df = df if not df is None else self.compare_env(pyexes)
         ROWS = len(df) + 1
         COLS = len(df.columns) + 1
         try:
+            if self.debug: print(f'OUTPUTTING TO EXCEL ("{filepath}") ...')
             df.to_excel(filepath, index_label='packages')
             wb = load_workbook(filename=filepath)
             ws = wb.active
@@ -182,9 +182,65 @@ class Pkgcomp:
             
             # save workbook
             wb.save(filename=filepath)
+            if self.debug: print(f'SAVED TO EXCEL ("{filepath}")')
 
         except Exception as err:
             print(err)
+
+    def to_csv(self, filepath='pk.csv', pyexes=None, df=None, sep=';'):
+        df = df if not df is None else self.compare_env(pyexes)
+        if self.debug: print(f'OUTPUTTING TO CSV ("{filepath}") ...')
+        df.to_csv(filepath, sep=sep, index=False)
+        if self.debug: print(f'SAVED TO CSV ("{filepath}")')
+
+    def to_html(self, filepath='pk.html', pyexes=None, df=None):
+        df = df if not df is None else self.compare_env(pyexes)
+        if self.debug: print(f'OUTPUTTING TO HTML ("{filepath}") ...')
+        with open(filepath, 'w', encoding='utf-8') as file_:
+            file_.write(df.to_html(na_rep='', index=False, render_links=True))
+        if self.debug: print(f'SAVED TO HTML ("{filepath}")')
+
+    def to_json(self, filepath='pk.json', pyexes=None, df=None):
+        df = df if not df is None else self.compare_env(pyexes)
+        if self.debug: print(f'OUTPUTTING TO JSON ("{filepath}") ...')
+        with open(filepath, 'w', encoding='utf-8') as file_:
+            file_.write(df.to_json(orient='index', indent=2))
+        if self.debug: print(f'SAVED TO JSON ("{filepath}")')
+
+    def to_pickle(self, filepath='pk.gz', pyexes=None, df=None, compression='infer'):
+        df = df if not df is None else self.compare_env(pyexes)
+        if self.debug: print(f'OUTPUTTING TO PICKLE ("{filepath}") ...')
+        df.to_pickle(filepath, compression=compression)
+        if self.debug: print(f'SAVED TO PICKLE ("{filepath}")')
+
+    def to_clipboard(self, pyexes=None, df=None, excel=True, sep=None):
+        df = df if not df is None else self.compare_env(pyexes)
+        df.to_clipboard(excel, sep, index=False, na_rep='')
+        if self.debug: print('SAVED TO CLIPBOARD')
+
+    def to_string(self, pyexes=None, df=None):
+        df = df if not df is None else self.compare_env(pyexes)
+        return df.to_string(index=False, na_rep='')
+
+    def to_stringx(self, pyexes=None, df=None, tablefmt='fancy_grid', maxwidth=200, filepath=None, **kwargs):
+        df = df if not df is None else self.compare_env(pyexes)
+        if maxwidth:
+            maxcolw = maxwidth // len(df.columns)
+            df = df.transform(lambda x: x.str.wrap(maxcolw))
+        kwargs = kwargs or {}
+        if tablefmt:
+            kwargs['tablefmt'] = tablefmt 
+        kwargs['headers'] = 'keys'
+        kwargs['showindex'] = False
+        if not 'stralign' in kwargs:
+            kwargs['stralign'] = 'left'
+        s = tabulate(df, **kwargs)
+        if filepath:
+            if self.debug: print(f'OUTPUTTING TO TEXT FILE ("{filepath}") ...')
+            with open(filepath, 'w', encoding='utf-8') as file_:
+                file_.write(s)
+            if self.debug: print(f'SAVED TO TEXT FILE ("{filepath}")')
+        return s
 
     def _comp_versions(self, versions, level=2):
         getvers = lambda s: pkvers.Version('.'.join(s.strip().split('.')[:level]) if s.strip() else '0')
@@ -264,30 +320,3 @@ class Pkgcomp:
 
     def __call__(self, key=None):
         return self.compare_env(key)
-
-## ---------------------------------------------------------------------------------------------- ##
-
-def main():   
-    # environments to compare (None = current)
-    envs = [None, r'c:\_PROG_\WPy64-3910\python-3.9.1.amd64\python.exe']
-    # create class instance (don't update existing DB with latest versions, switch on debugging messages)
-    pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
-    # output to Excel book
-    pk.to_xl('pk.xlsx', version_compare_level=2)
-    
-    # other output variants:
-    """
-    df = pk()
-    # >> CSV
-    df.to_csv('pk.csv', sep=';', index=False)
-    # >> JSON
-    with open('pk.json', 'w', encoding='utf-8') as file_:
-        file_.write(df.to_json(orient='index', indent=2))
-    # >> HTML
-    with open('pk.html', 'w', encoding='utf-8') as file_:
-        file_.write(df.to_html(na_rep='', render_links=True))
-    """
-
-## ---------------------------------------------------------------------------------------------- ##
-if __name__ == '__main__':
-    main()
