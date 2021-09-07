@@ -1,24 +1,27 @@
 # -*- coding: utf-8 -*-
-from pydistro import Pkgcomp, Distros
+from pydistro import Distros
+from utils import Utils
 
 ## ---------------------------------------------------------------------------------------------- ##
 
 def main():   
     # environments to compare (None = current)
-    envs = [None, r'c:\_PROG_\WPy64-3910\python-3.9.1.amd64\python.exe']
-    distros = Distros(envs, on_error=print)
-    print(distros)
+    envs = [None, r'c:\_PROG_\WPy64-3910\python-3.9.1.amd64\python.exe', None, '']
+    distros = Distros(envs, force_update=False)
 
-    # create class instance (don't update existing DB with latest versions, switch on debugging messages)    
-    # pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
-    # df = pk()
-    # output to various formats:
-    # pk.to_xl('pk.xlsx', df=df)
-    # pk.to_csv(df=df)
-    # pk.to_html(df=df)
-    # pk.to_json(df=df)
-    # pk.to_pickle(df=df)
-    # pk.to_stringx(df=df, filepath='pk.txt')
+    print(distros['3.9.1']['dask'].requires(distros['3.9.1'].pyexe))
+
+    # df = distros.asdataframe()
+    # distros.to_stringx(df=df, filepath='pk.txt')
+    # distros.to_csv(df=df)
+    # distros.to_html(df=df)
+    # distros.to_json(df=df)
+    # distros.to_pickle(df=df)
+    # distros.to_xl(df=df)
+
+    # diff_pk = distros['3.9.1'] - distros['']
+    # print(f'Differing packages = {len(diff_pk)}')
+    # diff_pk.to_xl('diff.xlsx')
     
 ## ---------------------------------------------------------------------------------------------- ##
 if __name__ == '__main__':
