@@ -419,6 +419,10 @@ class Packages(Dframe):
     def install(self, packages=None, pyexe=None, upgrade=True, force_version=False, on_install=None):
         packages = packages or self.packages
         if not packages: return
+        if not isinstance(packages[0], Package):
+            packages_ = []
+            self._collect_packages(packages, packages_)
+            packages = packages_
         if DEBUG: print(f'>> INSTALLING PACKAGES ({len(packages)}) ...')
         for pk in packages:
             res = pk.install(pyexe, upgrade, pk.version if force_version and pk.version else None)
@@ -429,6 +433,10 @@ class Packages(Dframe):
     def uninstall(self, packages=None, pyexe=None, on_uninstall=None):
         packages = packages or self.packages
         if not packages: return
+        if not isinstance(packages[0], Package):
+            packages_ = []
+            self._collect_packages(packages, packages_)
+            packages = packages_
         if DEBUG: print(f'>> UNINSTALLING PACKAGES ({len(packages)}) ...')
         for pk in packages:
             res = pk.uninstall(pyexe)
@@ -439,21 +447,29 @@ class Packages(Dframe):
     def check(self, packages=None, pyexe=None):
         packages = packages or self.packages
         if not packages: return
+        if not isinstance(packages[0], Package):
+            packages_ = []
+            self._collect_packages(packages, packages_)
+            packages = packages_
         return Utils.pip(['check'] + [pk.name for pk in packages], None, pyexe, self.on_error)
 
-    def _collect_packages(self):
-        if not self._pknames: return 
-        self.packages.clear()
-        has_versions = Utils.is_iterable(self._pknames[0])
+    def _collect_packages(self, pknames=None, packages=None):
+        pknames = pknames if pknames else self._pknames
+        if not pknames: return 
+        packages = packages if packages else self.packages
+        if not isinstance(packages, list): return
+
+        packages.clear()
+        has_versions = Utils.is_iterable(pknames[0])
 
         def worker(pkname, version):
             pk = Package(pkname, version, self.package_cache, force_update=self.force_update, vcomp_or_level=self.vcomp, on_error=self.on_error)
-            self.packages.append(pk)
+            packages.append(pk)
         
-        if DEBUG: print(f'>> COLLECTING PACKAGE INFO FOR {len(self.packages)} PACKAGES ...')
+        if DEBUG: print(f'>> COLLECTING PACKAGE INFO FOR {len(packages)} PACKAGES ...')
         with MULTI_EXECUTOR_CLASS(max_workers=WORKERS) as executor:
-            futures = {executor.submit(worker, pkname, version): pkname for pkname, version in self._pknames} if has_versions else \
-                      {executor.submit(worker, pkname, None): pkname for pkname in self._pknames} 
+            futures = {executor.submit(worker, pkname, version): pkname for pkname, version in pknames} if has_versions else \
+                      {executor.submit(worker, pkname, None): pkname for pkname in pknames} 
             for future in concurrent.futures.as_completed(futures):
                 pkname = futures[future]
                 try:
@@ -462,7 +478,7 @@ class Packages(Dframe):
                 except Exception as err:
                     if self.on_error: 
                         self.on_error(f'{pkname}: {str(err)}')
-        if DEBUG: print(f'<< COLLECTED PACKAGE INFO FOR {len(self.packages)} PACKAGES')
+        if DEBUG: print(f'<< COLLECTED PACKAGE INFO FOR {len(packages)} PACKAGES')
 
     def _get_merged(self, other, op='+'):
         if op=='+':           
@@ -587,13 +603,17 @@ class Distro(Packages):
         if not getattr(self, 'packages', None):
             raise Exception(f'Unable to get packages from environment "{self.pyexe}"!')
 
+    def reread(self):
+        self._pknames = self._list_env_packages()
+        self._collect_packages()
+
     def install(self, on_install=None):
         if not getattr(self, 'packages', None): return
         return str(self) + NL + super().install(pyexe=self.pyexe, upgrade=True, on_install=on_install)
 
-    def uninstall(self, on_uninstall=None):
+    def uninstall(self, packages=None, on_uninstall=None):
         if not getattr(self, 'packages', None): return
-        return str(self) + NL + super().uninstall(pyexe=self.pyexe, on_uninstall=on_uninstall)
+        return str(self) + NL + super().uninstall(packages=packages, pyexe=self.pyexe, on_uninstall=on_uninstall)
 
     def check(self):
         return str(self) + NL + Utils.pip(['check'], None, self.pyexe, self.on_error)
