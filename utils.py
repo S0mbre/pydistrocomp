@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import subprocess as sp
 import sys
-
 class Utils:
 
     @staticmethod
@@ -22,10 +21,9 @@ class Utils:
         return s
 
     @staticmethod
-    def execute(args, encoding='utf-8', capture_stderr=True, on_error=None, astext=True):
+    def execute(args, encoding='utf-8', capture_stderr=True, on_error=None):
         try:
-            res = sp.run(args, check=True, stdout=sp.PIPE, stderr=sp.STDOUT if capture_stderr else None, encoding=encoding)
-            return res.stdout if astext else res
+            return sp.check_output(args, stderr=sp.STDOUT if capture_stderr else None, encoding=encoding)
 
         except sp.CalledProcessError as err:
             if on_error:
@@ -45,4 +43,4 @@ class Utils:
         def on_error_(cmd, returncode, stdout, stderr):
             on_error({'cmd': cmd, 'returncode': returncode, 'stdout': stdout, 'stderr': stderr})
 
-        return Utils.execute(args, on_error=on_error_ if on_error else None, astext=False)
+        return Utils.execute(args_, on_error=on_error_ if on_error else None)

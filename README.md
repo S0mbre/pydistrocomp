@@ -1,4 +1,5 @@
 
+
 # pydistrocomp
 ### Comparison of python distro packages
 
@@ -36,13 +37,13 @@ envs = [None, # None = current environment (mine is 3.9.1)
         ]
 ```
 
-Then create a `Pkgcomp` object passing this list:
+Then create a `Distros` object passing this list:
 ```python
-pk = Pkgcomp(envs, get_latest_vers=False, debug=True)
+pk = Distros(envs, force_update=False)
 ```
 
-### Pkgcomp parameters
-The `Pkgcomp` parameters are:
+### `Distros` parameters
+The `Distros` parameters are:
 - `pyexes`: list of python executables or a dict in format `{'executable path': 'human label'}` (both path and label can be `None` or `0` to automatically guess the current environment and version number)
 > The simplest case is just a list of python executables, e.g.:
 > ```python
@@ -51,28 +52,57 @@ The `Pkgcomp` parameters are:
 > ```
 > As mentioned, the list can also include `None` or an empty string (or just any falsy object) to tell the app to take the current executable (from `sys.executable`). By default, the list is empty (meaning that only the current executable will be analyzed). So to get the packages in your current python you can do just this:
 > ```python
-> df = Pkgcomp()() # or Pkgcomp().compare_env()
+> df = Distros().asdataframe()
 > ```
 > The other option is a dictionary with python executables as keys and labels as values, e.g.:
 > ```python
 > envs = {r'c:\py37\python-3.7.5.amd64\python.exe': 'py37',
 >         r'c:\py39\python-3.9.5.amd64\python.exe': 'latest_python'}
 > ```
-> This option is available if you don't want to rely on automatic labeling (see `version_labels` parameter description below). To analyze the current python distro, you can also pass a falsy object here, e.g. `{None: 'my-python'}` (to use a custom label) or `{None: 0}` (to use automatic labeling).
+> This option is available if you don't want to rely on automatic labeling. To analyze the current python distro, you can also pass a falsy object here, e.g. `[(None, 'my-python')]` (to use a custom label) or just `None` (to use automatic labeling).
 - `dbdir`: directory to store the package database (used for caching package info); default = current project path
-- `use_procs`: whether to use multiple processes (default is `False`, meaning multiple threads)
-> It is recommended to leave this parameter set to `False` since multiprocessing may cause instability. Please use `use_procs` = `True` at your own discretion.
-- `max_workers`: maximum number of threads or processes to run in parallel (see `use_procs` above); default = `10`
-- `get_latest_vers`: whether to update the latest version information of packages in the database; default = `True`
-> Setting this parameter to `False` may help avoid database updates from PyPI, thus dramatically reducing execution time. It is recommended to set this to `False` after the database is filled from the first launch.
-- `timeout`: timeout in seconds for a single HTTP request to PyPI (during database updates); default = `4` seconds
-- `save_on_exist`: whether to save the database automatically when the app exits (in the class destructor); default = `True`
-- `version_labels`: whether to label the distros automatically in the resulting dataframe (table header); default = `True`
-> Setting this parameter to `False` will tell the app to use the raw executable paths in the table header as well, instead of automatic labels. However, if custom labels are provided (passing `pyexes` as a dictionary), these labels will be used.
-- `debug`: whether to output debug messages to the console (`STDOUT`) to track the execution progress; default = `False`
-- `request_args`: dictionary containing additional parameters passed to `requests.get()` (such as HTTP proxy etc.); by default, this is an empty dict (no extra parameters)
+- `save_on_exit`: whether to save the database automatically when the app exits (in the class destructor); default = `True`
+- `append_to_current`: custom postfix to mark the current python environment, if present (default = `'(CURRENT)'`
+- `force_update`: whether to update package data from PyPI forcefully; default = `False`
+> Setting this parameter to `True` will dramatically increase execution time. It is recommended to keep this set to `False` after the database is filled from the first launch.
+- `vcomp_or_level`: integer or an instance of `VersionCompare` class used to compare package versions
+> The `vcomp_or_level` parameter lets you decide on the criterion for comparing versions. The value of `2` (default) means that only the major and minor versions are considered (e.g. `0.1` from `0.1.5`).
+> If you set this to `1`, only the first part of the version string (major version) will be considered. The value of `3` tells the app to consider the first 3 parts, and so on.
+- `on_error`: custom exception handler (default = `print`)
 
-### How To...
+### Indexing and iterating `Distros`
+Once you've created a `Distros` object, you can access individual python distros (environments) in the usual pythonic way:
+- get a distro by alias or executable path:
+```python
+d = distros['3.9.5']
+# OR
+d = distros[r'c:\WPy64-3950\python-3.9.5.amd64\python.exe']
+# OR
+d = distros[''] # << to get the current environment
+```
+- get a distro by index:
+```python
+d = distros[0]
+```
+- you can also use the `get()` method instead of the index operator:
+```python
+d1 = distros.get(0)
+d2 = distros.get('3.9.5')
+```
+- iterate distros:
+```python
+for d in distros:
+    print(d.pyexe, d.alias, len(d))
+```
+### Some global parameters in `pydistro.py`:
+- `DEBUG`: whether to output debug messages to the console (`STDOUT`) to track the execution progress; default = `False`
+- `WORKERS`: max number of threads to execute for concurrent operations (default = `10`)
+- `TIMEOUT`: timeout in seconds for a single HTTP request to PyPI (during database updates); default = `5` seconds
+- `REQUEST_ARGS`: dictionary containing additional parameters passed to `requests.get()` (such as HTTP proxy etc.); by default, this is an empty dict (no extra parameters)
+- `VERS_LEVEL`: level of versions strings to compare (see above)
+- `MULTI_EXECUTOR_CLASS`: concurrent executor class (not configurable)
+
+## How To...
 - export the comparison table to Excel:
 ```python
 pk = Pkgcomp([None, r'c:\WPy64-3950\python-3.9.5.amd64\python.exe'])
