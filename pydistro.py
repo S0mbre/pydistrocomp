@@ -33,7 +33,7 @@ class VersionCompare:
         if not version_str: return pkvers.Version('0')
         parts = version_str.split('.')
         if len(parts) > self.level:
-            return pkvers.Version('.'.join(parts[:self.level])) 
+            return pkvers.Version('.'.join(parts[:self.level]))
         return pkvers.Version(version_str)
 
     def compare_binary(self, pk1, pk2, comp='<'):
@@ -54,9 +54,9 @@ class VersionCompare:
     def compare_binary_reverse(self, pk1, pk2):
         v_1 = self.get_version(pk1)
         v_2 = self.get_version(pk2)
-        if v_1 > v_2: 
+        if v_1 > v_2:
             return '>'
-        if v_1 < v_2: 
+        if v_1 < v_2:
             return '<'
         return '=='
 
@@ -91,7 +91,7 @@ class Package:
         self.on_error = on_error
         self.package_cache = package_cache
         self.force_update = force_update
-        self.no_update_cache = no_update_cache        
+        self.no_update_cache = no_update_cache
         self.update_properties(pk.asdict(False) if isinstance(pk, Package) else None)
 
     @property
@@ -108,15 +108,15 @@ class Package:
 
     def _get_pkg_info(self):
         try:
-            res = requests.get('https://pypi.org/pypi/{}/json'.format(self._pkname), 
+            res = requests.get('https://pypi.org/pypi/{}/json'.format(self._pkname),
                             headers={'Accept': 'application/json'}, timeout=TIMEOUT, **REQUEST_ARGS)
-            if res.status_code != 200: 
+            if res.status_code != 200:
                 raise Exception(f'HTTP Error {res.status_code}!{NL}{res.text}')
             resjs = json.loads(res.content)
             return resjs['info']
 
         except Exception as err:
-            if self.on_error: 
+            if self.on_error:
                 self.on_error(err)
             else:
                 raise
@@ -131,14 +131,14 @@ class Package:
             if DEBUG: print(f'       >> PACKAGE "{self._pkname}": NO DATA FOUND IN CACHE OR FORCED UPDATE! GETTING DATA FROM PYPI ...')
             inf = self._get_pkg_info()
             if DEBUG: print(f'       << PACKAGE "{self._pkname}": PYPI DATA FETCHED')
-            pkinf = {'name': inf.get('name', '') or pkinf.get('name', self._pkname) if pkinf else self._pkname, 
+            pkinf = {'name': inf.get('name', '') or pkinf.get('name', self._pkname) if pkinf else self._pkname,
                      'author': inf.get('author', '') or pkinf.get('author', self._pkname) if pkinf else '',
                      'summary': inf.get('summary', '') or pkinf.get('summary', self._pkname) if pkinf else '',
                      'homepage': inf.get('home_page', inf.get('project_url', inf.get('package_url', ''))) or pkinf.get('homepage', self._pkname) if pkinf else '',
                      'latest': inf.get('version', '') or pkinf.get('latest', self._pkname) if pkinf else ''}
 
         if not pkinf:
-            if self.on_error: 
+            if self.on_error:
                 self.on_error(f'Package {self._pkname} not found on PyPI!')
             else:
                 raise Exception(f'Package {self._pkname} not found on PyPI!')
@@ -190,7 +190,7 @@ class Package:
 
     def required_by(self, pyexe=None):
         res = self.show(pyexe)
-        if not 'Required-by:' in str(res): 
+        if not 'Required-by:' in str(res):
             return None
         res = res.split(NL)
         for line in res:
@@ -201,7 +201,7 @@ class Package:
 
     def requires(self, pyexe=None):
         res = self.show(pyexe)
-        if not 'Requires:' in str(res): 
+        if not 'Requires:' in str(res):
             return None
         res = res.split(NL)
         for line in res:
@@ -232,7 +232,7 @@ class Dframe:
     def to_xl(self, filepath='pk.xlsx', df=None):
         df = df if not df is None else self.asdataframe()
         if DEBUG: print(f'>> OUTPUTTING TO EXCEL ("{filepath}") ...')
-        df.to_excel(filepath, index_label='packages')            
+        df.to_excel(filepath, index_label='packages')
         if DEBUG: print(f'<< SAVED TO EXCEL ("{filepath}")')
 
     def to_csv(self, filepath='pk.csv', df=None, sep=';'):
@@ -277,7 +277,7 @@ class Dframe:
             df = df.transform(lambda x: x.str.wrap(maxcolw))
         kwargs = kwargs or {}
         if tablefmt:
-            kwargs['tablefmt'] = tablefmt 
+            kwargs['tablefmt'] = tablefmt
         kwargs['headers'] = 'keys'
         kwargs['showindex'] = False
         if not 'stralign' in kwargs:
@@ -297,7 +297,7 @@ class Packages(Dframe):
     def __init__(self, packages=None, package_cache=None, force_update=False, vcomp_or_level=VERS_LEVEL, on_error=None):
         self.package_cache = package_cache
         full_packages = packages and isinstance(packages[0], Package)
-        if full_packages:            
+        if full_packages:
             self.packages = packages.copy()
             self._pknames = [pk.name for pk in self.packages]
         else:
@@ -350,7 +350,7 @@ class Packages(Dframe):
 
             # format as table
             tab = worksheet.table.Table(displayName='Table1', ref=f'a1:{Utils.num2az(COLS)}{ROWS}')
-            tab.tableStyleInfo = worksheet.table.TableStyleInfo(name='TableStyleMedium8', showFirstColumn=False, 
+            tab.tableStyleInfo = worksheet.table.TableStyleInfo(name='TableStyleMedium8', showFirstColumn=False,
                                                                 showLastColumn=False, showRowStripes=False, showColumnStripes=False)
             if 'Table1' in ws.tables:
                 del ws.tables['Table1']
@@ -362,17 +362,17 @@ class Packages(Dframe):
                 COLW[Utils.num2az(i)] = 16
             for c in COLW:
                 ws.column_dimensions[c].width = COLW[c]
-            
+
             # save workbook
             wb.save(filename=filepath)
             if DEBUG: print(f'SAVED TO EXCEL ("{filepath}")')
 
         except Exception as err:
-            print(err)  
-    
+            print(err)
+
     def get_fullunion(self, other):
         return self._concat_from(other, '+')
-      
+
     def update_fullunion(self, other):
         self.packages = self.get_fullunion(other)
         self._pknames = [pk.name for pk in self.packages]
@@ -380,7 +380,7 @@ class Packages(Dframe):
 
     def get_union(self, other):
         return self._concat_from(other, '|')
-      
+
     def update_union(self, other):
         self.packages = self.get_union(other)
         self._pknames = [pk.name for pk in self.packages]
@@ -455,7 +455,7 @@ class Packages(Dframe):
 
     def _collect_packages(self, pknames=None, packages=None):
         pknames = pknames if pknames else self._pknames
-        if not pknames: return 
+        if not pknames: return
         packages = packages if packages else self.packages
         if not isinstance(packages, list): return
 
@@ -465,23 +465,23 @@ class Packages(Dframe):
         def worker(pkname, version):
             pk = Package(pkname, version, self.package_cache, force_update=self.force_update, vcomp_or_level=self.vcomp, on_error=self.on_error)
             packages.append(pk)
-        
+
         if DEBUG: print(f'>> COLLECTING PACKAGE INFO FOR {len(packages)} PACKAGES ...')
         with MULTI_EXECUTOR_CLASS(max_workers=WORKERS) as executor:
             futures = {executor.submit(worker, pkname, version): pkname for pkname, version in pknames} if has_versions else \
-                      {executor.submit(worker, pkname, None): pkname for pkname in pknames} 
+                      {executor.submit(worker, pkname, None): pkname for pkname in pknames}
             for future in concurrent.futures.as_completed(futures):
                 pkname = futures[future]
                 try:
                     pk = future.result()
                     if DEBUG: print(f'     << COLLECTED PACKAGE {str(pk)}')
                 except Exception as err:
-                    if self.on_error: 
+                    if self.on_error:
                         self.on_error(f'{pkname}: {str(err)}')
         if DEBUG: print(f'<< COLLECTED PACKAGE INFO FOR {len(packages)} PACKAGES')
 
     def _get_merged(self, other, op='+'):
-        if op=='+':           
+        if op=='+':
             return list(set(self.packages + other.packages))
 
         elif op=='-':
@@ -583,7 +583,7 @@ class Packages(Dframe):
 
     def __ixor__(self, other):
         return self.update_symmetric_difference(other)
-        
+
 ## ---------------------------------------------------------------------------------------------- ##
 
 class Distro(Packages):
@@ -672,7 +672,7 @@ class Distros(Dframe):
                 pyexes_ = {pyexes: None}
             self._list_envs(pyexes_)
         else:
-            self.distros = [Distro(package_cache=self.package_cache, append_to_current=self.append_to_current, 
+            self.distros = [Distro(package_cache=self.package_cache, append_to_current=self.append_to_current,
                                    force_update=self.force_update, vcomp_or_level=self.vcomp, on_error=self.on_error)]
 
     def __del__(self):
@@ -702,7 +702,7 @@ class Distros(Dframe):
 
         return None
 
-    def load_db(self, filepath=None):     
+    def load_db(self, filepath=None):
         if filepath:
             self.dbfile = os.path.abspath(filepath)
             self.dbdir = os.path.dirname(self.dbfile)
@@ -713,7 +713,7 @@ class Distros(Dframe):
             self.package_cache = json.load(open(self.dbfile, 'r', encoding='utf-8'))
             self.old_package_cache = self.package_cache.copy()
             if DEBUG: print(f'LOADED {len(self.package_cache)} PACKAGE DEFS')
-        elif DEBUG: 
+        elif DEBUG:
             print('NO DB FILE FOUND! (WILL CREATE NEW ON EXIT)')
 
     def save_db(self, filepath=None):
@@ -728,7 +728,7 @@ class Distros(Dframe):
             with open(self.dbfile, 'w', encoding='utf-8') as jsfile:
                 json.dump(self.package_cache, jsfile, ensure_ascii=False, indent=2)
             if DEBUG: print(f'SAVED {len(self.package_cache)} PACKAGE DEFS')
-        elif DEBUG: 
+        elif DEBUG:
             print('NO PACKAGE DEFS, NO DB CREATED!')
 
     # overloaded from DFrame
@@ -762,7 +762,7 @@ class Distros(Dframe):
 
             # format as table
             tab = worksheet.table.Table(displayName='Table1', ref=f'a1:{Utils.num2az(COLS)}{ROWS}')
-            tab.tableStyleInfo = worksheet.table.TableStyleInfo(name='TableStyleMedium8', showFirstColumn=False, 
+            tab.tableStyleInfo = worksheet.table.TableStyleInfo(name='TableStyleMedium8', showFirstColumn=False,
                                                                 showLastColumn=False, showRowStripes=False, showColumnStripes=False)
             if 'Table1' in ws.tables:
                 del ws.tables['Table1']
@@ -784,16 +784,16 @@ class Distros(Dframe):
                 lv = self.vcomp.latest_version([c.value or '' for c in cells])
                 if not lv is None:
                     cells[lv].style = 'Accent1'
-            
+
             # save workbook
             wb.save(filename=filepath)
             if DEBUG: print(f'SAVED TO EXCEL ("{filepath}")')
 
         except Exception as err:
-            print(err)    
+            print(err)
 
     def _list_envs(self, pyexes, on_distro=None):
-        def worker(pyexe, alias):            
+        def worker(pyexe, alias):
             cnt = sum(1 for d in self.distros if d.alias == alias)
             distro = Distro(pyexe, alias if not cnt else f'{alias}_{cnt}', self.package_cache, self.append_to_current, self.force_update, self.vcomp, self.on_error)
             self.distros.append(distro)
@@ -811,7 +811,7 @@ class Distros(Dframe):
                         if on_distro: on_distro(distro)
 
                 except Exception as err:
-                    if self.on_error: 
+                    if self.on_error:
                         self.on_error(f'Error retrieving env "{alias}"" ("{pyexe}""): {str(err)}')
         self.distros = list(set(self.distros))
         if DEBUG: print(f'<< CREATED DIRTROS ({len(self.distros)})')

@@ -32,7 +32,7 @@
     "author": "Tin Tvrtkovic",
     "summary": "File support for asyncio.",
     "homepage": "",
-    "latest": "0.7.0"
+    "latest": "0.8.0"
   },
   "adodbapi": {
     "name": "adodbapi",
@@ -81,7 +81,7 @@
     "author": "Alex Grönholm",
     "summary": "High level compatibility layer for multiple asynchronous event loop implementations",
     "homepage": "",
-    "latest": "3.3.0"
+    "latest": "3.4.0"
   },
   "altgraph": {
     "name": "altgraph",
@@ -410,7 +410,7 @@
     "author": "Jeff Whitaker",
     "summary": "Time-handling functionality from netcdf4-python",
     "homepage": "",
-    "latest": "1.5.0"
+    "latest": "1.5.1.1"
   },
   "click-plugins": {
     "name": "click-plugins",
@@ -865,7 +865,7 @@
     "author": "Alan \"AJ\" Pryor, Jr.",
     "summary": "Easy, opinionated Flask input/output handling with Flask-restx and Marshmallow",
     "homepage": "",
-    "latest": "0.18.2"
+    "latest": "0.18.4"
   },
   "flask": {
     "name": "Flask",
@@ -970,7 +970,7 @@
     "author": "",
     "summary": "A simple packaging tool for simple packages.",
     "homepage": "",
-    "latest": "3.3.0"
+    "latest": "3.5.1"
   },
   "fs": {
     "name": "fs",
@@ -1572,7 +1572,7 @@
     "author": "jupyter-lsp Contributors",
     "summary": "Multi-Language Server WebSocket proxy for Jupyter Notebook/Lab server",
     "homepage": "",
-    "latest": "1.4.1"
+    "latest": "1.5.0"
   },
   "keyring": {
     "name": "keyring",
@@ -1607,7 +1607,7 @@
     "author": "JupyterLab-LSP Development Team",
     "summary": "Coding assistance for JupyterLab with Language Server Protocol",
     "homepage": "",
-    "latest": "3.8.1"
+    "latest": "3.9.1"
   },
   "jupyterlab-git": {
     "name": "jupyterlab-git",
@@ -2895,7 +2895,7 @@
     "author": "Edgar Andrés Margffoy Tuay <andfoy@gmail.com>",
     "summary": "Pseudo terminal support for Windows from Python.",
     "homepage": "",
-    "latest": "1.1.4"
+    "latest": "1.1.6"
   },
   "pyzo": {
     "name": "pyzo",
@@ -3721,7 +3721,7 @@
     "author": "Lennart Regebro",
     "summary": "tzinfo object for the local timezone",
     "homepage": "",
-    "latest": "3.0"
+    "latest": "4.1"
   },
   "typed-ast": {
     "name": "typed-ast",
@@ -4002,5 +4002,313 @@
     "summary": "Zstandard bindings for Python",
     "homepage": "https://github.com/indygreg/python-zstandard",
     "latest": "0.15.2"
+  },
+  "bidict": {
+    "name": "bidict",
+    "author": "Joshua Bronson",
+    "summary": "The bidirectional mapping library for Python.",
+    "homepage": "https://bidict.readthedocs.io",
+    "latest": "0.21.4"
+  },
+  "chart-studio": {
+    "name": "chart-studio",
+    "author": "Chris P",
+    "summary": "Utilities for interfacing with plotly's Chart Studio",
+    "homepage": "https://plot.ly/python/",
+    "latest": "1.1.0"
+  },
+  "asciimatics": {
+    "name": "asciimatics",
+    "author": "Peter Brittain",
+    "summary": "A cross-platform package to replace curses (mouse/keyboard input & text colours/positioning) and create ASCII animations",
+    "homepage": "https://github.com/peterbrittain/asciimatics",
+    "latest": "1.13.0"
+  },
+  "dash-auth": {
+    "name": "dash-auth",
+    "author": "Christopher Parmer",
+    "summary": "Dash Authorization Package.",
+    "homepage": "https://plotly.com/dash",
+    "latest": "1.4.1"
+  },
+  "aria2p": {
+    "name": "aria2p",
+    "author": "Timothée Mazzucotelli",
+    "summary": "Command-line tool and library to interact with an aria2c daemon process with JSON-RPC.",
+    "homepage": "https://github.com/pawamoy/aria2p",
+    "latest": "0.10.4"
+  },
+  "aiosignal": {
+    "name": "aiosignal",
+    "author": "Nikolay Kim",
+    "summary": "aiosignal: a list of registered asynchronous callbacks",
+    "homepage": "https://github.com/aio-libs/aiosignal",
+    "latest": "1.2.0"
+  },
+  "cached-property": {
+    "name": "cached-property",
+    "author": "Daniel Greenfeld",
+    "summary": "A decorator for caching properties in classes.",
+    "homepage": "https://github.com/pydanny/cached-property",
+    "latest": "1.5.2"
+  },
+  "charset-normalizer": {
+    "name": "charset-normalizer",
+    "author": "Ahmed TAHRI @Ousret",
+    "summary": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+    "homepage": "https://github.com/ousret/charset_normalizer",
+    "latest": "2.0.9"
+  },
+  "backports.entry-points-selectable": {
+    "name": "backports.entry-points-selectable",
+    "author": "Jason R. Coombs",
+    "summary": "Compatibility shim providing selectable entry points for older implementations",
+    "homepage": "https://github.com/jaraco/backports.entry_points_selectable",
+    "latest": "1.1.1"
+  },
+  "loguru": {
+    "name": "loguru",
+    "author": "Delgan",
+    "summary": "Python logging made (stupidly) simple",
+    "homepage": "https://github.com/Delgan/loguru",
+    "latest": "0.5.3"
+  },
+  "asn1crypto": {
+    "name": "asn1crypto",
+    "author": "wbond",
+    "summary": "Fast ASN.1 parser and serializer with definitions for private keys, public keys, certificates, CRL, OCSP, CMS, PKCS#3, PKCS#7, PKCS#8, PKCS#12, PKCS#5, X.509 and TSP",
+    "homepage": "https://github.com/wbond/asn1crypto",
+    "latest": "1.4.0"
+  },
+  "funcy": {
+    "name": "funcy",
+    "author": "Alexander Schepanovski",
+    "summary": "A fancy and practical functional tools",
+    "homepage": "http://github.com/Suor/funcy",
+    "latest": "1.16"
+  },
+  "flask-seasurf": {
+    "name": "Flask-SeaSurf",
+    "author": "Max Countryman",
+    "summary": "An updated CSRF extension for Flask.",
+    "homepage": "https://github.com/maxcountryman/flask-seasurf/",
+    "latest": "0.3.1"
+  },
+  "jupyter-packaging": {
+    "name": "jupyter-packaging",
+    "author": "Jupyter Development Team",
+    "summary": "Jupyter Packaging Utilities.",
+    "homepage": "http://jupyter.org",
+    "latest": "0.11.1"
+  },
+  "fonttools": {
+    "name": "fonttools",
+    "author": "Just van Rossum",
+    "summary": "Tools to manipulate font files",
+    "homepage": "http://github.com/fonttools/fonttools",
+    "latest": "4.28.3"
+  },
+  "debugpy": {
+    "name": "debugpy",
+    "author": "Microsoft Corporation",
+    "summary": "An implementation of the Debug Adapter Protocol for Python",
+    "homepage": "https://aka.ms/debugpy",
+    "latest": "1.5.1"
+  },
+  "frozenlist": {
+    "name": "frozenlist",
+    "author": "Nikolay Kim",
+    "summary": "A list-like structure which implements collections.abc.MutableSequence",
+    "homepage": "https://github.com/aio-libs/frozenlist",
+    "latest": "1.2.0"
+  },
+  "dateutils": {
+    "name": "dateutils",
+    "author": "Jeremy Cantrell",
+    "summary": "Various utilities for working with date and datetime objects",
+    "homepage": "https://github.com/jmcantrell/python-dateutils",
+    "latest": "0.6.12"
+  },
+  "opencv-python": {
+    "name": "opencv-python",
+    "author": "",
+    "summary": "Wrapper package for OpenCV python bindings.",
+    "homepage": "https://github.com/skvark/opencv-python",
+    "latest": "4.5.4.60"
+  },
+  "deprecation": {
+    "name": "deprecation",
+    "author": "Brian Curtin",
+    "summary": "A library to handle automated deprecations",
+    "homepage": "http://deprecation.readthedocs.io/",
+    "latest": "2.1.0"
+  },
+  "plyer": {
+    "name": "plyer",
+    "author": "Kivy team",
+    "summary": "Platform-independent wrapper for platform-dependent APIs",
+    "homepage": "https://plyer.readthedocs.org/en/latest/",
+    "latest": "2.0.0"
+  },
+  "parsimonious": {
+    "name": "parsimonious",
+    "author": "Erik Rose",
+    "summary": "(Soon to be) the fastest pure-Python PEG parser I could muster",
+    "homepage": "https://github.com/erikrose/parsimonious",
+    "latest": "0.8.1"
+  },
+  "pycryptosat": {
+    "name": "pycryptosat",
+    "author": "Mate Soos",
+    "summary": "Bindings to CryptoMiniSat 5.6.8 (a SAT solver)",
+    "homepage": "https://github.com/msoos/cryptominisat",
+    "latest": "0.6.1"
+  },
+  "py-aiger": {
+    "name": "py-aiger",
+    "author": "Marcell Vazquez-Chanlatte",
+    "summary": "A python library for manipulating sequential and-inverter gates.",
+    "homepage": "https://github.com/mvcisback/py-aiger",
+    "latest": "6.1.20"
+  },
+  "pyperclip": {
+    "name": "pyperclip",
+    "author": "Al Sweigart",
+    "summary": "A cross-platform clipboard module for Python. (Only handles plain text for now.)",
+    "homepage": "https://github.com/asweigart/pyperclip",
+    "latest": "1.8.2"
+  },
+  "platformdirs": {
+    "name": "platformdirs",
+    "author": "",
+    "summary": "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\".",
+    "homepage": "https://github.com/platformdirs/platformdirs",
+    "latest": "2.4.0"
+  },
+  "pyside6": {
+    "name": "PySide6",
+    "author": "Qt for Python Team",
+    "summary": "Python bindings for the Qt cross-platform application and UI framework",
+    "homepage": "https://www.pyside.org",
+    "latest": "6.2.2"
+  },
+  "pyfiglet": {
+    "name": "pyfiglet",
+    "author": "Peter Waller (Thanks to Christopher Jones and Stefano Rivera)",
+    "summary": "Pure-python FIGlet implementation",
+    "homepage": "https://github.com/pwaller/pyfiglet",
+    "latest": "0.8.post1"
+  },
+  "parsy": {
+    "name": "parsy",
+    "author": "Jeanine Adkisson",
+    "summary": "easy-to-use parser combinators, for parsing in pure Python",
+    "homepage": "https://github.com/python-parsy/parsy",
+    "latest": "1.4.0"
+  },
+  "shiboken6": {
+    "name": "shiboken6",
+    "author": "Qt for Python Team",
+    "summary": "Python / C++ bindings helper module",
+    "homepage": "https://www.pyside.org",
+    "latest": "6.2.2"
+  },
+  "python-lsp-jsonrpc": {
+    "name": "python-lsp-jsonrpc",
+    "author": "Python Language Server Contributors",
+    "summary": "JSON RPC 2.0 server library",
+    "homepage": "https://github.com/python-lsp/python-lsp-jsonrpc",
+    "latest": "1.0.0"
+  },
+  "python-lsp-server": {
+    "name": "python-lsp-server",
+    "author": "Python Language Server Contributors",
+    "summary": "Python Language Server for the Language Server Protocol",
+    "homepage": "https://github.com/python-lsp/python-lsp-server",
+    "latest": "1.3.2"
+  },
+  "setuptools-scm": {
+    "name": "setuptools-scm",
+    "author": "Ronny Pfannschmidt",
+    "summary": "the blessed package to manage your versions by scm tags",
+    "homepage": "https://github.com/pypa/setuptools_scm/",
+    "latest": "6.3.2"
+  },
+  "toposort": {
+    "name": "toposort",
+    "author": "\"Eric V. Smith\"",
+    "summary": "\"Implements a topological sort algorithm.\"",
+    "homepage": "",
+    "latest": "1.7"
+  },
+  "ua-parser": {
+    "name": "ua-parser",
+    "author": "PBS",
+    "summary": "Python port of Browserscope's user agent parser",
+    "homepage": "https://github.com/ua-parser/uap-python",
+    "latest": "0.10.0"
+  },
+  "python-multipart": {
+    "name": "python-multipart",
+    "author": "Andrew Dunham",
+    "summary": "A streaming multipart parser for Python",
+    "homepage": "http://github.com/andrew-d/python-multipart",
+    "latest": "0.0.5"
+  },
+  "win32-setctime": {
+    "name": "win32-setctime",
+    "author": "Delgan",
+    "summary": "A small Python utility to set file creation time on Windows",
+    "homepage": "https://github.com/Delgan/win32-setctime",
+    "latest": "1.0.4"
+  },
+  "tomli": {
+    "name": "tomli",
+    "author": "",
+    "summary": "A lil' TOML parser",
+    "homepage": "",
+    "latest": "1.2.2"
+  },
+  "python-sat": {
+    "name": "python-sat",
+    "author": "Alexey Ignatiev, Joao Marques-Silva, Antonio Morgado",
+    "summary": "A Python library for prototyping with SAT oracles",
+    "homepage": "https://github.com/pysathq/pysat",
+    "latest": "0.1.7.dev15"
+  },
+  "sqlite-fts4": {
+    "name": "sqlite-fts4",
+    "author": "Simon Willison",
+    "summary": "Python functions for working with SQLite FTS4 search",
+    "homepage": "https://github.com/simonw/sqlite-fts4",
+    "latest": "1.0.1"
+  },
+  "wasmer-compiler-cranelift": {
+    "name": "wasmer-compiler-cranelift",
+    "author": "Wasmer Engineering Team <engineering@wasmer.io>",
+    "summary": "The Cranelift compiler for the `wasmer` package (to compile WebAssembly module)",
+    "homepage": "",
+    "latest": "1.0.0"
+  },
+  "wasmer-compiler-singlepass": {
+    "name": "wasmer-compiler-singlepass",
+    "author": "Wasmer Engineering Team <engineering@wasmer.io>",
+    "summary": "Python extension to run WebAssembly binaries",
+    "homepage": "",
+    "latest": "1.0.0"
+  },
+  "tomlkit": {
+    "name": "tomlkit",
+    "author": "Sébastien Eustace",
+    "summary": "Style preserving TOML library",
+    "homepage": "https://github.com/sdispater/tomlkit",
+    "latest": "0.7.2"
+  },
+  "tomli_w": {
+    "name": "tomli-w",
+    "author": "",
+    "summary": "A lil' TOML writer",
+    "homepage": "",
+    "latest": "1.0.0"
   }
 }

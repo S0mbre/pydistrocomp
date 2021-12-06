@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import subprocess as sp
 import sys
+
 class Utils:
 
     @staticmethod
@@ -39,7 +40,7 @@ class Utils:
         pyexe = pyexe or sys.executable
         args_ = [pyexe, '-m', 'pip'] + [cmd for cmd in args]
         if pkname: args_.append(pkname)
-        
+
         def on_error_(cmd, returncode, stdout, stderr):
             on_error({'cmd': cmd, 'returncode': returncode, 'stdout': stdout, 'stderr': stderr})
 
