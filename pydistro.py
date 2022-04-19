@@ -308,7 +308,7 @@ class Packages(Dframe):
         self.vcomp = vcomp_or_level if isinstance(vcomp_or_level, VersionCompare) else VersionCompare(vcomp_or_level)
         self._it = None
         if not full_packages:
-            self._collect_packages()
+            self._collect_packages()        
 
     def get(self, key):
         if isinstance(key, int):
@@ -599,7 +599,7 @@ class Distro(Packages):
         if self.append_to_current and self.pyexe == sys.executable:
             self.alias += self.append_to_current
         self.on_error = on_error
-        super().__init__(self._list_env_packages(), package_cache, force_update, vcomp_or_level, on_error)
+        super().__init__(self._list_env_packages(), package_cache, force_update, vcomp_or_level, on_error)        
         if not getattr(self, 'packages', None):
             raise Exception(f'Unable to get packages from environment "{self.pyexe}"!')
 
@@ -623,7 +623,7 @@ class Distro(Packages):
 
     def _list_env_packages(self):
         if DEBUG: print(f'>> LISTING INSTALLED PACKAGES FOR DISTRO {str(self)} ...')
-        out = [tuple(s.strip().split('==')) for s in Utils.execute([self.pyexe, '-m', 'pip', 'list', '--format', 'freeze']).split(NL) if s]
+        out = [tuple(s.strip().split('==')) for s in Utils.execute([self.pyexe, '-m', 'pip', 'list', '--format', 'freeze']).split(NL) if s and '==' in s]
         if DEBUG: print(f'<< LISTED INSTALLED PACKAGES FOR DISTRO {str(self)}')
         return out
 
@@ -670,6 +670,7 @@ class Distros(Dframe):
                     pyexes_ = [tuple(p[:2]) if Utils.is_iterable(p) and len(p) > 1 else (p, None) for p in pyexes]
             else:
                 pyexes_ = {pyexes: None}
+            # print(pyexes_)
             self._list_envs(pyexes_)
         else:
             self.distros = [Distro(package_cache=self.package_cache, append_to_current=self.append_to_current,
@@ -739,10 +740,7 @@ class Distros(Dframe):
         if l == 1: return df
         for d in self.distros[1:]:
             df = df.join(d.asdataframe().set_index(Package.prop_names), how='outer')
-        df = df.reset_index().fillna('')
-        df.set_index('name', drop=False, inplace=True)
-        df.index.name = None
-        return df.reindex(sorted(df.index, key=lambda x: x.lower()))
+        return df.reset_index().fillna('').sort_values('name', key=lambda col: col.str.lower()).reset_index(drop=True)
 
     # overloaded from DFrame
     def to_xl(self, filepath='pk.xlsx', df=None):
@@ -812,7 +810,7 @@ class Distros(Dframe):
 
                 except Exception as err:
                     if self.on_error:
-                        self.on_error(f'Error retrieving env "{alias}"" ("{pyexe}""): {str(err)}')
+                        self.on_error(f'Error retrieving env "{alias}" ("{pyexe}"): {str(err)}')
         self.distros = list(set(self.distros))
         if DEBUG: print(f'<< CREATED DIRTROS ({len(self.distros)})')
 
