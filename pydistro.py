@@ -737,7 +737,8 @@ class Distros(Dframe):
         l = len(self.distros)
         if not l: return pd.DataFrame()
         df = self.distros[0].asdataframe().set_index(Package.prop_names)
-        if l == 1: return df
+        if l == 1: 
+            return df.reset_index().fillna('').sort_values('name', key=lambda col: col.str.lower()).reset_index(drop=True)
         for d in self.distros[1:]:
             df = df.join(d.asdataframe().set_index(Package.prop_names), how='outer')
         return df.reset_index().fillna('').sort_values('name', key=lambda col: col.str.lower()).reset_index(drop=True)
@@ -788,7 +789,8 @@ class Distros(Dframe):
             if DEBUG: print(f'SAVED TO EXCEL ("{filepath}")')
 
         except Exception as err:
-            print(err)
+            Utils.trace_exc()
+            # print(err)
 
     def _list_envs(self, pyexes, on_distro=None):
         def worker(pyexe, alias):

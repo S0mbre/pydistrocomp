@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import subprocess as sp
-import sys
+import sys, traceback
 
 class Utils:
 
@@ -12,6 +12,10 @@ class Utils:
             return True
         except:
             return False
+
+    @staticmethod
+    def trace_exc():
+        traceback.print_exc()
 
     @staticmethod
     def num2az(num):
